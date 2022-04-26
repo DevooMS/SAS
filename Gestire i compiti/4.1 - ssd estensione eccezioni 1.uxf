@@ -373,17 +373,18 @@ tabellone turni</panel_attributes>
       <x>189</x>
       <y>875</y>
       <w>350</w>
-      <h>28</h>
+      <h>35</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-5.assegnaCompito(compito, turno, cuoco?, stima?, dosi?) </panel_attributes>
+5.assegnaCompito(compito, turno, cuoco?, stimaTempo?, 
+quantità?, porzioni?) </panel_attributes>
     <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>189</x>
-      <y>896</y>
+      <y>903</y>
       <w>350</w>
       <h>28</h>
     </coordinates>

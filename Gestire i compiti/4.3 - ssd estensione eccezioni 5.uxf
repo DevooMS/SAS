@@ -390,10 +390,11 @@ tabellone turni</panel_attributes>
       <x>360</x>
       <y>872</y>
       <w>400</w>
-      <h>32</h>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-5.assegnaCompito(compito, turno, cuoco?, stima?, dosi?) </panel_attributes>
+5.assegnaCompito(compito, turno, cuoco?, stimaTempo?, 
+quantità?, porzioni?)</panel_attributes>
     <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
   </element>
   <element>
@@ -462,10 +463,11 @@ lw=2
       <x>360</x>
       <y>1032</y>
       <w>400</w>
-      <h>32</h>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-5a.1 modificaCompito(compito, turno, cuoco?, stima?, dosi?) 
+5a.1 modificaAssegnamentoCompito(compito, turno, cuoco?, 
+stimaTempo?, quantità?, porzioni?) 
 fg=#9E1C8C</panel_attributes>
     <additional_attributes>480.0;20.0;10.0;20.0</additional_attributes>
   </element>
@@ -473,7 +475,7 @@ fg=#9E1C8C</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>360</x>
-      <y>1056</y>
+      <y>1064</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -510,7 +512,8 @@ layer=1</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;.
 5a.1 cuoco non disopnibile per il turno selezionato
-fg=red</panel_attributes>
+fg=red
+layer=2</panel_attributes>
     <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
   </element>
   <element>
@@ -536,7 +539,7 @@ layer=1</panel_attributes>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-5b.1 eliminaCompito(compito, turno, cuoco?, stima?, dosi?) 
+5b.1 eliminaAssegnamentoCompito(compito, turno, cuoco?) 
 fg=#9E1C8C</panel_attributes>
     <additional_attributes>480.0;20.0;10.0;20.0</additional_attributes>
   </element>
