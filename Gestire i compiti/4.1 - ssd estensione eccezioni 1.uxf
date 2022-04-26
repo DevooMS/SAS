@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>175</x>
+      <y>98</y>
+      <w>42</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>Attore</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>161</y>
+      <w>21</w>
+      <h>826</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>203</x>
+      <y>0</y>
+      <w>308</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+Diagrammi di sequenza di sistema
+per l'UC Gestire i Compiti
+lw=0
+fontsize=24
+bg=#F9FF47</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>483</x>
+      <y>112</y>
+      <w>77</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Sistema</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>203</x>
+      <y>42</y>
+      <w>308</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+Estensione al passo 1 (1a)
+e relativa eccezione (1a.1a)
+lw=0
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>518</x>
+      <y>140</y>
+      <w>21</w>
+      <h>847</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>189</y>
+      <w>350</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+1.generaFoglioRiepilogativo(evento, servizio)</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>217</y>
+      <w>350</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+foglio riepilogativo</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>147</x>
+      <y>182</y>
+      <w>406</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>ALT
+fg=#761C8C
+bg=#e7bfff
+lw=2
+--
+
+
+
+
+-.
+
+
+
+
+
+
+
+-.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>518</x>
+      <y>224</y>
+      <w>14</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>type=termination
+layer=2
+
+lw=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>273</y>
+      <w>350</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+1.generaFoglioRiepilogativo(evento, servizio)</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>294</y>
+      <w>350</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+foglio riepilogativo</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>154</x>
+      <y>483</y>
+      <w>399</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>OPT
+fg=#128C86
+bg=#B8E0E0
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>497</y>
+      <w>350</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+2.aggiungiCompito(compito)</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>518</y>
+      <w>350</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+foglio riepilogativo aggiornato</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>154</x>
+      <y>574</y>
+      <w>399</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>OPT
+fg=#128C86
+bg=#B8E0E0
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>616</y>
+      <w>350</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+3.ordinaElencoCompiti(compito, posizione)</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>637</y>
+      <w>350</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+foglio riepilogativo aggiornato</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>105</x>
+      <y>266</y>
+      <w>490</w>
+      <h>693</h>
+    </coordinates>
+    <panel_attributes>LOOP
+fg=blue
+bg=#CCE0FF
+layer=-3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>126</x>
+      <y>455</y>
+      <w>455</w>
+      <h>490</h>
+    </coordinates>
+    <panel_attributes>LOOP
+fg=blue
+bg=#8CB4FF
+layer=-2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>161</x>
+      <y>602</y>
+      <w>385</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>ALT
+fg=#761C8C
+bg=#e7bfff
+lw=2
+--
+
+
+
+
+-.
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>700</y>
+      <w>350</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+foglio riepilogativo aggiornato</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>679</y>
+      <w>350</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+3.ordinaElencoCompiti(compito, posizione)</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>518</x>
+      <y>644</y>
+      <w>14</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>type=termination
+lw=2
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>154</x>
+      <y>798</y>
+      <w>399</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>OPT
+fg=#128C86
+bg=#B8E0E0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>812</y>
+      <w>350</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+4.consultaTabelloneTurni()</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>833</y>
+      <w>350</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+tabellone turni</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>875</y>
+      <w>350</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+5.assegnaCompito(compito, turno, cuoco?, stima?, dosi?) </panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>896</y>
+      <w>350</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+foglio riepilogativo aggiornato, tabellone turni aggiornato</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>140</x>
+      <y>770</y>
+      <w>427</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>LOOP
+fg=blue
+bg=#8CB4FF
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>336</y>
+      <w>350</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+1a.1 scegliFoglioRiepilogativo(evento, servizio)
+fg=#9E1C8C</panel_attributes>
+    <additional_attributes>480.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>161</x>
+      <y>364</y>
+      <w>378</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>ALT
+bg=#ffaaaa
+--
+
+-.
+fg=#D3001B
+layer=0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>371</y>
+      <w>350</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+foglio riepilogativo
+fg=#9E1C8C</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>399</y>
+      <w>350</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+1a.1a.1 il foglio riepilogativo è di unservizio di un evento 
+non assegnato allo chef
+fg=red</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>518</x>
+      <y>406</y>
+      <w>14</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>type=termination
+fg=red
+lw=2
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

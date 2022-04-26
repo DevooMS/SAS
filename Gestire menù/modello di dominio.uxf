@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>180</y>
+      <w>180</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Menù
+--
+titolo: testo
+pubblicato: sì/no
+richiede cuoco: sì/no
+piatti caldi: sì/no
+richiede cucina: sì/no
+buffet: sì/no
+finger food: sì/no
+layer=-1
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>20</y>
+      <w>140</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Sezione
+--
+nome: testo
+
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>650</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Ricettario
+--
+
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>440</y>
+      <w>140</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Ricetta
+--
+
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>210</y>
+      <w>140</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Voce
+--
+descrizione: testo
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>450</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Evento
+--
+informazioni
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>40</y>
+      <w>320</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+contiene ^
+m2=0..n
+m1=1
+fg=black</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0;300.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>800</x>
+      <y>100</y>
+      <w>110</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
+appartiene ^
+m2=0..1
+m1=0..n
+fg=black
+</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>240</y>
+      <w>230</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+appartiene &gt;
+m2=0..n
+m1=0..1
+fg=black
+</panel_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>320</y>
+      <w>100</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=-
+in uso in v
+m2=0..n
+m1=0..n
+fg=black</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>800</x>
+      <y>310</y>
+      <w>140</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=-
+fa riferimento a v
+m2=0..n
+m1=1
+fg=black
+group=1</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>800</x>
+      <y>520</y>
+      <w>100</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=-
+si trova in v
+m2=1
+m1=0..n
+fg=black</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>660</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Chef
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>500</y>
+      <w>120</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+
+assegnato a v
+m2=0..1
+m1=0..n
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>940</x>
+      <y>20</y>
+      <w>220</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+Una voce puo' comparire in un 
+menu' all'interno di una sezione
+oppure come voce "libera" quindi 
+verrà valorizzata  una e una sola 
+delle due  relazioni appartiene
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
