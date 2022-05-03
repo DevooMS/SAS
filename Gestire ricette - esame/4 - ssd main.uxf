@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>378</x>
+      <y>0</y>
+      <w>308</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+Diagrammi di sequenza di sistema
+per l'UC Gestire le Ricette/Preparazioni
+lw=0
+fontsize=24
+bg=#F9FF47</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>378</x>
+      <y>42</y>
+      <w>308</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+Scenario principale
+lw=0
+fontsize=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>315</x>
+      <y>119</y>
+      <w>42</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>Attore</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>686</x>
+      <y>133</y>
+      <w>77</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Sistema</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>329</x>
+      <y>182</y>
+      <w>21</w>
+      <h>511</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;710.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>714</x>
+      <y>161</y>
+      <w>21</w>
+      <h>525</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;730.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>329</x>
+      <y>210</y>
+      <w>406</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+evento</panel_attributes>
+    <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
+  </element>
+</diagram>
