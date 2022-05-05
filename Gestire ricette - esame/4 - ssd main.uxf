@@ -86,7 +86,7 @@ fontsize=18</panel_attributes>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-generaMansione(nome, descrizione, note)</panel_attributes>
+generaMansione(nome, autore?)</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
   <element>
@@ -98,7 +98,7 @@ generaMansione(nome, descrizione, note)</panel_attributes>
       <h>35</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-mansione registrata
+mansione
 </panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
@@ -106,8 +106,8 @@ mansione registrata
     <id>UMLFrame</id>
     <coordinates>
       <x>287</x>
-      <y>273</y>
-      <w>483</w>
+      <y>371</y>
+      <w>476</w>
       <h>147</h>
     </coordinates>
     <panel_attributes>LOOP
@@ -119,12 +119,49 @@ bg=#8CB4FF</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>329</x>
-      <y>294</y>
+      <y>392</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 aggiungiPasso(descrizione, passo?, contenutoVariante?, contenutoRipetizione?)</panel_attributes>
+    <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>287</x>
+      <y>273</y>
+      <w>476</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>OPT
+fg=#128C86
+bg=#B8E0E0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>329</x>
+      <y>294</y>
+      <w>406</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+aggiungiInformazioi(informazioni)</panel_attributes>
+    <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>329</x>
+      <y>322</y>
+      <w>406</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+mansione aggiornata</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
 </diagram>
