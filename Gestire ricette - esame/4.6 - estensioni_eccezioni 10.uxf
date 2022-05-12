@@ -222,7 +222,7 @@ ingrediente regitsrato</panel_attributes>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-5.aggiungiPorzioniQuantità(porzioni, quantità)</panel_attributes>
+5.specificaPorzioniQuantità(porzioni, quantità)</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
   <element>
@@ -378,7 +378,7 @@ layer=-1</panel_attributes>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-9.aggiungiTempistiche(tempoConcreto, tempoPreparazione, tempoUltimazione)</panel_attributes>
+9.specificaTempistiche(tempoConcreto, tempoPreparazione, tempoUltimazione)</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
   <element>
