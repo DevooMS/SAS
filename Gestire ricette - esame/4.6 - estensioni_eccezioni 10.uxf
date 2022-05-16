@@ -61,10 +61,10 @@ fontsize=18</panel_attributes>
       <x>392</x>
       <y>154</y>
       <w>21</w>
-      <h>1358</h>
+      <h>1274</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1920.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1800.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -72,10 +72,10 @@ fontsize=18</panel_attributes>
       <x>777</x>
       <y>133</y>
       <w>21</w>
-      <h>1379</h>
+      <h>1295</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1950.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1830.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -423,7 +423,7 @@ tag registrato</panel_attributes>
       <x>322</x>
       <y>1050</y>
       <w>518</w>
-      <h>308</h>
+      <h>224</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
@@ -435,7 +435,7 @@ layer=-1</panel_attributes>
     <id>UMLFrame</id>
     <coordinates>
       <x>350</x>
-      <y>1393</y>
+      <y>1309</y>
       <w>476</w>
       <h>91</h>
     </coordinates>
@@ -448,7 +448,7 @@ bg=#B8E0E0</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>392</x>
-      <y>1414</y>
+      <y>1330</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
@@ -460,7 +460,7 @@ pubblicaMansione()</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>392</x>
-      <y>1442</y>
+      <y>1358</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
@@ -487,7 +487,7 @@ bg=#8CB4FF</panel_attributes>
       <x>259</x>
       <y>252</y>
       <w>637</w>
-      <h>1127</h>
+      <h>1043</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
@@ -501,20 +501,12 @@ layer=-2</panel_attributes>
       <x>350</x>
       <y>1078</y>
       <w>476</w>
-      <h>259</h>
+      <h>175</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
 bg=#e7bfff
 --
-
-
-
-
-
-
--.
-
 
 
 
@@ -533,7 +525,7 @@ bg=#e7bfff
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-10a.1 creaAggiungiTag(nome)</panel_attributes>
+10a.1 eliminaTag(tag)</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
   <element>
@@ -541,30 +533,6 @@ bg=#e7bfff
     <coordinates>
       <x>392</x>
       <y>1211</y>
-      <w>406</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-tag registrato</panel_attributes>
-    <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>392</x>
-      <y>1267</y>
-      <w>406</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;
-10b.1 eliminaTag(tag)</panel_attributes>
-    <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>392</x>
-      <y>1295</y>
       <w>406</w>
       <h>28</h>
     </coordinates>

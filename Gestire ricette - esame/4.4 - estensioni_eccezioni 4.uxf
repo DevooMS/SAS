@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>315</x>
+      <x>350</x>
       <y>0</y>
       <w>308</w>
       <h>42</h>
@@ -21,7 +21,7 @@ bg=#F9FF47</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>315</x>
+      <x>350</x>
       <y>42</y>
       <w>308</w>
       <h>21</h>
@@ -36,7 +36,7 @@ fontsize=18</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>259</x>
+      <x>294</x>
       <y>91</y>
       <w>42</w>
       <h>77</h>
@@ -47,7 +47,7 @@ fontsize=18</panel_attributes>
   <element>
     <id>UMLDeployment</id>
     <coordinates>
-      <x>630</x>
+      <x>665</x>
       <y>105</y>
       <w>77</w>
       <h>35</h>
@@ -58,29 +58,29 @@ fontsize=18</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
+      <x>308</x>
       <y>154</y>
       <w>21</w>
-      <h>1337</h>
+      <h>1519</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1890.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;2150.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>658</x>
+      <x>693</x>
       <y>133</y>
       <w>21</w>
-      <h>1358</h>
+      <h>1540</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1920.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;2180.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
+      <x>308</x>
       <y>182</y>
       <w>406</w>
       <h>28</h>
@@ -92,7 +92,7 @@ fontsize=18</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
+      <x>308</x>
       <y>210</y>
       <w>406</w>
       <h>35</h>
@@ -105,7 +105,7 @@ mansione
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>231</x>
+      <x>266</x>
       <y>399</y>
       <w>476</w>
       <h>77</h>
@@ -118,7 +118,7 @@ bg=#8CB4FF</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
+      <x>308</x>
       <y>413</y>
       <w>406</w>
       <h>35</h>
@@ -131,7 +131,7 @@ contenutoRipetizione?)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>231</x>
+      <x>266</x>
       <y>308</y>
       <w>476</w>
       <h>77</h>
@@ -144,7 +144,7 @@ bg=#B8E0E0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
+      <x>308</x>
       <y>322</y>
       <w>406</w>
       <h>28</h>
@@ -156,7 +156,7 @@ bg=#B8E0E0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
+      <x>308</x>
       <y>350</y>
       <w>406</w>
       <h>28</h>
@@ -168,7 +168,7 @@ informazioni registrate</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
+      <x>308</x>
       <y>441</y>
       <w>406</w>
       <h>28</h>
@@ -180,10 +180,10 @@ passo registrato</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>203</x>
+      <x>238</x>
       <y>490</y>
       <w>518</w>
-      <h>294</h>
+      <h>469</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
@@ -193,7 +193,7 @@ bg=#8CB4FF</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
+      <x>308</x>
       <y>539</y>
       <w>406</w>
       <h>28</h>
@@ -205,7 +205,7 @@ bg=#8CB4FF</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
+      <x>308</x>
       <y>567</y>
       <w>406</w>
       <h>28</h>
@@ -217,8 +217,8 @@ ingrediente regitsrato</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>798</y>
+      <x>308</x>
+      <y>973</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
@@ -229,8 +229,8 @@ ingrediente regitsrato</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>819</y>
+      <x>308</x>
+      <y>994</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
@@ -241,8 +241,8 @@ porzioni e quantità registrate</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>896</y>
+      <x>308</x>
+      <y>1071</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
@@ -253,8 +253,8 @@ porzioni e quantità registrate</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>924</y>
+      <x>308</x>
+      <y>1099</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
@@ -265,8 +265,8 @@ ricettario</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>231</x>
-      <y>882</y>
+      <x>266</x>
+      <y>1057</y>
       <w>476</w>
       <h>77</h>
     </coordinates>
@@ -279,8 +279,8 @@ layer=1</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>231</x>
-      <y>973</y>
+      <x>266</x>
+      <y>1148</y>
       <w>476</w>
       <h>77</h>
     </coordinates>
@@ -293,8 +293,8 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>987</y>
+      <x>308</x>
+      <y>1162</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
@@ -306,8 +306,8 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>1015</y>
+      <x>308</x>
+      <y>1190</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
@@ -319,8 +319,8 @@ layer=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>231</x>
-      <y>1064</y>
+      <x>266</x>
+      <y>1239</y>
       <w>476</w>
       <h>77</h>
     </coordinates>
@@ -333,8 +333,8 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>1106</y>
+      <x>308</x>
+      <y>1281</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
@@ -346,8 +346,8 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>1078</y>
+      <x>308</x>
+      <y>1253</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
@@ -359,10 +359,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>182</x>
+      <x>217</x>
       <y>280</y>
       <w>560</w>
-      <h>903</h>
+      <h>1078</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
@@ -373,8 +373,8 @@ layer=-1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>1197</y>
+      <x>308</x>
+      <y>1372</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
@@ -385,8 +385,8 @@ layer=-1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>1225</y>
+      <x>308</x>
+      <y>1400</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
@@ -397,8 +397,8 @@ tempistiche registrate</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>1274</y>
+      <x>308</x>
+      <y>1449</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
@@ -409,8 +409,8 @@ tempistiche registrate</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>1302</y>
+      <x>308</x>
+      <y>1477</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
@@ -421,8 +421,8 @@ tag registrato</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>231</x>
-      <y>1260</y>
+      <x>266</x>
+      <y>1435</y>
       <w>476</w>
       <h>77</h>
     </coordinates>
@@ -434,8 +434,8 @@ bg=#8CB4FF</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>231</x>
-      <y>1372</y>
+      <x>266</x>
+      <y>1554</y>
       <w>476</w>
       <h>91</h>
     </coordinates>
@@ -447,8 +447,8 @@ bg=#B8E0E0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>1393</y>
+      <x>308</x>
+      <y>1575</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
@@ -459,8 +459,8 @@ pubblicaMansione()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>1421</y>
+      <x>308</x>
+      <y>1603</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
@@ -471,8 +471,8 @@ mansione pubblicata</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>203</x>
-      <y>854</y>
+      <x>238</x>
+      <y>1029</y>
       <w>518</w>
       <h>308</h>
     </coordinates>
@@ -484,10 +484,10 @@ bg=#8CB4FF</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>140</x>
+      <x>175</x>
       <y>252</y>
       <w>637</w>
-      <h>1106</h>
+      <h>1281</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
@@ -498,10 +498,10 @@ layer=-2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>231</x>
+      <x>266</x>
       <y>518</y>
       <w>476</w>
-      <h>245</h>
+      <h>420</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
@@ -522,19 +522,35 @@ bg=#e7bfff
 
 
 -.
+
+
+
+
+
+
+
+-.
+
+
+
+
+
+
+
+-.
 layer=1</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>623</y>
+      <x>308</x>
+      <y>707</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-4a.1 modificaDoseIngrediente(ingrediente, dose)
+4b.1 modificaDoseIngrediente(ingrediente, dose)
 fg=#9E1C8C
 layer=2</panel_attributes>
     <additional_attributes>560.0;20.0;10.0;20.0</additional_attributes>
@@ -542,8 +558,8 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>651</y>
+      <x>308</x>
+      <y>735</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
@@ -556,13 +572,13 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>700</y>
+      <x>308</x>
+      <y>791</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-4b.1 eliminaIngrediente(ingrediente)
+4c.1 eliminaIngrediente(ingrediente)
 fg=#9E1C8C
 layer=2</panel_attributes>
     <additional_attributes>560.0;20.0;10.0;20.0</additional_attributes>
@@ -570,13 +586,70 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>728</y>
+      <x>308</x>
+      <y>819</y>
       <w>406</w>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 eliminazione ingrediente registrata
+fg=#9E1C8C
+layer=2</panel_attributes>
+    <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>308</x>
+      <y>623</y>
+      <w>406</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+4a.1 aggiungiIngredientePreparazione(preparazione)
+fg=#9E1C8C
+layer=2
+</panel_attributes>
+    <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>308</x>
+      <y>651</y>
+      <w>406</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+preparazione registrata come ingrediente
+fg=#9E1C8C
+layer=2</panel_attributes>
+    <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>308</x>
+      <y>868</y>
+      <w>406</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+4d.1 eliminaIngredientePreparazione(preparazione)
+fg=#9E1C8C
+layer=2</panel_attributes>
+    <additional_attributes>560.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>308</x>
+      <y>896</y>
+      <w>406</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+eliminazione preparazione come ingrediente registrata
 fg=#9E1C8C
 layer=2</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>

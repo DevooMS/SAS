@@ -465,7 +465,7 @@ informazioni: testo
 tempo concreto: testo
 tempo preparazione: testo
 tempo ultimazione: testo
-visibile a tutti: si/no
+bozza: si/no
 porzioni: testo
 quantità: testo
 fg=blue</panel_attributes>
@@ -489,15 +489,15 @@ m2=1
     <id>Relation</id>
     <coordinates>
       <x>1160</x>
-      <y>416</y>
+      <y>440</y>
       <w>184</w>
-      <h>208</h>
+      <h>184</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n
 m2=0..n
 è ingrediente in v</panel_attributes>
-    <additional_attributes>60.0;10.0;130.0;10.0;130.0;240.0;10.0;240.0</additional_attributes>
+    <additional_attributes>60.0;10.0;130.0;10.0;130.0;210.0;10.0;210.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
@@ -652,7 +652,7 @@ fg=blue</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1984</x>
-      <y>832</y>
+      <y>840</y>
       <w>112</w>
       <h>56</h>
     </coordinates>
@@ -666,7 +666,7 @@ fg=blue</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>2032</x>
-      <y>880</y>
+      <y>888</y>
       <w>24</w>
       <h>24</h>
     </coordinates>
@@ -843,13 +843,13 @@ fg=blue</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>2032</x>
-      <y>880</y>
+      <y>888</y>
       <w>24</w>
-      <h>64</h>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 fg=blue</panel_attributes>
-    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
@@ -933,13 +933,13 @@ fg=blue</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1632</x>
-      <y>848</y>
+      <y>856</y>
       <w>368</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
-m2=1..n
+m2=0..n
 contiene &gt;
 {ordered}
 fg=blue</panel_attributes>
@@ -963,21 +963,6 @@ fg=blue</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1160</x>
-      <y>632</y>
-      <w>384</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=-
-m1=0..n
-m2=1..n
-è associata a&gt;
-fg=blue</panel_attributes>
-    <additional_attributes>10.0;20.0;460.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1160</x>
       <y>736</y>
       <w>384</w>
       <h>32</h>
@@ -985,7 +970,7 @@ fg=blue</panel_attributes>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
 m2=0..n
-contiene &gt;
+specifica &gt;
 fg=blue</panel_attributes>
     <additional_attributes>10.0;20.0;460.0;20.0</additional_attributes>
   </element>
@@ -997,40 +982,12 @@ fg=blue</panel_attributes>
       <w>112</w>
       <h>56</h>
     </coordinates>
-    <panel_attributes>Ingrediente
+    <panel_attributes>Ingrediente Mansione
 --
 nome: testo
 dose: testo
 fg=blue</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1984</x>
-      <y>720</y>
-      <w>112</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>ListaIngredienti
---
-fg=blue</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1632</x>
-      <y>736</y>
-      <w>368</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=-
-m1=1..n
-m2=1
-contenuto in &gt;
-fg=blue</panel_attributes>
-    <additional_attributes>10.0;20.0;440.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -1085,5 +1042,77 @@ fg=blue</panel_attributes>
 --
 fg=blue</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1632</x>
+      <y>736</y>
+      <w>368</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+riferito a &gt;
+fg=blue</panel_attributes>
+    <additional_attributes>10.0;20.0;440.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1984</x>
+      <y>720</y>
+      <w>112</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Ingrediente predefinito
+--
+nome: testo
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2088</x>
+      <y>736</y>
+      <w>368</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1..n
+contenuto in &gt;
+fg=blue</panel_attributes>
+    <additional_attributes>440.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2440</x>
+      <y>720</y>
+      <w>112</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Lista ingredienti
+--
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1160</x>
+      <y>632</y>
+      <w>384</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=0..n
+è associata a &gt;
+fg=blue</panel_attributes>
+    <additional_attributes>10.0;20.0;460.0;20.0</additional_attributes>
   </element>
 </diagram>

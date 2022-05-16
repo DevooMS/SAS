@@ -566,7 +566,7 @@ lw=2
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-1b.1 copiaModificaMansione(mansione)</panel_attributes>
+1b.1 copiaModificaMansione(mansione, nome)</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
   <element>
@@ -729,7 +729,7 @@ layer=0</panel_attributes>
       <h>35</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-mansione
+mansione eliminata
 </panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
