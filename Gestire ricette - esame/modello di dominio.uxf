@@ -658,7 +658,7 @@ fg=blue</panel_attributes>
     </coordinates>
     <panel_attributes>Passo
 --
-descrizione: testo
+contenuto: testo
 fg=blue</panel_attributes>
     <additional_attributes/>
   </element>
