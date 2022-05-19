@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>432</x>
+      <x>336</x>
       <y>0</y>
       <w>264</w>
       <h>36</h>
@@ -21,14 +21,14 @@ bg=#F9FF47</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>432</x>
+      <x>336</x>
       <y>36</y>
       <w>264</w>
       <h>18</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=center
-Estensioni al passo 3 (3a, 3b)
+Estensioni al passo 3 (3a,3b,3c,3d)
 lw=0
 fontsize=18</panel_attributes>
     <additional_attributes/>
@@ -36,7 +36,7 @@ fontsize=18</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>384</x>
+      <x>288</x>
       <y>78</y>
       <w>36</w>
       <h>66</h>
@@ -47,7 +47,7 @@ fontsize=18</panel_attributes>
   <element>
     <id>UMLDeployment</id>
     <coordinates>
-      <x>702</x>
+      <x>606</x>
       <y>90</y>
       <w>66</w>
       <h>30</h>
@@ -58,7 +58,7 @@ fontsize=18</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>132</y>
       <w>18</w>
       <h>1332</h>
@@ -69,7 +69,7 @@ fontsize=18</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>726</x>
+      <x>630</x>
       <y>114</y>
       <w>18</w>
       <h>1350</h>
@@ -80,7 +80,7 @@ fontsize=18</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>156</y>
       <w>348</w>
       <h>24</h>
@@ -92,7 +92,7 @@ fontsize=18</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>180</y>
       <w>348</w>
       <h>30</h>
@@ -105,7 +105,7 @@ mansione
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>336</x>
+      <x>240</x>
       <y>342</y>
       <w>444</w>
       <h>402</h>
@@ -118,19 +118,19 @@ bg=#8CB4FF</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>384</y>
       <w>348</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-3.aggiungiPassoSempliceRaggruppamento(contenuto, sezione, poszione)</panel_attributes>
+3.aggiungiPasso(contenuto, passo?, sezione, posizione)</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>360</x>
+      <x>264</x>
       <y>264</y>
       <w>408</w>
       <h>66</h>
@@ -143,7 +143,7 @@ bg=#B8E0E0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>276</y>
       <w>348</w>
       <h>24</h>
@@ -155,7 +155,7 @@ bg=#B8E0E0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>300</y>
       <w>348</w>
       <h>24</h>
@@ -167,7 +167,7 @@ informazioni registrate</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>408</y>
       <w>348</w>
       <h>24</h>
@@ -179,7 +179,7 @@ passo registrato</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>360</x>
+      <x>264</x>
       <y>762</y>
       <w>408</w>
       <h>66</h>
@@ -192,7 +192,7 @@ bg=#8CB4FF</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>774</y>
       <w>348</w>
       <h>24</h>
@@ -204,7 +204,7 @@ bg=#8CB4FF</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>798</y>
       <w>348</w>
       <h>24</h>
@@ -216,7 +216,7 @@ ingrediente regitsrato</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>846</y>
       <w>348</w>
       <h>24</h>
@@ -228,7 +228,7 @@ ingrediente regitsrato</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>864</y>
       <w>348</w>
       <h>24</h>
@@ -240,7 +240,7 @@ porzioni e quantità registrate</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>936</y>
       <w>348</w>
       <h>24</h>
@@ -252,7 +252,7 @@ porzioni e quantità registrate</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>960</y>
       <w>348</w>
       <h>24</h>
@@ -264,7 +264,7 @@ ricettario</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>360</x>
+      <x>264</x>
       <y>924</y>
       <w>408</w>
       <h>66</h>
@@ -278,7 +278,7 @@ layer=1</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>360</x>
+      <x>264</x>
       <y>1002</y>
       <w>408</w>
       <h>66</h>
@@ -292,20 +292,21 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>1014</y>
       <w>348</w>
-      <h>24</h>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-7.eliminaPassiESostituisci(lista p1,...,pN di Passo, mansione)
+7.eliminaPassiESostituisci(listaPrima p1,...,pN, sezionePrima, listaMomento m1,...,mN, 
+sezioneMomento, preparazione)
 layer=2</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>1038</y>
       <w>348</w>
       <h>24</h>
@@ -318,7 +319,7 @@ layer=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>360</x>
+      <x>264</x>
       <y>1080</y>
       <w>408</w>
       <h>66</h>
@@ -332,7 +333,7 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>1116</y>
       <w>348</w>
       <h>24</h>
@@ -345,20 +346,21 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>1092</y>
       <w>348</w>
-      <h>24</h>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-8.eliminaPassiECrea(lista p1,...,pN di Passo)
+8.eliminaPassiECrea(listaPrima p1,...,pN, sezionePrima, listaMomento m1,...,mN, 
+sezioneMomento, listaIngredienti i1,...,iN, listaIngredientiPreparazioni ip1,...,ipN, nom)
 layer=2</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>318</x>
+      <x>222</x>
       <y>240</y>
       <w>480</w>
       <h>942</h>
@@ -372,7 +374,7 @@ layer=-1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>1200</y>
       <w>348</w>
       <h>24</h>
@@ -384,7 +386,7 @@ layer=-1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>1224</y>
       <w>348</w>
       <h>24</h>
@@ -396,7 +398,7 @@ tempistiche registrate</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>1272</y>
       <w>348</w>
       <h>24</h>
@@ -408,7 +410,7 @@ tempistiche registrate</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>1296</y>
       <w>348</w>
       <h>24</h>
@@ -420,7 +422,7 @@ tag registrato</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>360</x>
+      <x>264</x>
       <y>1260</y>
       <w>408</w>
       <h>66</h>
@@ -433,7 +435,7 @@ bg=#8CB4FF</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>360</x>
+      <x>264</x>
       <y>1356</y>
       <w>408</w>
       <h>78</h>
@@ -446,19 +448,19 @@ bg=#B8E0E0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>1374</y>
       <w>348</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-pubblicaMansione()</panel_attributes>
+11.pubblicaMansione()</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>1398</y>
       <w>348</w>
       <h>24</h>
@@ -470,7 +472,7 @@ mansione pubblicata</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>336</x>
+      <x>240</x>
       <y>900</y>
       <w>444</w>
       <h>264</h>
@@ -483,7 +485,7 @@ bg=#8CB4FF</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>282</x>
+      <x>186</x>
       <y>216</y>
       <w>546</w>
       <h>1128</h>
@@ -497,7 +499,7 @@ layer=-2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>360</x>
+      <x>264</x>
       <y>366</y>
       <w>408</w>
       <h>360</h>
@@ -543,13 +545,13 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
-      <y>594</y>
+      <x>300</x>
+      <y>456</y>
       <w>348</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-3c.1 modificaPasso(passo, posizione)
+3a.1 modificaContenutoPasso(passo, sezione, contenuto)
 fg=#9E1C8C
 layer=2</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
@@ -557,8 +559,8 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
-      <y>618</y>
+      <x>300</x>
+      <y>480</y>
       <w>348</w>
       <h>24</h>
     </coordinates>
@@ -571,7 +573,7 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>690</y>
       <w>348</w>
       <h>24</h>
@@ -585,13 +587,13 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>666</y>
       <w>348</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-3d.1 eliminaPasso(passo)
+3d.1 eliminaPasso(passo, sezione)
 fg=#9E1C8C
 layer=2</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
@@ -599,41 +601,13 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
-      <y>456</y>
-      <w>348</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;
-3a.1 aggiungiPassoVariante(contenutoVariante, passo, posizione)
-fg=#9E1C8C
-layer=2</panel_attributes>
-    <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>396</x>
-      <y>480</y>
-      <w>348</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-passo registrato
-fg=#9E1C8C
-layer=2</panel_attributes>
-    <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>528</y>
       <w>348</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-3b.1 aggiungiPassoRipetizione(contenutoRipetizione, passo, posizione)
+3b.1 modificaSezionePasso(passo, sezionePrec, sezioneMod, posizione)
 fg=#9E1C8C
 layer=2</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
@@ -641,13 +615,41 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
+      <x>300</x>
       <y>552</y>
       <w>348</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-passo registrato
+registra modifica passo
+fg=#9E1C8C
+layer=2</panel_attributes>
+    <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>594</y>
+      <w>348</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+3c.1 modificaPosizionePasso(passo, sezione, posizione)
+fg=#9E1C8C
+layer=2</panel_attributes>
+    <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>618</y>
+      <w>348</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+registra modifica passo
 fg=#9E1C8C
 layer=2</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>

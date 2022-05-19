@@ -54,7 +54,7 @@
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-addTask(kitchenJob)</panel_attributes>
+defineTask(kitchenDuty)</panel_attributes>
     <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
   </element>
   <element>
@@ -100,7 +100,7 @@ SummarySheet</panel_attributes>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-addTask(kitchenJob)</panel_attributes>
+addTask(kitchenDuty)</panel_attributes>
     <additional_attributes>10.0;20.0;280.0;20.0</additional_attributes>
   </element>
   <element>
@@ -123,7 +123,7 @@ addTask(kitchenJob)</panel_attributes>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-create(kitchenJob)</panel_attributes>
+create(kitchenDuty)</panel_attributes>
     <additional_attributes>200.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
@@ -177,11 +177,11 @@ task</panel_attributes>
     <coordinates>
       <x>696</x>
       <y>222</y>
-      <w>150</w>
+      <w>162</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-this.kitchenJob = kitchenJob</panel_attributes>
+this.kitchenDuty = kitchenDuty</panel_attributes>
     <additional_attributes>10.0;10.0;60.0;10.0;60.0;40.0;10.0;40.0</additional_attributes>
   </element>
   <element>
@@ -287,7 +287,7 @@ fg=blue
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-updateSectionAdded(menuMgr.currentMenu, sec)</panel_attributes>
+updateTaskAdded(task)</panel_attributes>
     <additional_attributes>10.0;20.0;670.0;20.0</additional_attributes>
   </element>
   <element>
@@ -298,8 +298,8 @@ updateSectionAdded(menuMgr.currentMenu, sec)</panel_attributes>
       <w>120</w>
       <h>24</h>
     </coordinates>
-    <panel_attributes>er: MenuEventReceiver: 
-Menu</panel_attributes>
+    <panel_attributes>er: 
+TaskEventReceiver: </panel_attributes>
     <additional_attributes/>
   </element>
   <element>

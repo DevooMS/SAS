@@ -28,7 +28,7 @@ bg=#F9FF47</panel_attributes>
     </coordinates>
     <panel_attributes>valign=center
 halign=center
-Estensioni al passo 10 (10a, 10b)
+Estensioni al passo 10 (10a)
 lw=0
 fontsize=18</panel_attributes>
     <additional_attributes/>
@@ -124,7 +124,7 @@ bg=#8CB4FF</panel_attributes>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-3.aggiungiPasso(descrizione, passo?, contenutoVariante?, contenutoRipetizione?)</panel_attributes>
+3.aggiungiPasso(contenuto, passo?, sezione, posizione)</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
   <element>
@@ -295,10 +295,11 @@ layer=1</panel_attributes>
       <x>392</x>
       <y>770</y>
       <w>406</w>
-      <h>28</h>
+      <h>35</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-7.eliminaPassiESostituisci(lista p1,...,pN di Passo, mansione)
+7.eliminaPassiESostituisci(listaPrima p1,...,pN, sezionePrima, listaMomento m1,...,mN, 
+sezioneMomento, preparazione)
 layer=2</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
@@ -348,10 +349,11 @@ layer=2</panel_attributes>
       <x>392</x>
       <y>861</y>
       <w>406</w>
-      <h>28</h>
+      <h>35</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-8.eliminaPassiECrea(lista p1,...,pN di Passo)
+8.eliminaPassiECrea(listaPrima p1,...,pN, sezionePrima, listaMomento m1,...,mN, 
+sezioneMomento, listaIngredienti i1,...,iN, listaIngredientiPreparazioni ip1,...,ipN, nom)
 layer=2</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
@@ -453,7 +455,7 @@ bg=#B8E0E0</panel_attributes>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-pubblicaMansione()</panel_attributes>
+11.pubblicaMansione()</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
   <element>
