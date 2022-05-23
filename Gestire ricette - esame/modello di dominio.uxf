@@ -319,7 +319,8 @@ m2=1..n
 --
 quantità: testo
 porzioni: testo
-stima tempo: numero</panel_attributes>
+stima tempo: numero
+completato: si/no</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -357,6 +358,8 @@ eseguito da ^</panel_attributes>
       <h>56</h>
     </coordinates>
     <panel_attributes>Turno
+--
+-assegnabile: false
 --</panel_attributes>
     <additional_attributes/>
   </element>
@@ -539,7 +542,7 @@ da cui l'Evento è costituito</panel_attributes>
 Menu' all'interno di una Sezione
 oppure come Voce "libera" quindi 
 verrà valorizzata  una e una sola 
-delle due  relazioni appartiene
+delle due  relazioni appartiene a
 bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
@@ -562,9 +565,9 @@ fg=black
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>336</x>
+      <x>329</x>
       <y>63</y>
-      <w>119</w>
+      <w>126</w>
       <h>49</h>
     </coordinates>
     <panel_attributes>bg=yellow
@@ -1112,5 +1115,21 @@ m2=0..n
 è associata a &gt;
 fg=blue</panel_attributes>
     <additional_attributes>10.0;20.0;460.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>2065</x>
+      <y>791</y>
+      <w>140</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Una Variante/Ripetizione è formata
+da un Passo semplice o raggruppamento
+quindi solo una delle due relazioni
+formata da di Variante/Ripetizione
+viene valorizzata
+bg=yellow</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

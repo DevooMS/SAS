@@ -67,8 +67,8 @@ MenuManager</panel_attributes>
       <w>230</w>
       <h>50</h>
     </coordinates>
-    <panel_attributes>recipeMgr:
-RecipeManager
+    <panel_attributes>kitchenDutyMgr:
+KitchenDutyManager
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -115,7 +115,7 @@ getRecipes( )</panel_attributes>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-recipes</panel_attributes>
+kitchenDutys</panel_attributes>
     <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
   </element>
   <element>
@@ -127,7 +127,7 @@ recipes</panel_attributes>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-recipes</panel_attributes>
+kitchenDutys</panel_attributes>
     <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
   </element>
   <element>
