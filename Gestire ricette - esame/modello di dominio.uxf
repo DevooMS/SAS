@@ -927,6 +927,7 @@ fg=blue</panel_attributes>
     </coordinates>
     <panel_attributes>SezioneMansione
 --
+nome: testo
 fg=blue</panel_attributes>
     <additional_attributes/>
   </element>

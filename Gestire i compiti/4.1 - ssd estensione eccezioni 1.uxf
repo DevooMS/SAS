@@ -428,7 +428,7 @@ layer=-1</panel_attributes>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-1a.1 scegliFoglioRiepilogativo(evento, servizio)
+1a.1 scegliFoglioRiepilogativo(evento, servizio, foglioRiepilogativo)
 fg=#9E1C8C</panel_attributes>
     <additional_attributes>480.0;20.0;10.0;20.0</additional_attributes>
   </element>

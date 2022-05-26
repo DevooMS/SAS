@@ -413,4 +413,19 @@ throw UseCaseLogicException
 this.completed = false</panel_attributes>
     <additional_attributes>20.0;10.0;70.0;10.0;70.0;40.0;10.0;40.0</additional_attributes>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>534</x>
+      <y>36</y>
+      <w>204</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>halign=center
+*2 addTask*
+lw=0
+fontsize=20
+</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>

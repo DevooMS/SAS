@@ -5,7 +5,7 @@
     <id>UMLGeneric</id>
     <coordinates>
       <x>432</x>
-      <y>45</y>
+      <y>126</y>
       <w>243</w>
       <h>45</h>
     </coordinates>
@@ -17,7 +17,7 @@ MenuManager</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>207</x>
-      <y>81</y>
+      <y>162</y>
       <w>27</w>
       <h>477</h>
     </coordinates>
@@ -28,7 +28,7 @@ MenuManager</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>549</x>
-      <y>81</y>
+      <y>162</y>
       <w>27</w>
       <h>477</h>
     </coordinates>
@@ -39,7 +39,7 @@ MenuManager</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>207</x>
-      <y>90</y>
+      <y>171</y>
       <w>369</w>
       <h>36</h>
     </coordinates>
@@ -51,7 +51,7 @@ moveSection(section, position)</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>549</x>
-      <y>108</y>
+      <y>189</y>
       <w>18</w>
       <h>396</h>
     </coordinates>
@@ -62,7 +62,7 @@ moveSection(section, position)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>981</x>
-      <y>81</y>
+      <y>162</y>
       <w>27</w>
       <h>495</h>
     </coordinates>
@@ -73,7 +73,7 @@ moveSection(section, position)</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>981</x>
-      <y>315</y>
+      <y>396</y>
       <w>18</w>
       <h>18</h>
     </coordinates>
@@ -84,7 +84,7 @@ moveSection(section, position)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>774</x>
-      <y>297</y>
+      <y>378</y>
       <w>225</w>
       <h>36</h>
     </coordinates>
@@ -96,7 +96,7 @@ remove(section)</panel_attributes>
     <id>UMLFrame</id>
     <coordinates>
       <x>0</x>
-      <y>135</y>
+      <y>216</y>
       <w>1224</w>
       <h>405</h>
     </coordinates>
@@ -122,7 +122,7 @@ fontsize=11
     <id>Relation</id>
     <coordinates>
       <x>207</x>
-      <y>162</y>
+      <y>243</y>
       <w>360</w>
       <h>36</h>
     </coordinates>
@@ -134,7 +134,7 @@ throw UseCaseLogicException</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>774</x>
-      <y>333</y>
+      <y>414</y>
       <w>225</w>
       <h>36</h>
     </coordinates>
@@ -146,7 +146,7 @@ add(position, section)</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>981</x>
-      <y>351</y>
+      <y>432</y>
       <w>18</w>
       <h>18</h>
     </coordinates>
@@ -157,7 +157,7 @@ add(position, section)</panel_attributes>
     <id>Text</id>
     <coordinates>
       <x>0</x>
-      <y>216</y>
+      <y>297</y>
       <w>189</w>
       <h>45</h>
     </coordinates>
@@ -170,7 +170,7 @@ fontsize=11</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1143</x>
-      <y>81</y>
+      <y>162</y>
       <w>27</w>
       <h>477</h>
     </coordinates>
@@ -182,7 +182,7 @@ fontsize=11</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>1143</x>
-      <y>450</y>
+      <y>531</y>
       <w>18</w>
       <h>18</h>
     </coordinates>
@@ -194,7 +194,7 @@ fontsize=11</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>567</x>
-      <y>441</y>
+      <y>522</y>
       <w>594</w>
       <h>45</h>
     </coordinates>
@@ -207,7 +207,7 @@ updateSectionsRearranged(currentMenu)
     <id>UMLFrame</id>
     <coordinates>
       <x>441</x>
-      <y>423</y>
+      <y>504</y>
       <w>747</w>
       <h>63</h>
     </coordinates>
@@ -220,7 +220,7 @@ er in receivers
     <id>UMLGeneric</id>
     <coordinates>
       <x>1071</x>
-      <y>45</y>
+      <y>126</y>
       <w>171</w>
       <h>45</h>
     </coordinates>
@@ -234,7 +234,7 @@ MenuEventReceiver
     <id>UMLPackage</id>
     <coordinates>
       <x>180</x>
-      <y>27</y>
+      <y>108</y>
       <w>81</w>
       <h>63</h>
     </coordinates>
@@ -245,7 +245,7 @@ MenuEventReceiver
     <id>UMLGeneric</id>
     <coordinates>
       <x>873</x>
-      <y>45</y>
+      <y>126</y>
       <w>189</w>
       <h>45</h>
     </coordinates>
@@ -257,7 +257,7 @@ ArrayList&lt;Section&gt;</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>558</x>
-      <y>342</y>
+      <y>423</y>
       <w>324</w>
       <h>72</h>
     </coordinates>
@@ -269,7 +269,7 @@ notifySectionsRearranged(currentMenu)</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>558</x>
-      <y>396</y>
+      <y>477</y>
       <w>18</w>
       <h>99</h>
     </coordinates>
@@ -280,7 +280,7 @@ notifySectionsRearranged(currentMenu)</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>693</x>
-      <y>45</y>
+      <y>126</y>
       <w>171</w>
       <h>45</h>
     </coordinates>
@@ -291,7 +291,7 @@ notifySectionsRearranged(currentMenu)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>765</x>
-      <y>81</y>
+      <y>162</y>
       <w>27</w>
       <h>495</h>
     </coordinates>
@@ -302,7 +302,7 @@ notifySectionsRearranged(currentMenu)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>558</x>
-      <y>270</y>
+      <y>351</y>
       <w>225</w>
       <h>36</h>
     </coordinates>
@@ -314,7 +314,7 @@ moveSection(section, position)</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>765</x>
-      <y>288</y>
+      <y>369</y>
       <w>18</w>
       <h>63</h>
     </coordinates>

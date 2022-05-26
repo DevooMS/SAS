@@ -43,10 +43,10 @@ e relativa eccezione (1a.1a)// Uncomment the following line to change the fontsi
       <x>434</x>
       <y>161</y>
       <w>21</w>
-      <h>1092</h>
+      <h>945</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1540.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1330.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -98,10 +98,10 @@ fontsize=18</panel_attributes>
       <x>763</x>
       <y>140</y>
       <w>21</w>
-      <h>1113</h>
+      <h>966</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1570.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1360.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -267,7 +267,7 @@ foglio riepilogativo aggiornato</panel_attributes>
       <x>357</x>
       <y>266</y>
       <w>483</w>
-      <h>959</h>
+      <h>812</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
@@ -281,7 +281,7 @@ layer=-3</panel_attributes>
       <x>371</x>
       <y>336</y>
       <w>455</w>
-      <h>875</h>
+      <h>728</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
@@ -416,7 +416,7 @@ layer=2</panel_attributes>
       <x>385</x>
       <y>644</y>
       <w>427</w>
-      <h>553</h>
+      <h>406</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
@@ -430,7 +430,7 @@ layer=-1</panel_attributes>
       <x>399</x>
       <y>756</y>
       <w>399</w>
-      <h>350</h>
+      <h>203</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
@@ -460,37 +460,8 @@ lw=2
 
 
 
-
--.</panel_attributes>
+</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>434</x>
-      <y>903</y>
-      <w>350</w>
-      <h>35</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-5a.1 modificaAssegnamentoCompito(compito, turno, cuoco?, 
-stimaTempo?, quantità?, porzioni?) 
-fg=#9E1C8C</panel_attributes>
-    <additional_attributes>480.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>434</x>
-      <y>952</y>
-      <w>350</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-foglio riepilogativo aggiornato, tabellone turni aggiornato
-fg=#9E1C8C
-layer=2</panel_attributes>
-    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
@@ -528,7 +499,7 @@ layer=2</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>434</x>
-      <y>1050</y>
+      <y>903</y>
       <w>350</w>
       <h>28</h>
     </coordinates>
@@ -541,7 +512,7 @@ fg=#9E1C8C</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>434</x>
-      <y>1071</y>
+      <y>924</y>
       <w>350</w>
       <h>28</h>
     </coordinates>
@@ -553,44 +524,8 @@ fg=#9E1C8C</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>406</x>
-      <y>938</y>
-      <w>385</w>
-      <h>84</h>
-    </coordinates>
-    <panel_attributes>ALT
-bg=#ffaaaa
---
-
-
--.
-fg=#D3001B
-layer=1
-
-
-
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>434</x>
-      <y>987</y>
-      <w>350</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-5a.5a.1 cuoco non disopnibile per il turno selezionato
-fg=red
-layer=2</panel_attributes>
-    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLFrame</id>
-    <coordinates>
       <x>399</x>
-      <y>1120</y>
+      <y>973</y>
       <w>399</w>
       <h>63</h>
     </coordinates>
@@ -603,7 +538,7 @@ bg=#B8E0E0</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>434</x>
-      <y>1134</y>
+      <y>987</y>
       <w>350</w>
       <h>28</h>
     </coordinates>
@@ -615,7 +550,7 @@ bg=#B8E0E0</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>434</x>
-      <y>1155</y>
+      <y>1008</y>
       <w>350</w>
       <h>28</h>
     </coordinates>
