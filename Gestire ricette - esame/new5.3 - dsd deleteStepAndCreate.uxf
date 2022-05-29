@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>276</x>
+      <y>30</y>
+      <w>54</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>UI</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>294</x>
+      <y>66</y>
+      <w>18</w>
+      <h>990</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1630.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>294</x>
+      <y>108</y>
+      <w>714</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+deleteStepsAndCreate(beforeList?, beforeSection?, nowList?, nowSection?, ingredientsList?, preparationsIngredientsList?, name, prepFactory: new PreparationFactory())</panel_attributes>
+    <additional_attributes>1170.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>0</x>
+      <y>138</y>
+      <w>4260</w>
+      <h>894</h>
+    </coordinates>
+    <panel_attributes>alt 
+fg=#761C8C
+[kitchenDutyMgr.currentKitchenDuty == null ||
+ (beforeSectione != null &amp;&amp; !kitchenDutyMgr.currentKitchenDuty.hasSection(beforeSection)) ||
+ (nowSection != null &amp;&amp; !kitchenDutyMgr.currentKitchenDuty.hasSection(nowSection))] 
+--
+
+
+
+
+-.
+
+
+
+
+
+
+
+
+
+
+
+
+-.
+
+
+
+
+
+
+
+
+
+
+
+
+-.
+
+
+
+
+
+
+
+
+
+
+
+
+-.
+
+
+
+
+
+
+
+
+
+
+
+
+-.
+fontsize=11
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>912</x>
+      <y>42</y>
+      <w>174</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>kitchenDutyMgr:
+KitchenDutyManager</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>996</x>
+      <y>66</y>
+      <w>18</w>
+      <h>978</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1610.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>996</x>
+      <y>120</y>
+      <w>12</w>
+      <h>900</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>18</x>
+      <y>318</y>
+      <w>258</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>OPT
+
+[beforeList != null &amp;&amp; beforeSection != null
+fg=#128C86</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>168</x>
+      <y>264</y>
+      <w>108</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>[for each bi in beforeList 
+ if !beforeSection.hasStep(bi)]
+style=wordwrap
+fontsize=11</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>294</x>
+      <y>174</y>
+      <w>714</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+throw UseCaseLogicException</panel_attributes>
+    <additional_attributes>10.0;20.0;1170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>294</x>
+      <y>246</y>
+      <w>714</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+throw UseCaseLogicException</panel_attributes>
+    <additional_attributes>10.0;20.0;1170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>18</x>
+      <y>222</y>
+      <w>258</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>OPT
+
+[nowList != null &amp;&amp; nowSection != null
+fg=#128C86</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>162</x>
+      <y>354</y>
+      <w>114</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>[for each ni in nowList
+ if !nowSection.hasStep(ni)]
+style=wordwrap
+fontsize=11</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>294</x>
+      <y>342</y>
+      <w>714</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+throw UseCaseLogicException</panel_attributes>
+    <additional_attributes>10.0;20.0;1170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>96</x>
+      <y>456</y>
+      <w>180</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>[for each ili in ingredientsList
+ if !kitchenDutyMgr.currentKitchenDuty.hasIngredient(ili)]
+style=wordwrap
+fontsize=11</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>18</x>
+      <y>420</y>
+      <w>258</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>OPT
+
+[ingredientsList != null
+fg=#128C86</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>18</x>
+      <y>516</y>
+      <w>258</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>OPT
+
+[preparationsngredientsList != null
+fg=#128C86</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>66</x>
+      <y>552</y>
+      <w>210</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>[for each pi in preparationsIngredientsList
+ if !kitchenDutyMgr.currentKitchenDuty.hasPreparationIngredient(pi)]
+style=wordwrap
+fontsize=11</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>294</x>
+      <y>438</y>
+      <w>714</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+throw UseCaseLogicException</panel_attributes>
+    <additional_attributes>10.0;20.0;1170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>294</x>
+      <y>540</y>
+      <w>714</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+throw UseCaseLogicException</panel_attributes>
+    <additional_attributes>10.0;20.0;1170.0;20.0</additional_attributes>
+  </element>
+</diagram>

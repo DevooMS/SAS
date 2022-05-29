@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.3.0">
+<diagram program="umlet" version="15.0.0">
   <zoom_level>8</zoom_level>
   <element>
     <id>UMLActor</id>
@@ -194,7 +194,7 @@ layer=-1</panel_attributes>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-foglio riepilogativo aggiornato</panel_attributes>
+compito registrato</panel_attributes>
     <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
   </element>
   <element>
@@ -232,7 +232,7 @@ layer=-1</panel_attributes>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-foglio riepilogativo aggiornato</panel_attributes>
+foglio aggiornato</panel_attributes>
     <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
   </element>
   <element>
@@ -293,7 +293,7 @@ lw=2
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-foglio riepilogativo aggiornato</panel_attributes>
+foglio aggiornato</panel_attributes>
     <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
   </element>
   <element>
@@ -380,7 +380,7 @@ quantità?, porzioni?) </panel_attributes>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-foglio riepilogativo aggiornato, tabellone turni aggiornato</panel_attributes>
+foglio aggiornato</panel_attributes>
     <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
   </element>
   <element>
