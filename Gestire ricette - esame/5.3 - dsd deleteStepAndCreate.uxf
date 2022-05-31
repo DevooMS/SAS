@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.0.0">
-  <zoom_level>8</zoom_level>
+  <zoom_level>2</zoom_level>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>368</x>
+      <x>92</x>
       <y>0</y>
-      <w>72</w>
-      <h>56</h>
+      <w>18</w>
+      <h>14</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -15,33 +15,33 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>48</y>
-      <w>24</w>
-      <h>1320</h>
+      <x>98</x>
+      <y>12</y>
+      <w>6</w>
+      <h>1102</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1630.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;5490.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>104</y>
-      <w>952</w>
-      <h>32</h>
+      <x>98</x>
+      <y>26</y>
+      <w>238</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-deleteStepsAndCreate(beforeList?, beforeSection?, nowList?, nowSection?, ingredientsList?, preparationsIngredientsList?, name, type)</panel_attributes>
+deleteStepsAndCreate(beforeList?, beforeSection?, momentList?, momentSection?, ingredientsList?, preparationsIngredientsList?, name, type)</panel_attributes>
     <additional_attributes>1170.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
       <x>0</x>
-      <y>144</y>
-      <w>5680</w>
-      <h>4656</h>
+      <y>36</y>
+      <w>1542</w>
+      <h>1062</h>
     </coordinates>
     <panel_attributes>alt 
 fg=#761C8C
@@ -113,10 +113,10 @@ fontsize=11
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1216</x>
-      <y>16</y>
-      <w>232</w>
-      <h>40</h>
+      <x>304</x>
+      <y>4</y>
+      <w>58</w>
+      <h>10</h>
     </coordinates>
     <panel_attributes>kitchenDutyMgr:
 KitchenDutyManager</panel_attributes>
@@ -125,21 +125,21 @@ KitchenDutyManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1328</x>
-      <y>48</y>
-      <w>24</w>
-      <h>4768</h>
+      <x>332</x>
+      <y>12</y>
+      <w>6</w>
+      <h>1090</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;5940.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;5430.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1328</x>
-      <y>120</y>
-      <w>16</w>
-      <h>4464</h>
+      <x>332</x>
+      <y>30</y>
+      <w>4</w>
+      <h>1066</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -147,10 +147,10 @@ KitchenDutyManager</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>24</x>
-      <y>384</y>
-      <w>344</w>
-      <h>88</h>
+      <x>6</x>
+      <y>96</y>
+      <w>86</w>
+      <h>22</h>
     </coordinates>
     <panel_attributes>OPT
 
@@ -161,10 +161,10 @@ fg=#128C86</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>224</x>
-      <y>312</y>
-      <w>144</w>
-      <h>32</h>
+      <x>56</x>
+      <y>78</y>
+      <w>36</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>[for each bi in beforeList 
  if !beforeSection.hasStep(bi)]
@@ -175,10 +175,10 @@ fontsize=11</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>192</y>
-      <w>952</w>
-      <h>32</h>
+      <x>98</x>
+      <y>48</y>
+      <w>238</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
@@ -187,10 +187,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>288</y>
-      <w>952</w>
-      <h>32</h>
+      <x>98</x>
+      <y>72</y>
+      <w>238</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
@@ -199,10 +199,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>24</x>
-      <y>256</y>
-      <w>344</w>
-      <h>88</h>
+      <x>6</x>
+      <y>64</y>
+      <w>86</w>
+      <h>22</h>
     </coordinates>
     <panel_attributes>OPT
 
@@ -213,10 +213,10 @@ fg=#128C86</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>216</x>
-      <y>432</y>
-      <w>152</w>
-      <h>40</h>
+      <x>54</x>
+      <y>108</y>
+      <w>38</w>
+      <h>10</h>
     </coordinates>
     <panel_attributes>[for each ni in nowList
  if !nowSection.hasStep(ni)]
@@ -227,10 +227,10 @@ fontsize=11</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>416</y>
-      <w>952</w>
-      <h>32</h>
+      <x>98</x>
+      <y>104</y>
+      <w>238</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
@@ -239,10 +239,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>128</x>
-      <y>568</y>
-      <w>240</w>
-      <h>40</h>
+      <x>32</x>
+      <y>142</y>
+      <w>60</w>
+      <h>10</h>
     </coordinates>
     <panel_attributes>[for each ili in ingredientsList
  if !kitchenDutyMgr.currentKitchenDuty.hasIngredient(ili)]
@@ -253,10 +253,10 @@ fontsize=11</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>24</x>
-      <y>520</y>
-      <w>344</w>
-      <h>88</h>
+      <x>6</x>
+      <y>130</y>
+      <w>86</w>
+      <h>22</h>
     </coordinates>
     <panel_attributes>OPT
 
@@ -267,10 +267,10 @@ fg=#128C86</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>24</x>
-      <y>648</y>
-      <w>344</w>
-      <h>88</h>
+      <x>6</x>
+      <y>162</y>
+      <w>86</w>
+      <h>22</h>
     </coordinates>
     <panel_attributes>OPT
 
@@ -281,10 +281,10 @@ fg=#128C86</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>88</x>
-      <y>696</y>
-      <w>280</w>
-      <h>40</h>
+      <x>22</x>
+      <y>174</y>
+      <w>70</w>
+      <h>10</h>
     </coordinates>
     <panel_attributes>[for each pi in preparationsIngredientsList
  if !kitchenDutyMgr.currentKitchenDuty.hasPreparationIngredient(pi)]
@@ -295,10 +295,10 @@ fontsize=11</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>544</y>
-      <w>952</w>
-      <h>32</h>
+      <x>98</x>
+      <y>136</y>
+      <w>238</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
@@ -307,10 +307,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>680</y>
-      <w>952</w>
-      <h>32</h>
+      <x>98</x>
+      <y>170</y>
+      <w>238</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
@@ -319,10 +319,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>2200</x>
-      <y>16</y>
-      <w>232</w>
-      <h>40</h>
+      <x>550</x>
+      <y>4</y>
+      <w>58</w>
+      <h>10</h>
     </coordinates>
     <panel_attributes>type:
 PreparationFactory</panel_attributes>
@@ -331,10 +331,10 @@ PreparationFactory</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1512</x>
-      <y>16</y>
-      <w>224</w>
-      <h>40</h>
+      <x>378</x>
+      <y>4</y>
+      <w>56</w>
+      <h>10</h>
     </coordinates>
     <panel_attributes>userMgr:
 UserManager
@@ -344,10 +344,10 @@ UserManager
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1336</x>
-      <y>776</y>
-      <w>304</w>
-      <h>32</h>
+      <x>334</x>
+      <y>194</y>
+      <w>76</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 getCurrentUser( )</panel_attributes>
@@ -356,10 +356,10 @@ getCurrentUser( )</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1624</x>
-      <y>48</y>
-      <w>24</w>
-      <h>776</h>
+      <x>406</x>
+      <y>12</y>
+      <w>6</w>
+      <h>194</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;950.0</additional_attributes>
@@ -367,10 +367,10 @@ getCurrentUser( )</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1624</x>
-      <y>792</y>
-      <w>16</w>
-      <h>16</h>
+      <x>406</x>
+      <y>198</y>
+      <w>4</w>
+      <h>4</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -378,10 +378,10 @@ getCurrentUser( )</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1336</x>
-      <y>792</y>
-      <w>304</w>
-      <h>32</h>
+      <x>334</x>
+      <y>198</y>
+      <w>76</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 user</panel_attributes>
@@ -390,22 +390,22 @@ user</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1336</x>
-      <y>840</y>
-      <w>992</w>
-      <h>32</h>
+      <x>334</x>
+      <y>210</y>
+      <w>248</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-createPreparationFromExistingKitchenDuty(beforeList?, nowList?, ingredientsList?, preparationsIngredientsList?, name, user)</panel_attributes>
+createPreparationFromExistingKitchenDuty(beforeList?, momentList?, ingredientsList?, preparationsIngredientsList?, name, user)</panel_attributes>
     <additional_attributes>1220.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2312</x>
-      <y>48</y>
-      <w>24</w>
-      <h>2736</h>
+      <x>578</x>
+      <y>12</y>
+      <w>6</w>
+      <h>684</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;3400.0</additional_attributes>
@@ -413,10 +413,10 @@ createPreparationFromExistingKitchenDuty(beforeList?, nowList?, ingredientsList?
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>2312</x>
-      <y>856</y>
-      <w>16</w>
-      <h>1904</h>
+      <x>578</x>
+      <y>214</y>
+      <w>4</w>
+      <h>476</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -424,10 +424,10 @@ createPreparationFromExistingKitchenDuty(beforeList?, nowList?, ingredientsList?
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2320</x>
-      <y>864</y>
-      <w>368</w>
-      <h>32</h>
+      <x>580</x>
+      <y>216</y>
+      <w>92</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;.
 create(name,user)</panel_attributes>
@@ -436,10 +436,10 @@ create(name,user)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>2672</x>
-      <y>864</y>
-      <w>144</w>
-      <h>32</h>
+      <x>668</x>
+      <y>216</y>
+      <w>36</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>prep: 
 Preparation</panel_attributes>
@@ -448,10 +448,10 @@ Preparation</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2736</x>
-      <y>888</y>
-      <w>24</w>
-      <h>896</h>
+      <x>684</x>
+      <y>222</y>
+      <w>6</w>
+      <h>224</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1100.0</additional_attributes>
@@ -459,10 +459,10 @@ Preparation</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>2736</x>
-      <y>896</y>
-      <w>16</w>
-      <h>848</h>
+      <x>684</x>
+      <y>224</y>
+      <w>4</w>
+      <h>212</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -470,10 +470,10 @@ Preparation</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2744</x>
-      <y>920</y>
-      <w>152</w>
-      <h>48</h>
+      <x>686</x>
+      <y>230</y>
+      <w>38</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 this.name = name</panel_attributes>
@@ -482,10 +482,10 @@ this.name = name</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2744</x>
-      <y>976</y>
-      <w>96</w>
-      <h>32</h>
+      <x>686</x>
+      <y>244</y>
+      <w>24</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;.
 create</panel_attributes>
@@ -494,10 +494,10 @@ create</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>2824</x>
-      <y>976</y>
-      <w>144</w>
-      <h>32</h>
+      <x>706</x>
+      <y>244</y>
+      <w>36</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>sections:
 ArrayList&lt;KitchenDutySection&gt;
@@ -507,12 +507,12 @@ fontsize=12</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>2920</x>
-      <y>1032</y>
-      <w>144</w>
-      <h>32</h>
+      <x>730</x>
+      <y>258</y>
+      <w>36</w>
+      <h>8</h>
     </coordinates>
-    <panel_attributes>sectionFirst:
+    <panel_attributes>beforeSection:
 KitchenDutySection
 fontsize=12</panel_attributes>
     <additional_attributes/>
@@ -520,22 +520,22 @@ fontsize=12</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2744</x>
-      <y>1032</y>
-      <w>192</w>
-      <h>32</h>
+      <x>686</x>
+      <y>258</y>
+      <w>48</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;.
-create(nameSectionFirst)</panel_attributes>
+create(nameBeforeSection)</panel_attributes>
     <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>2984</x>
-      <y>1064</y>
-      <w>16</w>
-      <h>104</h>
+      <x>746</x>
+      <y>266</y>
+      <w>4</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -543,22 +543,22 @@ create(nameSectionFirst)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2992</x>
-      <y>1080</y>
-      <w>208</w>
-      <h>48</h>
+      <x>748</x>
+      <y>270</y>
+      <w>56</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-this.name = nameSectionFirst</panel_attributes>
+this.name = nameBeforeSection</panel_attributes>
     <additional_attributes>10.0;10.0;60.0;10.0;60.0;40.0;10.0;40.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2992</x>
-      <y>1128</y>
-      <w>104</w>
-      <h>32</h>
+      <x>748</x>
+      <y>282</y>
+      <w>26</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 create</panel_attributes>
@@ -567,46 +567,46 @@ create</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3080</x>
-      <y>1128</y>
-      <w>136</w>
-      <h>32</h>
+      <x>770</x>
+      <y>282</y>
+      <w>34</w>
+      <h>8</h>
     </coordinates>
-    <panel_attributes>sectionFirst.steps:
+    <panel_attributes>beforeSection.steps:
 ArrayList&lt;Step&gt;</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2744</x>
-      <y>1152</y>
-      <w>256</w>
-      <h>32</h>
+      <x>686</x>
+      <y>288</y>
+      <w>64</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-sectionFirst</panel_attributes>
+beforeSection</panel_attributes>
     <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2744</x>
-      <y>1192</y>
-      <w>536</w>
-      <h>32</h>
+      <x>686</x>
+      <y>298</y>
+      <w>134</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-add(sectionFirst)</panel_attributes>
+add(beforeSection)</panel_attributes>
     <additional_attributes>10.0;20.0;650.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3264</x>
-      <y>1208</y>
-      <w>16</w>
-      <h>16</h>
+      <x>816</x>
+      <y>302</y>
+      <w>4</w>
+      <h>4</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -614,10 +614,10 @@ add(sectionFirst)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3192</x>
-      <y>16</y>
-      <w>152</w>
-      <h>40</h>
+      <x>796</x>
+      <y>4</y>
+      <w>42</w>
+      <h>10</h>
     </coordinates>
     <panel_attributes>sections:
 ArrayList&lt;KitchenDutySection&gt;
@@ -627,10 +627,10 @@ ArrayList&lt;KitchenDutySection&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3264</x>
-      <y>48</y>
-      <w>24</w>
-      <h>1416</h>
+      <x>816</x>
+      <y>12</y>
+      <w>6</w>
+      <h>354</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1750.0</additional_attributes>
@@ -638,24 +638,24 @@ ArrayList&lt;KitchenDutySection&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2744</x>
-      <y>1248</y>
-      <w>192</w>
-      <h>32</h>
+      <x>686</x>
+      <y>312</y>
+      <w>48</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;.
-create(nameSectionMoment)</panel_attributes>
+create(nameMomentSection)</panel_attributes>
     <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>2920</x>
-      <y>1248</y>
-      <w>144</w>
-      <h>32</h>
+      <x>730</x>
+      <y>312</y>
+      <w>36</w>
+      <h>8</h>
     </coordinates>
-    <panel_attributes>sectionMoment:
+    <panel_attributes>momentSection:
 KitchenDutySection
 fontsize=12</panel_attributes>
     <additional_attributes/>
@@ -663,10 +663,10 @@ fontsize=12</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>2984</x>
-      <y>1280</y>
-      <w>16</w>
-      <h>104</h>
+      <x>746</x>
+      <y>320</y>
+      <w>4</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -674,34 +674,34 @@ fontsize=12</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2992</x>
-      <y>1296</y>
-      <w>232</w>
-      <h>48</h>
+      <x>748</x>
+      <y>324</y>
+      <w>58</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-this.name = nameSectionMoment</panel_attributes>
+this.name = nameMomentSection</panel_attributes>
     <additional_attributes>10.0;10.0;60.0;10.0;60.0;40.0;10.0;40.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3080</x>
-      <y>1344</y>
-      <w>136</w>
-      <h>32</h>
+      <x>770</x>
+      <y>336</y>
+      <w>34</w>
+      <h>8</h>
     </coordinates>
-    <panel_attributes>sectionMoment.steps:
+    <panel_attributes>momentSection.steps:
 ArrayList&lt;Step&gt;</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2992</x>
-      <y>1344</y>
-      <w>104</w>
-      <h>32</h>
+      <x>748</x>
+      <y>336</y>
+      <w>26</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 create</panel_attributes>
@@ -710,10 +710,10 @@ create</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2984</x>
-      <y>1272</y>
-      <w>24</w>
-      <h>144</h>
+      <x>746</x>
+      <y>318</y>
+      <w>6</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
@@ -721,22 +721,22 @@ create</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2744</x>
-      <y>1368</y>
-      <w>256</w>
-      <h>32</h>
+      <x>686</x>
+      <y>342</y>
+      <w>64</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-sectionMoment</panel_attributes>
+momentSection</panel_attributes>
     <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2744</x>
-      <y>1472</y>
-      <w>96</w>
-      <h>32</h>
+      <x>686</x>
+      <y>368</y>
+      <w>24</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;.
 create</panel_attributes>
@@ -745,10 +745,10 @@ create</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>2824</x>
-      <y>1472</y>
-      <w>152</w>
-      <h>32</h>
+      <x>706</x>
+      <y>368</y>
+      <w>38</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>tags:
 ArrayList&lt;Tag&gt;
@@ -758,10 +758,10 @@ fontsize=12</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2744</x>
-      <y>1528</y>
-      <w>96</w>
-      <h>32</h>
+      <x>686</x>
+      <y>382</y>
+      <w>24</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;.
 create</panel_attributes>
@@ -770,10 +770,10 @@ create</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>2824</x>
-      <y>1528</y>
-      <w>152</w>
-      <h>32</h>
+      <x>706</x>
+      <y>382</y>
+      <w>38</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>ingredients:
 ArrayList&lt;KitchenDutyIngredient&gt;
@@ -783,10 +783,10 @@ fontsize=12</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>2824</x>
-      <y>1584</y>
-      <w>152</w>
-      <h>32</h>
+      <x>706</x>
+      <y>396</y>
+      <w>38</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>preparationsIngredients:
 ArrayList&lt;Preparation&gt;
@@ -796,10 +796,10 @@ fontsize=12</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2744</x>
-      <y>1584</y>
-      <w>96</w>
-      <h>32</h>
+      <x>686</x>
+      <y>396</y>
+      <w>24</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;.
 create</panel_attributes>
@@ -808,10 +808,10 @@ create</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2744</x>
-      <y>1632</y>
-      <w>152</w>
-      <h>48</h>
+      <x>686</x>
+      <y>408</y>
+      <w>38</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 this.owner = user</panel_attributes>
@@ -820,10 +820,10 @@ this.owner = user</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2744</x>
-      <y>1688</y>
-      <w>136</w>
-      <h>48</h>
+      <x>686</x>
+      <y>422</y>
+      <w>34</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 this.draft = true</panel_attributes>
@@ -832,22 +832,22 @@ this.draft = true</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2744</x>
-      <y>1408</y>
-      <w>536</w>
-      <h>32</h>
+      <x>686</x>
+      <y>352</y>
+      <w>134</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-add(sectionMoment)</panel_attributes>
+add(momentSection)</panel_attributes>
     <additional_attributes>10.0;20.0;650.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3264</x>
-      <y>1424</y>
-      <w>16</w>
-      <h>16</h>
+      <x>816</x>
+      <y>356</y>
+      <w>4</w>
+      <h>4</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -855,10 +855,10 @@ add(sectionMoment)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2320</x>
-      <y>1728</y>
-      <w>432</w>
-      <h>32</h>
+      <x>580</x>
+      <y>432</y>
+      <w>108</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 prep</panel_attributes>
@@ -867,10 +867,10 @@ prep</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3408</x>
-      <y>16</y>
-      <w>152</w>
-      <h>40</h>
+      <x>852</x>
+      <y>4</y>
+      <w>38</w>
+      <h>10</h>
     </coordinates>
     <panel_attributes>prep:
 Preparation
@@ -880,10 +880,10 @@ Preparation
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3480</x>
-      <y>48</y>
-      <w>24</w>
-      <h>2696</h>
+      <x>870</x>
+      <y>12</y>
+      <w>6</w>
+      <h>674</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;3350.0</additional_attributes>
@@ -891,10 +891,10 @@ Preparation
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2312</x>
-      <y>1960</y>
-      <w>1392</w>
-      <h>32</h>
+      <x>578</x>
+      <y>490</y>
+      <w>348</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 addStep(sb)</panel_attributes>
@@ -903,10 +903,10 @@ addStep(sb)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>2088</x>
-      <y>1808</y>
-      <w>1896</w>
-      <h>272</h>
+      <x>522</x>
+      <y>452</y>
+      <w>474</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>OPT
 
@@ -917,10 +917,10 @@ fg=#128C86</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>2192</x>
-      <y>1936</y>
-      <w>1760</w>
-      <h>104</h>
+      <x>548</x>
+      <y>484</y>
+      <w>440</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>for each 
 sb in beforeList 
@@ -930,22 +930,22 @@ fg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2320</x>
-      <y>1856</y>
-      <w>1176</w>
-      <h>32</h>
+      <x>580</x>
+      <y>464</y>
+      <w>294</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-getSectionFirst()</panel_attributes>
+getbeforeSection()</panel_attributes>
     <additional_attributes>10.0;20.0;1450.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3480</x>
-      <y>1872</y>
-      <w>16</w>
-      <h>24</h>
+      <x>870</x>
+      <y>468</y>
+      <w>4</w>
+      <h>6</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -953,24 +953,24 @@ getSectionFirst()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2320</x>
-      <y>1880</y>
-      <w>1184</w>
-      <h>32</h>
+      <x>580</x>
+      <y>470</y>
+      <w>296</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-sectionFirst</panel_attributes>
+beforeSection</panel_attributes>
     <additional_attributes>10.0;20.0;1460.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3616</x>
-      <y>16</y>
-      <w>152</w>
-      <h>40</h>
+      <x>904</x>
+      <y>4</y>
+      <w>38</w>
+      <h>10</h>
     </coordinates>
-    <panel_attributes>sectionFirst:
+    <panel_attributes>beforeSection:
 kitchenDutySection
 </panel_attributes>
     <additional_attributes/>
@@ -978,10 +978,10 @@ kitchenDutySection
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3688</x>
-      <y>48</y>
-      <w>24</w>
-      <h>2008</h>
+      <x>922</x>
+      <y>12</y>
+      <w>6</w>
+      <h>502</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;2490.0</additional_attributes>
@@ -989,10 +989,10 @@ kitchenDutySection
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3688</x>
-      <y>1976</y>
-      <w>16</w>
-      <h>48</h>
+      <x>922</x>
+      <y>494</y>
+      <w>4</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -1000,22 +1000,22 @@ kitchenDutySection
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3816</x>
-      <y>16</y>
-      <w>160</w>
-      <h>40</h>
+      <x>954</x>
+      <y>4</y>
+      <w>40</w>
+      <h>10</h>
     </coordinates>
-    <panel_attributes>sectionFirst.steps:
+    <panel_attributes>beforeSection.steps:
 ArrayList&lt;Step&gt;</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3888</x>
-      <y>48</y>
-      <w>24</w>
-      <h>1984</h>
+      <x>972</x>
+      <y>12</y>
+      <w>6</w>
+      <h>496</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;2460.0</additional_attributes>
@@ -1023,10 +1023,10 @@ ArrayList&lt;Step&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3696</x>
-      <y>1976</y>
-      <w>208</w>
-      <h>32</h>
+      <x>924</x>
+      <y>494</y>
+      <w>52</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 add(sb)</panel_attributes>
@@ -1035,10 +1035,10 @@ add(sb)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3888</x>
-      <y>1992</y>
-      <w>16</w>
-      <h>16</h>
+      <x>972</x>
+      <y>498</y>
+      <w>4</w>
+      <h>4</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -1046,10 +1046,10 @@ add(sb)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2312</x>
-      <y>2256</y>
-      <w>1800</w>
-      <h>32</h>
+      <x>578</x>
+      <y>564</y>
+      <w>450</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 addStep(sb)</panel_attributes>
@@ -1058,10 +1058,10 @@ addStep(sb)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>2192</x>
-      <y>2232</y>
-      <w>2168</w>
-      <h>104</h>
+      <x>548</x>
+      <y>558</y>
+      <w>542</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>for each 
 sn in nowList 
@@ -1071,22 +1071,22 @@ fg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2320</x>
-      <y>2152</y>
-      <w>1176</w>
-      <h>32</h>
+      <x>580</x>
+      <y>538</y>
+      <w>294</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-getSectionMoment()</panel_attributes>
+getMomentSection()</panel_attributes>
     <additional_attributes>10.0;20.0;1450.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3480</x>
-      <y>2168</y>
-      <w>16</w>
-      <h>24</h>
+      <x>870</x>
+      <y>542</y>
+      <w>4</w>
+      <h>6</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -1094,22 +1094,22 @@ getSectionMoment()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2320</x>
-      <y>2176</y>
-      <w>1184</w>
-      <h>32</h>
+      <x>580</x>
+      <y>544</y>
+      <w>296</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-sectionMoment</panel_attributes>
+momentSection</panel_attributes>
     <additional_attributes>10.0;20.0;1460.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4096</x>
-      <y>2272</y>
-      <w>16</w>
-      <h>48</h>
+      <x>1024</x>
+      <y>568</y>
+      <w>4</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -1117,10 +1117,10 @@ sectionMoment</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4104</x>
-      <y>2272</y>
-      <w>208</w>
-      <h>32</h>
+      <x>1026</x>
+      <y>568</y>
+      <w>52</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 add(sb)</panel_attributes>
@@ -1129,10 +1129,10 @@ add(sb)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4296</x>
-      <y>2288</y>
-      <w>16</w>
-      <h>16</h>
+      <x>1074</x>
+      <y>572</y>
+      <w>4</w>
+      <h>4</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -1140,12 +1140,12 @@ add(sb)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4024</x>
-      <y>16</y>
-      <w>152</w>
-      <h>40</h>
+      <x>1006</x>
+      <y>4</y>
+      <w>38</w>
+      <h>10</h>
     </coordinates>
-    <panel_attributes>sectionFirst:
+    <panel_attributes>momentSection:
 kitchenDutySection
 </panel_attributes>
     <additional_attributes/>
@@ -1153,10 +1153,10 @@ kitchenDutySection
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4096</x>
-      <y>48</y>
-      <w>24</w>
-      <h>2296</h>
+      <x>1024</x>
+      <y>12</y>
+      <w>6</w>
+      <h>574</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;2850.0</additional_attributes>
@@ -1164,10 +1164,10 @@ kitchenDutySection
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4296</x>
-      <y>48</y>
-      <w>24</w>
-      <h>2280</h>
+      <x>1074</x>
+      <y>12</y>
+      <w>6</w>
+      <h>570</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;2830.0</additional_attributes>
@@ -1175,22 +1175,22 @@ kitchenDutySection
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4224</x>
-      <y>16</y>
-      <w>160</w>
-      <h>40</h>
+      <x>1056</x>
+      <y>4</y>
+      <w>40</w>
+      <h>10</h>
     </coordinates>
-    <panel_attributes>sectionFirst.steps:
+    <panel_attributes>momentSection.steps:
 ArrayList&lt;Step&gt;</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>2088</x>
-      <y>2120</y>
-      <w>2312</w>
-      <h>272</h>
+      <x>522</x>
+      <y>530</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>OPT
 
@@ -1201,10 +1201,10 @@ fg=#128C86</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4448</x>
-      <y>16</y>
-      <w>152</w>
-      <h>40</h>
+      <x>1112</x>
+      <y>4</y>
+      <w>38</w>
+      <h>10</h>
     </coordinates>
     <panel_attributes>prep.ingredients:
 ArrayList&lt;KitchenDutyIngredient&gt;
@@ -1214,10 +1214,10 @@ fontsize=12</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4528</x>
-      <y>2504</y>
-      <w>16</w>
-      <h>16</h>
+      <x>1132</x>
+      <y>626</y>
+      <w>4</w>
+      <h>4</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -1225,10 +1225,10 @@ fontsize=12</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4520</x>
-      <y>48</y>
-      <w>32</w>
-      <h>2496</h>
+      <x>1130</x>
+      <y>12</y>
+      <w>8</w>
+      <h>624</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;20.0;3100.0</additional_attributes>
@@ -1236,10 +1236,10 @@ fontsize=12</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3480</x>
-      <y>2480</y>
-      <w>16</w>
-      <h>56</h>
+      <x>870</x>
+      <y>620</y>
+      <w>4</w>
+      <h>14</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -1247,10 +1247,10 @@ fontsize=12</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3488</x>
-      <y>2488</y>
-      <w>1056</w>
-      <h>32</h>
+      <x>872</x>
+      <y>622</y>
+      <w>264</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 add(i)</panel_attributes>
@@ -1259,10 +1259,10 @@ add(i)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2320</x>
-      <y>2464</y>
-      <w>1176</w>
-      <h>32</h>
+      <x>580</x>
+      <y>616</y>
+      <w>294</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 addIngredient(i)</panel_attributes>
@@ -1271,10 +1271,10 @@ addIngredient(i)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>2120</x>
-      <y>2432</y>
-      <w>2904</w>
-      <h>128</h>
+      <x>530</x>
+      <y>608</y>
+      <w>726</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>for each 
 i in ingredientsList 
@@ -1284,10 +1284,10 @@ fg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2320</x>
-      <y>2632</y>
-      <w>1176</w>
-      <h>32</h>
+      <x>580</x>
+      <y>658</y>
+      <w>294</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 addPreparationIngredient(ip)</panel_attributes>
@@ -1296,10 +1296,10 @@ addPreparationIngredient(ip)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3480</x>
-      <y>2648</y>
-      <w>16</w>
-      <h>56</h>
+      <x>870</x>
+      <y>662</y>
+      <w>4</w>
+      <h>14</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -1307,10 +1307,10 @@ addPreparationIngredient(ip)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3488</x>
-      <y>2656</y>
-      <w>1240</w>
-      <h>32</h>
+      <x>872</x>
+      <y>664</y>
+      <w>310</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 add(ip)</panel_attributes>
@@ -1319,10 +1319,10 @@ add(ip)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>2120</x>
-      <y>2600</y>
-      <w>2904</w>
-      <h>128</h>
+      <x>530</x>
+      <y>650</y>
+      <w>726</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>for each 
 ip in preparationsIngredientList 
@@ -1332,10 +1332,10 @@ fg=blue</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4712</x>
-      <y>2672</y>
-      <w>16</w>
-      <h>16</h>
+      <x>1178</x>
+      <y>668</y>
+      <w>4</w>
+      <h>4</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -1343,10 +1343,10 @@ fg=blue</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4640</x>
-      <y>16</y>
-      <w>152</w>
-      <h>40</h>
+      <x>1160</x>
+      <y>4</y>
+      <w>38</w>
+      <h>10</h>
     </coordinates>
     <panel_attributes>prep.preparationsIngredients:
 ArrayList&lt;Preparation&gt;
@@ -1356,10 +1356,10 @@ fontsize=12</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4712</x>
-      <y>48</y>
-      <w>24</w>
-      <h>2664</h>
+      <x>1178</x>
+      <y>12</y>
+      <w>6</w>
+      <h>666</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;3310.0</additional_attributes>
@@ -1367,10 +1367,10 @@ fontsize=12</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1856</x>
-      <y>16</y>
-      <w>208</w>
-      <h>40</h>
+      <x>464</x>
+      <y>4</y>
+      <w>52</w>
+      <h>10</h>
     </coordinates>
     <panel_attributes>kitchenDutyMgr.currentKitchenDuty:
 KitchenDuty</panel_attributes>
@@ -1379,22 +1379,22 @@ KitchenDuty</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1336</x>
-      <y>2848</y>
-      <w>616</w>
-      <h>32</h>
+      <x>334</x>
+      <y>712</y>
+      <w>156</w>
+      <h>8</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-deleteSteps(beforeList?, beforeSection?, nowList?, nowSection?, ingredientsList?, preparationsIngredientsList?)</panel_attributes>
-    <additional_attributes>750.0;20.0;10.0;20.0</additional_attributes>
+deleteSteps(beforeList?, beforeSection?, momentList?, momentSection?, ingredientsList?, preparationsIngredientsList?)</panel_attributes>
+    <additional_attributes>760.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1936</x>
-      <y>2864</y>
-      <w>16</w>
-      <h>760</h>
+      <x>486</x>
+      <y>716</y>
+      <w>4</w>
+      <h>334</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -1402,12 +1402,557 @@ deleteSteps(beforeList?, beforeSection?, nowList?, nowSection?, ingredientsList?
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1936</x>
-      <y>56</y>
-      <w>40</w>
-      <h>3904</h>
+      <x>486</x>
+      <y>12</y>
+      <w>8</w>
+      <h>1044</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>30.0;10.0;10.0;4860.0</additional_attributes>
+    <additional_attributes>20.0;10.0;10.0;5200.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>412</x>
+      <y>726</y>
+      <w>932</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>OPT
+     
+     [beforList != null &amp;&amp; beforeSection != null]
+     
+fg=#128C86</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>438</x>
+      <y>746</y>
+      <w>890</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>for each 
+bi in beforeList 
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>488</x>
+      <y>758</y>
+      <w>750</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+deleteStep(bi)</panel_attributes>
+    <additional_attributes>3730.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1234</x>
+      <y>762</y>
+      <w>4</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1236</x>
+      <y>764</y>
+      <w>74</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+remove(bi)</panel_attributes>
+    <additional_attributes>350.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1306</x>
+      <y>768</y>
+      <w>4</w>
+      <h>4</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>412</x>
+      <y>806</y>
+      <w>1054</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>OPT
+     
+     [momentList != null &amp;&amp; momentSection != null]
+     
+fg=#128C86</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>438</x>
+      <y>826</y>
+      <w>1020</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>for each 
+ni in nowList 
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>488</x>
+      <y>838</y>
+      <w>892</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+deleteStep(bi)</panel_attributes>
+    <additional_attributes>4440.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1376</x>
+      <y>842</y>
+      <w>4</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1378</x>
+      <y>844</y>
+      <w>74</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+remove(bi)</panel_attributes>
+    <additional_attributes>350.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1448</x>
+      <y>848</y>
+      <w>4</w>
+      <h>4</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1208</x>
+      <y>4</y>
+      <w>58</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>beforeSection:
+KitchenDutySection</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1278</x>
+      <y>4</y>
+      <w>58</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>beforeList.steps:
+ArrayList&lt;Step&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1350</x>
+      <y>4</y>
+      <w>58</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>momentSection:
+KitchenDutySection</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1420</x>
+      <y>4</y>
+      <w>58</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>momentList.steps:
+ArrayList&lt;Step&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1234</x>
+      <y>12</y>
+      <w>8</w>
+      <h>772</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>20.0;10.0;10.0;3840.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1306</x>
+      <y>12</y>
+      <w>6</w>
+      <h>766</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;3810.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1448</x>
+      <y>12</y>
+      <w>6</w>
+      <h>846</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;4210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1376</x>
+      <y>12</y>
+      <w>8</w>
+      <h>854</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>20.0;10.0;10.0;4250.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>638</x>
+      <y>4</y>
+      <w>52</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>currentKitchenDuty.ingredients:
+ArrayList&lt;KitchenDutyIngredient&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>412</x>
+      <y>890</y>
+      <w>270</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>OPT
+     
+     [ingredientsList != null]
+     
+fg=#128C86</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>438</x>
+      <y>910</y>
+      <w>236</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>for each 
+i in ingredientsList 
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>732</x>
+      <y>4</y>
+      <w>56</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>currentKitchenDuty.preparationsIngredients:
+ArrayList&lt;Preparation&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>662</x>
+      <y>12</y>
+      <w>8</w>
+      <h>938</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;20.0;4670.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>488</x>
+      <y>920</y>
+      <w>50</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+this.deleteIngredient(i)</panel_attributes>
+    <additional_attributes>20.0;60.0;90.0;60.0;90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>488</x>
+      <y>930</y>
+      <w>4</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>936</y>
+      <w>178</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+remove(i)</panel_attributes>
+    <additional_attributes>10.0;20.0;870.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>664</x>
+      <y>940</y>
+      <w>4</w>
+      <h>4</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>412</x>
+      <y>974</y>
+      <w>384</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>OPT
+     
+     [preparationsIngredientsList != null]
+     
+fg=#128C86</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>438</x>
+      <y>994</y>
+      <w>344</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>for each 
+ip in preparationsIngredientsList 
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>488</x>
+      <y>1004</y>
+      <w>66</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+this.deletePreparationIngredient(ip)</panel_attributes>
+    <additional_attributes>20.0;60.0;90.0;60.0;90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>488</x>
+      <y>1014</y>
+      <w>4</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>1020</y>
+      <w>280</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+remove(ip)</panel_attributes>
+    <additional_attributes>10.0;20.0;1380.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>766</x>
+      <y>1024</y>
+      <w>4</w>
+      <h>4</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>766</x>
+      <y>12</y>
+      <w>6</w>
+      <h>1022</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;5090.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>746</x>
+      <y>264</y>
+      <w>6</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1490</x>
+      <y>4</y>
+      <w>38</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>er:
+KitchenDutyEventReceiver
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1508</x>
+      <y>12</y>
+      <w>6</w>
+      <h>1090</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;5430.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>334</x>
+      <y>1064</y>
+      <w>84</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+notifyDeletedStepsAndCreateded(currentKitchenDuty)</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0;70.0;40.0;20.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>298</x>
+      <y>1078</y>
+      <w>1222</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>for each
+er in eventReceivers
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>334</x>
+      <y>1072</y>
+      <w>4</w>
+      <h>22</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>336</x>
+      <y>1082</y>
+      <w>1176</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+updateDeletedStepsAndCreateded(currentKitchenDuty)
+</panel_attributes>
+    <additional_attributes>5860.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1508</x>
+      <y>1086</y>
+      <w>4</w>
+      <h>4</h>
+    </coordinates>
+    <panel_attributes>
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>646</x>
+      <y>4</y>
+      <w>38</w>
+      <h>10</h>
+    </coordinates>
+    <panel_attributes>er:
+MenuEventReceiver
+
+</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
