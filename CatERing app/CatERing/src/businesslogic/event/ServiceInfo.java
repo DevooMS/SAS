@@ -12,6 +12,7 @@ import java.sql.Time;
 
 public class ServiceInfo implements EventItemInfo {
     private int id;
+    private int menu_id;
     private String name;
     private Date date;
     private Time timeStart;
@@ -31,7 +32,7 @@ public class ServiceInfo implements EventItemInfo {
 
     public static ObservableList<ServiceInfo> loadServiceInfoForEvent(int event_id) {
         ObservableList<ServiceInfo> result = FXCollections.observableArrayList();
-        String query = "SELECT id, name, service_date, time_start, time_end, expected_participants " +
+        String query = "SELECT id, menu_id, name, service_date, time_start, time_end, expected_participants " +
                 "FROM Services WHERE event_id = " + event_id;
         PersistenceManager.executeQuery(query, new ResultHandler() {
             @Override
@@ -39,6 +40,7 @@ public class ServiceInfo implements EventItemInfo {
                 String s = rs.getString("name");
                 ServiceInfo serv = new ServiceInfo(s);
                 serv.id = rs.getInt("id");
+                serv.menu_id = rs.getInt("menu_id");
                 serv.date = rs.getDate("service_date");
                 serv.timeStart = rs.getTime("time_start");
                 serv.timeEnd = rs.getTime("time_end");

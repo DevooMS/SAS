@@ -29,7 +29,7 @@ public class TestCatERing {
             System.out.println(m.testString());
 
             System.out.println("\nTEST GET EVENT INFO");
-            ObservableList<EventInfo> events = CatERing.getInstance().getEventManager().getEventInfo();
+            ObservableList<EventInfo> events = CatERing.getInstance().getEventManager().getAllEventInfo();
             for (EventInfo e: events) {
                 System.out.println(e);
                 for (ServiceInfo s: e.getServices()) {

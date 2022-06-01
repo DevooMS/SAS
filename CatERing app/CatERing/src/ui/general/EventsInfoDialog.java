@@ -18,7 +18,7 @@ public class EventsInfoDialog {
     TreeView<EventItemInfo> eventTree;
 
     public void initialize() {
-        ObservableList<EventInfo> all = CatERing.getInstance().getEventManager().getEventInfo();
+        ObservableList<EventInfo> all = CatERing.getInstance().getEventManager().getAllEventInfo();
         eventTree.setShowRoot(false);
         TreeItem<EventItemInfo> root = new TreeItem<>(null);
 

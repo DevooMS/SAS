@@ -29,6 +29,14 @@ public class EventInfo implements EventItemInfo {
         return FXCollections.unmodifiableObservableList(this.services);
     }
 
+    public boolean isAssignedUser(User user){
+        return user.getUserName().compareTo(organizer.getUserName()) == 0;
+    }
+
+    public boolean hasService(ServiceInfo service){
+        return services.contains(service);
+    }
+
     public String toString() {
         return name + ": " + dateStart + "-" + dateEnd + ", " + participants + " pp. (" + organizer.getUserName() + ")";
     }
