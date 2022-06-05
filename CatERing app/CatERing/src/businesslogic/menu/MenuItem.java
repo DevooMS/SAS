@@ -140,4 +140,21 @@ public class MenuItem {
         String rem = "DELETE FROM MenuItems WHERE id = " + mi.getId();
         PersistenceManager.executeUpdate(rem);
     }
+
+    /* get the recipe of an item */
+    public static ArrayList<String> getItemRecipe(int item_id){
+        String query = "SELECT recipe_id, description " +
+                       "FROM Menuitems " +
+                       "WHERE id = " + item_id;
+        ArrayList<String> item_recipe = new ArrayList<>();
+        PersistenceManager.executeQuery(query, new ResultHandler() {
+            @Override
+            public void handle(ResultSet rs) throws SQLException {
+                item_recipe.add(String.valueOf(rs.getInt("recipe_id")));
+                item_recipe.add(rs.getString("description"));
+            }
+        });
+
+        return item_recipe;
+    }
 }

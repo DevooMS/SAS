@@ -1,5 +1,6 @@
 package businesslogic.event;
 
+import businesslogic.menu.Menu;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import persistence.PersistenceManager;
@@ -9,23 +10,39 @@ import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Time;
+import java.util.ArrayList;
 
 public class ServiceInfo implements EventItemInfo {
+
     private int id;
     private int menu_id;
     private String name;
     private Date date;
-    private Time timeStart;
-    private Time timeEnd;
+    private Time time_Start;
+    private Time time_End;
     private int participants;
 
     public ServiceInfo(String name) {
         this.name = name;
     }
 
+    /* get the id of the items of a menu */
+    public ArrayList<Integer> getServiceMenuItems() {
+        ArrayList<Integer> menu_items = new ArrayList<>();
+
+        for(int item_id: Menu.getMenuItems(this.menu_id)) {
+            menu_items.add(item_id);
+        }
+
+        return menu_items;
+    }
+
+    public int getId() {
+        return id;
+    }
 
     public String toString() {
-        return name + ": " + date + " (" + timeStart + "-" + timeEnd + "), " + participants + " pp.";
+        return name + ": " + date + " (" + time_Start + "-" + time_End + "), " + participants + " pp.";
     }
 
     // STATIC METHODS FOR PERSISTENCE
@@ -42,8 +59,8 @@ public class ServiceInfo implements EventItemInfo {
                 serv.id = rs.getInt("id");
                 serv.menu_id = rs.getInt("menu_id");
                 serv.date = rs.getDate("service_date");
-                serv.timeStart = rs.getTime("time_start");
-                serv.timeEnd = rs.getTime("time_end");
+                serv.time_Start = rs.getTime("time_start");
+                serv.time_End = rs.getTime("time_end");
                 serv.participants = rs.getInt("expected_participants");
                 result.add(serv);
             }

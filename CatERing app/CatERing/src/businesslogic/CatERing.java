@@ -1,13 +1,12 @@
 package businesslogic;
 
 import businesslogic.event.EventManager;
-import businesslogic.menu.Menu;
 import businesslogic.menu.MenuManager;
 import businesslogic.recipe.RecipeManager;
 import businesslogic.user.UserManager;
 import persistence.MenuPersistence;
-import persistence.PersistenceManager;
-import task.TaskManager;
+import persistence.TaskPersistence;
+import businesslogic.task.TaskManager;
 
 public class CatERing {
     private static CatERing singleInstance;
@@ -26,6 +25,7 @@ public class CatERing {
     private TaskManager taskMgr;
 
     private MenuPersistence menuPersistence;
+    private TaskPersistence taskPersistence;
 
     private CatERing() {
         menuMgr = new MenuManager();
@@ -34,7 +34,9 @@ public class CatERing {
         eventMgr = new EventManager();
         taskMgr = new TaskManager();
         menuPersistence = new MenuPersistence();
+        taskPersistence = new TaskPersistence();
         menuMgr.addEventReceiver(menuPersistence);
+        taskMgr.addEventReceiver(taskPersistence);
     }
 
 

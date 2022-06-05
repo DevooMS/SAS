@@ -343,6 +343,21 @@ public class Menu {
         PersistenceManager.executeUpdate(upd);
     }
 
+    /* get the items of a menu */
+    public static ArrayList<Integer> getMenuItems(int menu_id){
+        String query = "SELECT id FROM Menuitems WHERE menu_id = " + menu_id;
+        ArrayList<Integer> menu_items = new ArrayList<>();
+
+        PersistenceManager.executeQuery(query, new ResultHandler() {
+            @Override
+            public void handle(ResultSet rs) throws SQLException {
+                menu_items.add(rs.getInt("id"));
+            }
+        });
+
+        return menu_items;
+    }
+
     public static void saveMenuFeatures(Menu m) {
         // Delete existing features if any
         String updDel = "DELETE FROM MenuFeatures WHERE menu_id = " + m.getId();
