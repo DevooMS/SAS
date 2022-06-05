@@ -56,7 +56,7 @@ public class SummarySheet {
         });
 
         for(Task task: s.tasks){
-            task.saveNewTask(s.id, task, s.tasks.getI);
+            task.saveNewTask(s.id, task, s.tasks.indexOf(task));
         }
     }
 }

@@ -26,9 +26,9 @@ public class Task {
     // STATIC METHODS FOR PERSISTENCE
 
     /* save the businesslogic.task in the db */
-    public static void saveNewTask(int summary_sheet_id, Task t) {
+    public static void saveNewTask(int summary_sheet_id, Task t, int position) {
         String summarySheetInsert = "INSERT INTO tasks (summary_sheet_id, recipe_id, description, quantity, portions, estimatedTime, completed, position) " +
-                                    "VALUES (?, ?, ?, ?, ?, ?, ?);";
+                                    "VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
         PersistenceManager.executeBatchUpdate(summarySheetInsert, 1, new BatchUpdateHandler() {
             @Override
             public void handleBatchItem(PreparedStatement ps, int batchCount) throws SQLException {
@@ -39,6 +39,7 @@ public class Task {
                 ps.setString(5, PersistenceManager.escapeString(t.portions));
                 ps.setString(6, PersistenceManager.escapeString(t.estimated_time));
                 ps.setBoolean(7, t.completed);
+                ps.setInt(8, position);
             }
 
             @Override
