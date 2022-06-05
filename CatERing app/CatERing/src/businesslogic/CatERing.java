@@ -4,6 +4,7 @@ import businesslogic.event.EventManager;
 import businesslogic.menu.MenuManager;
 import businesslogic.recipe.RecipeManager;
 import businesslogic.user.UserManager;
+import businesslogic.workShift.WorkShiftManager;
 import persistence.MenuPersistence;
 import persistence.TaskPersistence;
 import businesslogic.task.TaskManager;
@@ -23,6 +24,7 @@ public class CatERing {
     private UserManager userMgr;
     private EventManager eventMgr;
     private TaskManager taskMgr;
+    private WorkShiftManager workShiftMgr;
 
     private MenuPersistence menuPersistence;
     private TaskPersistence taskPersistence;
@@ -33,6 +35,7 @@ public class CatERing {
         userMgr = new UserManager();
         eventMgr = new EventManager();
         taskMgr = new TaskManager();
+        workShiftMgr = new WorkShiftManager();
         menuPersistence = new MenuPersistence();
         taskPersistence = new TaskPersistence();
         menuMgr.addEventReceiver(menuPersistence);
@@ -56,4 +59,5 @@ public class CatERing {
 
     public TaskManager getTaskManager() { return taskMgr; }
 
+    public WorkShiftManager getWorkShiftManager() { return workShiftMgr; }
 }

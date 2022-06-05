@@ -1,5 +1,6 @@
 package businesslogic.task;
 
+import businesslogic.menu.Menu;
 import persistence.BatchUpdateHandler;
 import persistence.PersistenceManager;
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.0.0">
-  <zoom_level>6</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>234</x>
-      <y>246</y>
-      <w>54</w>
-      <h>42</h>
+      <x>128</x>
+      <y>200</y>
+      <w>72</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -15,10 +15,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
-      <y>282</y>
-      <w>18</w>
-      <h>144</h>
+      <x>152</x>
+      <y>248</y>
+      <w>24</w>
+      <h>192</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;220.0</additional_attributes>
@@ -26,10 +26,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
-      <y>300</y>
-      <w>192</w>
-      <h>24</h>
+      <x>152</x>
+      <y>272</y>
+      <w>256</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 getWorkShiftBoard()</panel_attributes>
@@ -38,10 +38,10 @@ getWorkShiftBoard()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>378</x>
-      <y>258</y>
-      <w>120</w>
-      <h>24</h>
+      <x>320</x>
+      <y>216</y>
+      <w>160</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>taskMgr: TaskManager</panel_attributes>
     <additional_attributes/>
@@ -49,10 +49,10 @@ getWorkShiftBoard()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>432</x>
-      <y>276</y>
-      <w>18</w>
-      <h>144</h>
+      <x>392</x>
+      <y>240</y>
+      <w>24</w>
+      <h>192</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;220.0</additional_attributes>
@@ -60,10 +60,10 @@ getWorkShiftBoard()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>432</x>
-      <y>312</y>
-      <w>12</w>
-      <h>84</h>
+      <x>392</x>
+      <y>288</y>
+      <w>16</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -71,10 +71,10 @@ getWorkShiftBoard()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>372</x>
-      <y>174</y>
-      <w>204</w>
-      <h>24</h>
+      <x>344</x>
+      <y>104</y>
+      <w>272</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>halign=center
 *4 getWorkShiftBoard*
@@ -86,10 +86,10 @@ fontsize=20
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>564</x>
-      <y>258</y>
-      <w>120</w>
-      <h>24</h>
+      <x>568</x>
+      <y>216</y>
+      <w>160</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>workShiftMgr: 
 WorkShiftManager</panel_attributes>
@@ -98,10 +98,10 @@ WorkShiftManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>618</x>
-      <y>276</y>
-      <w>18</w>
-      <h>126</h>
+      <x>640</x>
+      <y>240</y>
+      <w>24</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
@@ -109,10 +109,10 @@ WorkShiftManager</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>618</x>
-      <y>336</y>
-      <w>12</w>
-      <h>42</h>
+      <x>640</x>
+      <y>320</y>
+      <w>16</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -120,10 +120,10 @@ WorkShiftManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>438</x>
-      <y>324</y>
-      <w>192</w>
-      <h>24</h>
+      <x>400</x>
+      <y>304</y>
+      <w>256</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 getWorkShiftBoard()</panel_attributes>
@@ -132,10 +132,10 @@ getWorkShiftBoard()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>438</x>
-      <y>366</y>
-      <w>192</w>
-      <h>24</h>
+      <x>400</x>
+      <y>360</y>
+      <w>256</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 workShifts</panel_attributes>
@@ -144,10 +144,10 @@ workShifts</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
+      <x>152</x>
       <y>384</y>
-      <w>192</w>
-      <h>24</h>
+      <w>256</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 workShifts</panel_attributes>

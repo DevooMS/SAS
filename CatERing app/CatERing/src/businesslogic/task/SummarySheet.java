@@ -1,6 +1,7 @@
 package businesslogic.task;
 
 import businesslogic.event.ServiceInfo;
+import businesslogic.menu.Menu;
 import businesslogic.menu.MenuItem;
 import businesslogic.recipe.Recipe;
 import javafx.collections.FXCollections;
@@ -69,7 +70,11 @@ public class SummarySheet {
     }
 
     /* sort the task list */
-    public void sortTaskList(Tas)
+    public void sortTaskList(Task t, int position){
+        tasks.remove(t);
+        tasks.add(position, t);
+    }
+
     // STATIC METHODS FOR PERSISTENCE
 
     /* save the summary sheet in the db */
@@ -93,5 +98,22 @@ public class SummarySheet {
         for(Task task: s.tasks){
             task.saveNewTask(s.id, task, s.tasks.indexOf(task));
         }
+    }
+
+    /* save the new order of the task list */
+    public static void saveTaskListRearranged(SummarySheet s) {
+        String upd = "UPDATE tasks SET position = ? WHERE id = ?";
+        PersistenceManager.executeBatchUpdate(upd, s.tasks.size(), new BatchUpdateHandler() {
+            @Override
+            public void handleBatchItem(PreparedStatement ps, int batchCount) throws SQLException {
+                ps.setInt(1, batchCount);
+                ps.setInt(2, s.tasks.get(batchCount).getId());
+            }
+
+            @Override
+            public void handleGeneratedIds(ResultSet rs, int count) throws SQLException {
+                // no generated ids to handle
+            }
+        });
     }
 }

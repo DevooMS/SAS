@@ -7,6 +7,7 @@ import businesslogic.event.EventInfo;
 import businesslogic.event.ServiceInfo;
 import businesslogic.recipe.Recipe;
 import businesslogic.user.User;
+import businesslogic.workShift.WorkShift;
 
 import java.util.ArrayList;
 
@@ -59,20 +60,6 @@ public class TaskManager {
         this.currentSummarySheet = summarySheet;
     }
 
-    /* notify the creation of the summary sheet for a specific service*/
-    private void notifySummarySheetCreated(SummarySheet s) {
-        for (TaskEventReceiver er : this.eventReceivers) {
-            er.updateSummarySheetCreated(s);
-        }
-    }
-
-    /* notify the add of a new task in the summary sheet for a specific service*/
-    private void notifyTaskAdded(SummarySheet s, Task t, int task_position) {
-        for (TaskEventReceiver er : this.eventReceivers) {
-            er.updateTaskAdded(s, t, task_position);
-        }
-    }
-
     /* sort the task list */
     public void sortTaskList(Task t, int position) throws UseCaseLogicException {
         if(currentSummarySheet == null || !currentSummarySheet.hasTask(t) || position < 0 || position >= currentSummarySheet.tasksSize()){
@@ -80,6 +67,34 @@ public class TaskManager {
         }
 
         currentSummarySheet.sortTaskList(t, position);
+
+        this.notifyTaskListRearranged(currentSummarySheet);
+    }
+
+    /* get the work shif board */
+    public ArrayList<WorkShift> getWorkShiftBoard(){
+        return CatERing.getInstance().getWorkShiftManager().getWorkShifts();
+    }
+
+    /* notify the creation of the summary sheet for a specific service */
+    private void notifySummarySheetCreated(SummarySheet s) {
+        for (TaskEventReceiver er : this.eventReceivers) {
+            er.updateSummarySheetCreated(s);
+        }
+    }
+
+    /* notify the add of a new task in the summary sheet for a specific service */
+    private void notifyTaskAdded(SummarySheet s, Task t, int task_position) {
+        for (TaskEventReceiver er : this.eventReceivers) {
+            er.updateTaskAdded(s, t, task_position);
+        }
+    }
+
+    /* notify the rearranged of the task list */
+    private void notifyTaskListRearranged(SummarySheet s) {
+        for (TaskEventReceiver er : this.eventReceivers) {
+            er.updateTaskListRearranged(s);
+        }
     }
 
     public void addEventReceiver(TaskEventReceiver rec) {

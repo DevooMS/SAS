@@ -804,7 +804,7 @@ m2=0..n</panel_attributes>
     </coordinates>
     <panel_attributes>WorkShift
 --
--assignable: false
+-assignable: boolean
 --
 +hasCook(cook: User): boolean
 +indicateFull()
