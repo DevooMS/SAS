@@ -53,6 +53,23 @@ public class SummarySheet {
         return tasks.indexOf(t);
     }
 
+    /* return if summary sheet has the task */
+    public boolean hasTask(Task t){
+        for(Task task: tasks){
+            if(task.getId() == t.getId())
+                return true;
+        }
+
+        return false;
+    }
+
+    /* return the number of the task */
+    public int tasksSize(){
+        return tasks.size();
+    }
+
+    /* sort the task list */
+    public void sortTaskList(Tas)
     // STATIC METHODS FOR PERSISTENCE
 
     /* save the summary sheet in the db */

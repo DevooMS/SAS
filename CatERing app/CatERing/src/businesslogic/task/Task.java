@@ -23,6 +23,10 @@ public class Task {
         this.completed = false;
     }
 
+    public int getId(){
+        return id;
+    }
+
     // STATIC METHODS FOR PERSISTENCE
 
     /* save the businesslogic.task in the db */

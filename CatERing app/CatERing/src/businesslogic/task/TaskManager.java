@@ -73,6 +73,15 @@ public class TaskManager {
         }
     }
 
+    /* sort the task list */
+    public void sortTaskList(Task t, int position) throws UseCaseLogicException {
+        if(currentSummarySheet == null || !currentSummarySheet.hasTask(t) || position < 0 || position >= currentSummarySheet.tasksSize()){
+            throw  new UseCaseLogicException();
+        }
+
+        currentSummarySheet.sortTaskList(t, position);
+    }
+
     public void addEventReceiver(TaskEventReceiver rec) {
         this.eventReceivers.add(rec);
     }
