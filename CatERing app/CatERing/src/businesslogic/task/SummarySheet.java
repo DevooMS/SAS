@@ -2,6 +2,7 @@ package businesslogic.task;
 
 import businesslogic.event.ServiceInfo;
 import businesslogic.menu.MenuItem;
+import businesslogic.recipe.Recipe;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import persistence.BatchUpdateHandler;
@@ -33,6 +34,23 @@ public class SummarySheet {
 
             tasks.add(t);
         }
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    /* add a new task in the summary sheet */
+    public Task addTask(Recipe recipe){
+        Task t = new Task(recipe.getId(), recipe.getName());
+        tasks.add(t);
+
+        return t;
+    }
+
+    /* return the position of a task */
+    public int getTaskPosition(Task t){
+        return tasks.indexOf(t);
     }
 
     // STATIC METHODS FOR PERSISTENCE

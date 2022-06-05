@@ -460,9 +460,9 @@ m1=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1456</x>
+      <x>1428</x>
       <y>2212</y>
-      <w>196</w>
+      <w>252</w>
       <h>238</h>
     </coordinates>
     <panel_attributes>Task
@@ -473,6 +473,7 @@ m1=1</panel_attributes>
 -estimateTime: String
 -completed = false
 --
++create(recipe_id: int, description: String): Task
 +indicateCompleted()
 +assign(workShift: WorkShift, 
               cook?: User, 
@@ -514,7 +515,7 @@ m1=1</panel_attributes>
 +generateSummarySheet(event: Event, service: Service): SummarySheet
 +selectSummarySheet(event: Event, service: Service, 
                                       summarySheet: SummarySheet): SummarySheet
-+defineTask(kitchenJob: KitchenDuty, description: String): Task
++defineTask(recipe: Recipe): Task
 +deleteTask(task: Task)
 +indicateTaskCompleted(task: Task)
 +sortTaskList(task: Task, position: int)
@@ -555,7 +556,7 @@ m2=0..1</panel_attributes>
 
 --
 +create(service: Service)
-+addTask(kitchenDuty: Kitchenduty, description: String)
++addTask(recipe: Recipe): Task
 +removeTask(task: Task)
 +hasTask(task: Task): boolean
 +indicateTaskCompleted(task: Task)
@@ -586,15 +587,15 @@ m2=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1645</x>
+      <x>1673</x>
       <y>2338</y>
-      <w>301</w>
+      <w>273</w>
       <h>35</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 taskRecipe
 m2=1</panel_attributes>
-    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -839,15 +840,15 @@ m2=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1645</x>
+      <x>1673</x>
       <y>1351</y>
-      <w>308</w>
+      <w>280</w>
       <h>931</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 cook
 m2=0..1</panel_attributes>
-    <additional_attributes>10.0;1310.0;110.0;1310.0;110.0;10.0;420.0;10.0</additional_attributes>
+    <additional_attributes>10.0;1310.0;70.0;1310.0;70.0;10.0;380.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>

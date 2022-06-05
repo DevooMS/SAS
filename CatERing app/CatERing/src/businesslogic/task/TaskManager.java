@@ -5,7 +5,7 @@ import businesslogic.UseCaseLogicException;
 import businesslogic.event.EventException;
 import businesslogic.event.EventInfo;
 import businesslogic.event.ServiceInfo;
-import businesslogic.menu.MenuEventReceiver;
+import businesslogic.recipe.Recipe;
 import businesslogic.user.User;
 
 import java.util.ArrayList;
@@ -39,6 +39,21 @@ public class TaskManager {
         return s;
     }
 
+    /* define new task for a summary sheet */
+    public Task defineTask(Recipe recipe) throws UseCaseLogicException {
+
+        if(currentSummarySheet == null){
+            throw new UseCaseLogicException();
+        }
+
+        Task t = currentSummarySheet.addTask(recipe);
+        int task_position = currentSummarySheet.getTaskPosition(t);
+
+        this.notifyTaskAdded(currentSummarySheet, t, task_position);
+
+        return t;
+    }
+
     /* set the current summary sheet */
     public void setCurrentSummarySheet(SummarySheet summarySheet) {
         this.currentSummarySheet = summarySheet;
@@ -48,6 +63,13 @@ public class TaskManager {
     private void notifySummarySheetCreated(SummarySheet s) {
         for (TaskEventReceiver er : this.eventReceivers) {
             er.updateSummarySheetCreated(s);
+        }
+    }
+
+    /* notify the add of a new task in the summary sheet for a specific service*/
+    private void notifyTaskAdded(SummarySheet s, Task t, int task_position) {
+        for (TaskEventReceiver er : this.eventReceivers) {
+            er.updateTaskAdded(s, t, task_position);
         }
     }
 
