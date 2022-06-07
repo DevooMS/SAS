@@ -8,6 +8,7 @@ import businesslogic.workShift.WorkShiftManager;
 import persistence.MenuPersistence;
 import persistence.TaskPersistence;
 import businesslogic.task.TaskManager;
+import persistence.WorkShiftPersistence;
 
 public class CatERing {
     private static CatERing singleInstance;
@@ -28,6 +29,7 @@ public class CatERing {
 
     private MenuPersistence menuPersistence;
     private TaskPersistence taskPersistence;
+    private WorkShiftPersistence workShiftPersistence;
 
     private CatERing() {
         menuMgr = new MenuManager();
@@ -38,8 +40,10 @@ public class CatERing {
         workShiftMgr = new WorkShiftManager();
         menuPersistence = new MenuPersistence();
         taskPersistence = new TaskPersistence();
+        workShiftPersistence = new WorkShiftPersistence();
         menuMgr.addEventReceiver(menuPersistence);
         taskMgr.addEventReceiver(taskPersistence);
+        workShiftMgr.addEventReceiver(workShiftPersistence);
     }
 
 

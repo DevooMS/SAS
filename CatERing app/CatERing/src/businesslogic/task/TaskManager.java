@@ -78,18 +78,43 @@ public class TaskManager {
     }
 
     /* assign a task */
-    public void assignTask(Task task, WorkShift work_shift, User cook, String estimated_time, String quantity, String portions) throws UseCaseLogicException, WorkShiftException {
+    public void assignTask(Task task, WorkShift workShift, User cook, String estimatedTime, String quantity, String portions) throws UseCaseLogicException, WorkShiftException {
         if(this.currentSummarySheet == null || !currentSummarySheet.hasTask(task)){
             throw new UseCaseLogicException();
         }
 
-        if((cook != null && !work_shift.hasCook(cook)) || work_shift.getAssignable()){
+        if((cook != null && !workShift.hasCook(cook)) || workShift.getAssignable()){
             throw new WorkShiftException();
         }
 
-        currentSummarySheet.assignTask(task, work_shift, cook, estimated_time, quantity, portions);
+        currentSummarySheet.assignTask(task, workShift, cook, estimatedTime, quantity, portions);
 
         this.notifyTaskAssigned(task);
+    }
+
+    /* indicate full work shift */
+    public void indicateFullWorkShift(WorkShift workShift) throws WorkShiftException {
+        CatERing.getInstance().getWorkShiftManager().indicateFullWorkShift(workShift);
+
+        this.notifyIndicatedFullWorkShift(workShift);
+    }
+
+    /* select a summary sheet */
+    public SummarySheet selectSummarySheet(EventInfo event, ServiceInfo service, SummarySheet summarySheet) throws UseCaseLogicException, EventException, TaskException {
+        User user = CatERing.getInstance().getUserManager().getCurrentUser();
+
+        if(!user.isChef())
+            throw new UseCaseLogicException();
+
+        if(!event.isAssignedUser(user) || !event.hasService(service))
+            throw new EventException();
+
+        if(!summarySheet.hasService(service))
+            throw new TaskException();
+
+        this.currentSummarySheet = summarySheet;
+
+        return summarySheet;
     }
 
     /* notify the creation of the summary sheet for a specific service */
@@ -117,6 +142,13 @@ public class TaskManager {
     private void notifyTaskAssigned(Task t){
         for (TaskEventReceiver er : this.eventReceivers) {
             er.updateTaskAssigned(t);
+        }
+    }
+
+    /* notify the indicated full work shift*/
+    private void notifyIndicatedFullWorkShift(WorkShift ws){
+        for (TaskEventReceiver er : this.eventReceivers) {
+            er.updateIndicatedFullWorkShift(ws);
         }
     }
 

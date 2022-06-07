@@ -3,6 +3,7 @@ package persistence;
 import businesslogic.task.SummarySheet;
 import businesslogic.task.Task;
 import businesslogic.task.TaskEventReceiver;
+import businesslogic.workShift.WorkShift;
 
 public class TaskPersistence implements TaskEventReceiver {
 
@@ -24,5 +25,10 @@ public class TaskPersistence implements TaskEventReceiver {
     @Override
     public void updateTaskAssigned(Task t){
         Task.updateTaskInformation(t);
+    }
+
+    @Override
+    public void updateIndicatedFullWorkShift(WorkShift ws){
+        WorkShift.updateWorkShiftInformation(ws);
     }
 }

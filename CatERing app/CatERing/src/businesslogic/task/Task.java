@@ -13,7 +13,7 @@ import java.sql.SQLException;
 public class Task {
     private int id, recipe_id, work_shift_id, cook_id;
     private boolean completed;
-    private String description, quantity, portions, estimated_time;
+    private String description, quantity, portions, estimatedTime;
 
 
     public Task(int recipe_id, String description){
@@ -23,7 +23,7 @@ public class Task {
         this.cook_id = 0;
         this.quantity = "";
         this.portions = "";
-        this.estimated_time = "";
+        this.estimatedTime = "";
         this.completed = false;
     }
 
@@ -39,7 +39,7 @@ public class Task {
             this.cook_id = cook.getId();
 
         if(estimated_time!=null)
-            this.estimated_time = estimated_time;
+            this.estimatedTime = estimated_time;
 
         if(quantity != null)
             this.quantity = quantity;
@@ -65,7 +65,7 @@ public class Task {
                 ps.setString(5, PersistenceManager.escapeString(t.description));
                 ps.setString(6, PersistenceManager.escapeString(t.quantity));
                 ps.setString(7, PersistenceManager.escapeString(t.portions));
-                ps.setString(8, PersistenceManager.escapeString(t.estimated_time));
+                ps.setString(8, PersistenceManager.escapeString(t.estimatedTime));
                 ps.setBoolean(9, t.completed);
                 ps.setInt(10, position);
             }
@@ -84,7 +84,7 @@ public class Task {
     public static void updateTaskInformation(Task task){
         String upd = "UPDATE tasks SET work_shift_id = " + task.work_shift_id +
                      "                 cook_id = " + task.cook_id + " quantity = " + task.quantity +
-                     "                 portions = " + task.portions + " estimated_time = " + task.estimated_time +
+                     "                 portions = " + task.portions + " estimated_time = " + task.estimatedTime +
                      "WHERE id = " + task.id;
 
         PersistenceManager.executeUpdate(upd);

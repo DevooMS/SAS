@@ -1,5 +1,7 @@
 package businesslogic.task;
 
+import businesslogic.workShift.WorkShift;
+
 public interface TaskEventReceiver {
     public void updateSummarySheetCreated(SummarySheet s);
 
@@ -8,4 +10,6 @@ public interface TaskEventReceiver {
     public void updateTaskListRearranged(SummarySheet s);
 
     public void updateTaskAssigned(Task t);
+
+    public void updateIndicatedFullWorkShift(WorkShift ws);
 }

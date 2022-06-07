@@ -78,8 +78,13 @@ public class SummarySheet {
     }
 
     /* assign a task */
-    public void assignTask(Task task, WorkShift work_shift, User cook, String estimated_time, String quantity, String portions){
-        task.assign(work_shift, cook, estimated_time, quantity, portions);
+    public void assignTask(Task task, WorkShift workShift, User cook, String estimatedTime, String quantity, String portions){
+        task.assign(workShift, cook, estimatedTime, quantity, portions);
+    }
+
+    /* check if the id of the service is the same of the summary sheet service id */
+    public boolean hasService(ServiceInfo service){
+        return this.service_id == service.getId();
     }
 
     // STATIC METHODS FOR PERSISTENCE

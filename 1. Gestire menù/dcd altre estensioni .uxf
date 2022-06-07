@@ -556,6 +556,7 @@ m2=0..1</panel_attributes>
 
 --
 +create(service: Service)
++hasService(service: Service): boolean
 +addTask(recipe: Recipe): Task
 +removeTask(task: Task)
 +hasTask(task: Task): boolean
@@ -776,9 +777,9 @@ m2=0..n</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1932</x>
-      <y>1001</y>
+      <y>994</y>
       <w>231</w>
-      <h>126</h>
+      <h>147</h>
     </coordinates>
     <panel_attributes>WorkShiftManager
 --
@@ -789,9 +790,11 @@ m2=0..n</panel_attributes>
 
 --
 *operations methods*
++createWorkShift(): WorkShift
 +indicateFullWorkShift(workShift: WorkShift)
 +indicateNotFullWorkShift(workShift: WorkShift)
-+getWorkShiftBoard(): ArrayList&lt;WorkShift&gt;</panel_attributes>
++getWorkShiftBoard(): ArrayList&lt;WorkShift&gt;
++hasWorkShift(workShift: WorkShift): boolean</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -1510,7 +1513,7 @@ m2=0..n</panel_attributes>
 -timeEnd: Time
 -partecipants: int
 --
-+hasSummarySheet(summarySheet: SummarySheet): boolean</panel_attributes>
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
