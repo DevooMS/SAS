@@ -20,4 +20,9 @@ public class TaskPersistence implements TaskEventReceiver {
     public void updateTaskListRearranged(SummarySheet s){
         SummarySheet.saveTaskListRearranged(s);
     }
+
+    @Override
+    public void updateTaskAssigned(Task t){
+        Task.updateTaskInformation(t);
+    }
 }

@@ -8,6 +8,7 @@ import businesslogic.event.ServiceInfo;
 import businesslogic.recipe.Recipe;
 import businesslogic.user.User;
 import businesslogic.workShift.WorkShift;
+import businesslogic.workShift.WorkShiftException;
 
 import java.util.ArrayList;
 
@@ -76,6 +77,21 @@ public class TaskManager {
         return CatERing.getInstance().getWorkShiftManager().getWorkShifts();
     }
 
+    /* assign a task */
+    public void assignTask(Task task, WorkShift work_shift, User cook, String estimated_time, String quantity, String portions) throws UseCaseLogicException, WorkShiftException {
+        if(this.currentSummarySheet == null || !currentSummarySheet.hasTask(task)){
+            throw new UseCaseLogicException();
+        }
+
+        if((cook != null && !work_shift.hasCook(cook)) || work_shift.getAssignable()){
+            throw new WorkShiftException();
+        }
+
+        currentSummarySheet.assignTask(task, work_shift, cook, estimated_time, quantity, portions);
+
+        this.notifyTaskAssigned(task);
+    }
+
     /* notify the creation of the summary sheet for a specific service */
     private void notifySummarySheetCreated(SummarySheet s) {
         for (TaskEventReceiver er : this.eventReceivers) {
@@ -94,6 +110,13 @@ public class TaskManager {
     private void notifyTaskListRearranged(SummarySheet s) {
         for (TaskEventReceiver er : this.eventReceivers) {
             er.updateTaskListRearranged(s);
+        }
+    }
+
+    /* notify the assigned of the task */
+    private void notifyTaskAssigned(Task t){
+        for (TaskEventReceiver er : this.eventReceivers) {
+            er.updateTaskAssigned(t);
         }
     }
 

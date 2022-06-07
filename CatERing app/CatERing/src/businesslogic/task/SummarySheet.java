@@ -4,6 +4,8 @@ import businesslogic.event.ServiceInfo;
 import businesslogic.menu.Menu;
 import businesslogic.menu.MenuItem;
 import businesslogic.recipe.Recipe;
+import businesslogic.user.User;
+import businesslogic.workShift.WorkShift;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import persistence.BatchUpdateHandler;
@@ -73,6 +75,11 @@ public class SummarySheet {
     public void sortTaskList(Task t, int position){
         tasks.remove(t);
         tasks.add(position, t);
+    }
+
+    /* assign a task */
+    public void assignTask(Task task, WorkShift work_shift, User cook, String estimated_time, String quantity, String portions){
+        task.assign(work_shift, cook, estimated_time, quantity, portions);
     }
 
     // STATIC METHODS FOR PERSISTENCE

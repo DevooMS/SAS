@@ -506,7 +506,7 @@ m1=1</panel_attributes>
 -notifyTaskDeleted(task: Task)
 -notifyTaskCompleted(task: Task)
 -notifyTaskListRearranged(currentSummarySheet: SummarySheet)
--notifyTaskAssign(task: Task)
+-notifyTaskAssigned(task: Task)
 -notifyDeleteTaskAssign(task: Task)
 -notifyIndicateFullWorkshift(workShift: WorkShift)
 -notifyIndicateNotFullWorkshift(workShift: WorkShift)
@@ -615,7 +615,7 @@ m2=1</panel_attributes>
 +updateTaskDeleted(task: Task)
 +updateTaskCompleted(task: Task)
 +updateTaskListRearranged(currentSummarySheet: SummarySheet)
-+updateTaskAssign(task: Task)
++updateTaskAssigned(task: Task)
 +updateDeleteTaskAssign(task: Task)
 +updateIndicateFullWorkshift(workShift: WorkShift)
 +updateIndicateNotFullWorkshift(workShift: WorkShift)
@@ -833,7 +833,7 @@ m2=0..1</panel_attributes>
       <h>252</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
-work
+cooks
 m2=0..n</panel_attributes>
     <additional_attributes>650.0;10.0;650.0;160.0;70.0;160.0;70.0;330.0;10.0;330.0</additional_attributes>
   </element>

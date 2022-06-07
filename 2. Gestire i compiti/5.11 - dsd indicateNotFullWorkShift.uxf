@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.3.0">
+<diagram program="umlet" version="15.0.0">
   <zoom_level>6</zoom_level>
   <element>
     <id>UMLPackage</id>
@@ -41,10 +41,10 @@ indicateNotFullWorkShift(workShift)</panel_attributes>
       <x>312</x>
       <y>180</y>
       <w>18</w>
-      <h>288</h>
+      <h>384</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;460.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;620.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -52,7 +52,7 @@ indicateNotFullWorkShift(workShift)</panel_attributes>
       <x>312</x>
       <y>216</y>
       <w>12</w>
-      <h>234</h>
+      <h>324</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -63,10 +63,10 @@ indicateNotFullWorkShift(workShift)</panel_attributes>
       <x>72</x>
       <y>186</y>
       <w>18</w>
-      <h>300</h>
+      <h>396</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;480.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;640.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -86,16 +86,16 @@ WorkShiftManager</panel_attributes>
       <x>534</x>
       <y>180</y>
       <w>18</w>
-      <h>168</h>
+      <h>246</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;260.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;390.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
       <x>534</x>
-      <y>234</y>
+      <y>324</y>
       <w>12</w>
       <h>90</h>
     </coordinates>
@@ -106,7 +106,7 @@ WorkShiftManager</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>318</x>
-      <y>222</y>
+      <y>312</y>
       <w>228</w>
       <h>24</h>
     </coordinates>
@@ -130,7 +130,7 @@ WorkShift</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>540</x>
-      <y>240</y>
+      <y>330</y>
       <w>228</w>
       <h>24</h>
     </coordinates>
@@ -142,7 +142,7 @@ indicateNotFull()</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>756</x>
-      <y>252</y>
+      <y>342</y>
       <w>12</w>
       <h>54</h>
     </coordinates>
@@ -155,16 +155,16 @@ indicateNotFull()</panel_attributes>
       <x>756</x>
       <y>186</y>
       <w>18</w>
-      <h>138</h>
+      <h>222</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;210.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;350.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>762</x>
-      <y>264</y>
+      <y>354</y>
       <w>120</w>
       <h>36</h>
     </coordinates>
@@ -176,7 +176,7 @@ this.assignable = true</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>318</x>
-      <y>342</y>
+      <y>432</y>
       <w>198</w>
       <h>36</h>
     </coordinates>
@@ -188,7 +188,7 @@ notifyIndicateNotFullWorkshift(workShift)</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>318</x>
-      <y>366</y>
+      <y>456</y>
       <w>12</w>
       <h>72</h>
     </coordinates>
@@ -199,7 +199,7 @@ notifyIndicateNotFullWorkshift(workShift)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>324</x>
-      <y>390</y>
+      <y>480</y>
       <w>618</w>
       <h>24</h>
     </coordinates>
@@ -211,7 +211,7 @@ updateIndicateNotFullWorkShift(workShift)</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>930</x>
-      <y>402</y>
+      <y>492</y>
       <w>12</w>
       <h>12</h>
     </coordinates>
@@ -251,9 +251,41 @@ TaskEventReceiver: </panel_attributes>
       <x>930</x>
       <y>186</y>
       <w>18</w>
-      <h>246</h>
+      <h>330</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;390.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;530.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>108</x>
+      <y>234</y>
+      <w>900</w>
+      <h>318</h>
+    </coordinates>
+    <panel_attributes>ALT 
+        [!workShiftMgr.hasWorkShift(workShift)]
+fg=#761C8C
+lw=2
+--
+
+
+
+
+-.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>318</x>
+      <y>258</y>
+      <w>234</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+throw WorkShiftException</panel_attributes>
+    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
   </element>
 </diagram>
