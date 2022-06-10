@@ -8,8 +8,4 @@ import businesslogic.workShift.WorkShiftManager;
 
 public class WorkShiftPersistence implements WorkShiftEventReceiver {
 
-    @Override
-    public void updateWorkShiftCreated(WorkShift ws){
-        WorkShift.saveNewWorkShift(ws);
-    }
 }

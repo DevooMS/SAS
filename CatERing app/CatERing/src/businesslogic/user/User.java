@@ -1,15 +1,14 @@
 package businesslogic.user;
 
+import businesslogic.workShift.WorkShift;
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import persistence.PersistenceManager;
 import persistence.ResultHandler;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class User {
 

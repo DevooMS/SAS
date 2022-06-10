@@ -24,6 +24,12 @@ public class Recipe {
         this.name = name;
     }
 
+    /* constructor for task recipe */
+    public Recipe(int id, String name){
+        this.id= id;
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
@@ -62,6 +68,11 @@ public class Recipe {
             }
         });
         return ret;
+    }
+
+    /* get a loaded recipe */
+    public static Recipe getLoadedRecipe(int recipe_id){
+        return all.get(recipe_id);
     }
 
     public static ObservableList<Recipe> getAllRecipes() {

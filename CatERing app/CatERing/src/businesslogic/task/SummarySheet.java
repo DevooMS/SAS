@@ -3,6 +3,7 @@ package businesslogic.task;
 import businesslogic.event.ServiceInfo;
 import businesslogic.menu.Menu;
 import businesslogic.menu.MenuItem;
+import businesslogic.menu.Section;
 import businesslogic.recipe.Recipe;
 import businesslogic.user.User;
 import businesslogic.workShift.WorkShift;
@@ -18,22 +19,33 @@ import java.util.ArrayList;
 
 public class SummarySheet {
     private int id;
-
-    private int service_id;
-
+    private ServiceInfo service;
     private ObservableList<Task> tasks;
+    private Menu menu;
 
     public SummarySheet(ServiceInfo service){
-        this.service_id = service.getId();
-
+        this.service = service;
         this.tasks = FXCollections.observableArrayList();
+        this.menu = service.getMenu();
 
-        ArrayList<Integer> menu_items_id = service.getServiceMenuItems();
+        ObservableList<Section> menu_sections = menu.getSections();
 
-        for(int item_id: menu_items_id){
-            ArrayList<String> menu_item_recipe = MenuItem.getItemRecipe(item_id);
+        for(Section s: menu_sections){
+            for(MenuItem section_item: s.getItems()){
+                Recipe r = section_item.getItemRecipe();
 
-            Task t = new Task(Integer.parseInt(menu_item_recipe.get(0)), menu_item_recipe.get(1));
+                Task t = new Task(r, section_item.getDescription());
+
+                tasks.add(t);
+            }
+        }
+
+        ObservableList<MenuItem> menu_free_items = menu.getFreeItems();
+
+        for(MenuItem menu_free_item: menu_free_items){
+            Recipe r = menu_free_item.getItemRecipe();
+
+            Task t = new Task(r, menu_free_item.getDescription());
 
             tasks.add(t);
         }
@@ -43,9 +55,19 @@ public class SummarySheet {
         return id;
     }
 
+    public ObservableList<Task> getTasks() {
+        return tasks;
+    }
+
     /* add a new task in the summary sheet */
-    public Task addTask(Recipe recipe){
-        Task t = new Task(recipe.getId(), recipe.getName());
+    public Task addTask(Recipe recipe, String description){
+        Task t;
+
+        if(description == null)
+            t = new Task(recipe, recipe.getName());
+        else
+            t = new Task(recipe, description);
+
         tasks.add(t);
 
         return t;
@@ -84,8 +106,28 @@ public class SummarySheet {
 
     /* check if the id of the service is the same of the summary sheet service id */
     public boolean hasService(ServiceInfo service){
-        return this.service_id == service.getId();
+        return this.service.getId() == service.getId();
     }
+
+    public String toString(){
+        String summarySheet = "Id foglio riepilogativo: " + this.id + "\n";
+
+        for(Task t: tasks)
+            summarySheet += t + "\n";
+
+        return summarySheet;
+    }
+
+    /* remove a task */
+    public void removeTask(Task task){
+        tasks.remove(task);
+    }
+
+    /* indicate task completed */
+    public void indicateTaskCompleted(Task task){
+        task.indicateCompleted();
+    }
+
 
     // STATIC METHODS FOR PERSISTENCE
 
@@ -95,7 +137,7 @@ public class SummarySheet {
         PersistenceManager.executeBatchUpdate(summarySheetInsert, 1, new BatchUpdateHandler() {
             @Override
             public void handleBatchItem(PreparedStatement ps, int batchCount) throws SQLException {
-                ps.setInt(1,s.service_id);
+                ps.setInt(1,s.service.getId());
             }
 
             @Override

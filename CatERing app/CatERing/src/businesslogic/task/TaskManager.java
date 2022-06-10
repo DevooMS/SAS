@@ -9,6 +9,7 @@ import businesslogic.recipe.Recipe;
 import businesslogic.user.User;
 import businesslogic.workShift.WorkShift;
 import businesslogic.workShift.WorkShiftException;
+import javafx.collections.ObservableList;
 
 import java.util.ArrayList;
 
@@ -42,13 +43,13 @@ public class TaskManager {
     }
 
     /* define new task for a summary sheet */
-    public Task defineTask(Recipe recipe) throws UseCaseLogicException {
+    public Task defineTask(Recipe recipe, String description) throws UseCaseLogicException {
 
         if(currentSummarySheet == null){
             throw new UseCaseLogicException();
         }
 
-        Task t = currentSummarySheet.addTask(recipe);
+        Task t = currentSummarySheet.addTask(recipe, description);
         int task_position = currentSummarySheet.getTaskPosition(t);
 
         this.notifyTaskAdded(currentSummarySheet, t, task_position);
@@ -73,8 +74,8 @@ public class TaskManager {
     }
 
     /* get the work shif board */
-    public ArrayList<WorkShift> getWorkShiftBoard(){
-        return CatERing.getInstance().getWorkShiftManager().getWorkShifts();
+    public ObservableList<WorkShift> getWorkShiftBoard(){
+        return CatERing.getInstance().getWorkShiftManager().getWorkShiftBoard();
     }
 
     /* assign a task */
@@ -83,7 +84,7 @@ public class TaskManager {
             throw new UseCaseLogicException();
         }
 
-        if((cook != null && !workShift.hasCook(cook)) || workShift.getAssignable()){
+        if((cook != null && !workShift.hasCook(cook)) || !workShift.getAssignable()){
             throw new WorkShiftException();
         }
 
@@ -115,6 +116,35 @@ public class TaskManager {
         this.currentSummarySheet = summarySheet;
 
         return summarySheet;
+    }
+
+    /* delete a task */
+    public void deleteTask(Task task) throws UseCaseLogicException {
+        if(this.currentSummarySheet != null && !this.currentSummarySheet.hasTask(task)){
+            throw new UseCaseLogicException();
+        }
+
+        this.currentSummarySheet.removeTask(task);
+
+        this.notifyTaskDeleted(task, this.currentSummarySheet);
+    }
+
+    /* indicate task completed */
+    public void indicateTaskCompleted(Task task) throws UseCaseLogicException {
+        if(this.currentSummarySheet != null && !this.currentSummarySheet.hasTask(task)){
+            throw new UseCaseLogicException();
+        }
+
+        this.currentSummarySheet.indicateTaskCompleted(task);
+
+        this.notifyTaskCompleted(task);
+    }
+
+    /* indicate not full work shift */
+    public void indicateNotFullWorkShift(WorkShift workShift) throws WorkShiftException {
+        CatERing.getInstance().getWorkShiftManager().indicateNotFullWorkShift(workShift);
+
+        this.notifyIndicateNotFullWorkShift(workShift);
     }
 
     /* notify the creation of the summary sheet for a specific service */
@@ -149,6 +179,27 @@ public class TaskManager {
     private void notifyIndicatedFullWorkShift(WorkShift ws){
         for (TaskEventReceiver er : this.eventReceivers) {
             er.updateIndicatedFullWorkShift(ws);
+        }
+    }
+
+    /* notify the deleted of a task */
+    private void notifyTaskDeleted(Task task, SummarySheet s){
+        for (TaskEventReceiver er : this.eventReceivers) {
+            er.updateTaskDeleted(task, s);
+        }
+    }
+
+    /* notify the completed of a task */
+    private void notifyTaskCompleted(Task task){
+        for (TaskEventReceiver er : this.eventReceivers) {
+            er.updateTaskCompleted(task);
+        }
+    }
+
+    /* notify the indicated not full work shift*/
+    private void notifyIndicateNotFullWorkShift(WorkShift ws){
+        for (TaskEventReceiver er : this.eventReceivers) {
+            er.updateIndicatedNotFullWorkShift(ws);
         }
     }
 

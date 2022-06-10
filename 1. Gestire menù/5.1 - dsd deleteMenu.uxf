@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.3.0">
+<diagram program="umlet" version="15.0.0">
   <zoom_level>8</zoom_level>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>200</x>
-      <y>64</y>
+      <x>120</x>
+      <y>112</y>
       <w>24</w>
       <h>536</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>512</x>
-      <y>64</y>
+      <x>432</x>
+      <y>112</y>
       <w>24</w>
       <h>536</h>
     </coordinates>
@@ -26,8 +26,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>200</x>
-      <y>72</y>
+      <x>120</x>
+      <y>120</y>
       <w>336</w>
       <h>32</h>
     </coordinates>
@@ -38,8 +38,8 @@ deleteMenu(menu)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>512</x>
-      <y>88</y>
+      <x>432</x>
+      <y>136</y>
       <w>16</w>
       <h>440</h>
     </coordinates>
@@ -49,8 +49,8 @@ deleteMenu(menu)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>80</x>
-      <y>192</y>
+      <x>0</x>
+      <y>240</y>
       <w>1040</w>
       <h>320</h>
     </coordinates>
@@ -73,8 +73,8 @@ fontsize=11
   <element>
     <id>Text</id>
     <coordinates>
-      <x>96</x>
-      <y>256</y>
+      <x>16</x>
+      <y>304</y>
       <w>128</w>
       <h>40</h>
     </coordinates>
@@ -87,8 +87,8 @@ fontsize=11</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>200</x>
-      <y>200</y>
+      <x>120</x>
+      <y>248</y>
       <w>328</w>
       <h>32</h>
     </coordinates>
@@ -99,8 +99,8 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>200</x>
-      <y>256</y>
+      <x>120</x>
+      <y>304</y>
       <w>328</w>
       <h>32</h>
     </coordinates>
@@ -111,8 +111,8 @@ throw MenuException</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>528</x>
-      <y>416</y>
+      <x>448</x>
+      <y>464</y>
       <w>504</w>
       <h>40</h>
     </coordinates>
@@ -124,8 +124,8 @@ updateMenuDeleted(menu)
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1016</x>
-      <y>64</y>
+      <x>936</x>
+      <y>112</y>
       <w>24</w>
       <h>568</h>
     </coordinates>
@@ -136,8 +136,8 @@ updateMenuDeleted(menu)
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1016</x>
-      <y>432</y>
+      <x>936</x>
+      <y>480</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -148,8 +148,8 @@ updateMenuDeleted(menu)
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>424</x>
-      <y>408</y>
+      <x>344</x>
+      <y>456</y>
       <w>640</w>
       <h>56</h>
     </coordinates>
@@ -161,8 +161,8 @@ fg=blue</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>952</x>
-      <y>32</y>
+      <x>872</x>
+      <y>80</y>
       <w>152</w>
       <h>40</h>
     </coordinates>
@@ -174,8 +174,8 @@ MenuEventReceiver
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>408</x>
-      <y>32</y>
+      <x>328</x>
+      <y>80</y>
       <w>232</w>
       <h>40</h>
     </coordinates>
@@ -186,8 +186,8 @@ MenuManager</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>688</x>
-      <y>32</y>
+      <x>608</x>
+      <y>80</y>
       <w>224</w>
       <h>40</h>
     </coordinates>
@@ -199,8 +199,8 @@ UserManager
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>176</x>
-      <y>16</y>
+      <x>96</x>
+      <y>64</y>
       <w>72</w>
       <h>56</h>
     </coordinates>
@@ -210,8 +210,8 @@ UserManager
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>784</x>
-      <y>64</y>
+      <x>704</x>
+      <y>112</y>
       <w>24</w>
       <h>536</h>
     </coordinates>
@@ -222,8 +222,8 @@ UserManager
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
-      <y>96</y>
+      <x>440</x>
+      <y>144</y>
       <w>280</w>
       <h>32</h>
     </coordinates>
@@ -234,8 +234,8 @@ getCurrentUser( )</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
-      <y>128</y>
+      <x>440</x>
+      <y>176</y>
       <w>288</w>
       <h>32</h>
     </coordinates>
@@ -246,8 +246,8 @@ user</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>784</x>
-      <y>112</y>
+      <x>704</x>
+      <y>160</y>
       <w>16</w>
       <h>32</h>
     </coordinates>
@@ -258,8 +258,8 @@ user</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
-      <y>336</y>
+      <x>440</x>
+      <y>384</y>
       <w>200</w>
       <h>48</h>
     </coordinates>
@@ -270,8 +270,8 @@ notifyMenuDeleted(menu)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>520</x>
-      <y>368</y>
+      <x>440</x>
+      <y>416</y>
       <w>16</w>
       <h>88</h>
     </coordinates>

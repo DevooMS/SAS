@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 public class Menu {
+
     private static Map<Integer, Menu> loadedMenus = FXCollections.observableHashMap();
     private int id;
     private String title;
@@ -250,7 +251,6 @@ public class Menu {
         }
         return null;
     }
-
 
     public void removeSection(Section s, boolean deleteItems) {
         if (!deleteItems) {
@@ -506,6 +506,11 @@ public class Menu {
             loadedMenus.put(m.id, m);
         }
         return FXCollections.observableArrayList(loadedMenus.values());
+    }
+
+    /* get a loaded menu */
+    public static Menu getLoadedMenu(int menu_id) {
+        return loadedMenus.get(menu_id);
     }
 
     public static void saveSectionOrder(Menu m) {

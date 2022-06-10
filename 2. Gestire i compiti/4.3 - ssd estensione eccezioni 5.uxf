@@ -208,7 +208,7 @@ layer=-1</panel_attributes>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-2.aggiungiCompito(ricetta)</panel_attributes>
+2.aggiungiCompito(ricetta, descrizione)</panel_attributes>
     <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
   </element>
   <element>

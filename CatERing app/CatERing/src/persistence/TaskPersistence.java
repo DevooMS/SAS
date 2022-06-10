@@ -31,4 +31,20 @@ public class TaskPersistence implements TaskEventReceiver {
     public void updateIndicatedFullWorkShift(WorkShift ws){
         WorkShift.updateWorkShiftInformation(ws);
     }
+
+    @Override
+    public void updateTaskDeleted(Task t, SummarySheet s){
+        Task.deleteTask(t,s);
+        SummarySheet.saveTaskListRearranged(s);
+    }
+
+    @Override
+    public void updateTaskCompleted(Task t){
+        Task.completeTask(t);
+    }
+
+    @Override
+    public void updateIndicatedNotFullWorkShift(WorkShift ws){
+        WorkShift.updateWorkShiftInformation(ws);
+    }
 }

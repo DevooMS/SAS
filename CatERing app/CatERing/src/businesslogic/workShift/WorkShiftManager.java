@@ -2,31 +2,23 @@ package businesslogic.workShift;
 
 import businesslogic.task.Task;
 import businesslogic.task.TaskEventReceiver;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 import java.util.ArrayList;
 
 public class WorkShiftManager {
-    private ArrayList<WorkShift> workShifts;
     private ArrayList<WorkShiftEventReceiver> eventReceivers;
 
     public WorkShiftManager() {
-        workShifts = new ArrayList<>();
+        WorkShift.loadAllWorkShifts();
         eventReceivers = new ArrayList<>();
     }
 
-    public ArrayList<WorkShift> getWorkShifts() {
-        return workShifts;
+    public ObservableList<WorkShift> getWorkShiftBoard() {
+        return FXCollections.unmodifiableObservableList(WorkShift.getAllWorkShifts());
     }
 
-    /* create work shift */
-    public WorkShift createWorkShift(){
-        WorkShift ws = new WorkShift();
-        workShifts.add(ws);
-
-        this.notifyWorkShiftCreated(ws);
-
-        return ws;
-    }
     /* indicate full work shift */
     public void indicateFullWorkShift(WorkShift workShift) throws WorkShiftException {
         if(!this.hasWorkShift(workShift)){
@@ -37,20 +29,16 @@ public class WorkShiftManager {
     }
 
     public boolean hasWorkShift(WorkShift workShift){
-        for(WorkShift ws: workShifts){
-            if(ws.getId() == workShift.getId()){
-                return true;
-            }
-        }
-
-        return false;
+        return WorkShift.hasWorkShift(workShift);
     }
 
-    /* notify the created work shift */
-    private void notifyWorkShiftCreated(WorkShift ws){
-        for (WorkShiftEventReceiver er : this.eventReceivers) {
-            er.updateWorkShiftCreated(ws);
+    /* indicate not full work shift */
+    public void indicateNotFullWorkShift(WorkShift workShift) throws WorkShiftException {
+        if(!this.hasWorkShift(workShift)){
+            throw new WorkShiftException();
         }
+
+        workShift.indicateNotFull();
     }
 
     public void addEventReceiver(WorkShiftEventReceiver rec) {

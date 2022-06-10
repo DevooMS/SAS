@@ -15,26 +15,20 @@ import java.util.ArrayList;
 public class ServiceInfo implements EventItemInfo {
 
     private int id;
-    private int menu_id;
+    private Menu menu;
     private String name;
     private Date date;
     private Time time_Start;
     private Time time_End;
     private int participants;
 
-    public ServiceInfo(String name) {
+    public ServiceInfo(String name, int menu_id) {
         this.name = name;
+        this.menu = Menu.getLoadedMenu(menu_id);
     }
 
-    /* get the id of the items of a menu */
-    public ArrayList<Integer> getServiceMenuItems() {
-        ArrayList<Integer> menu_items = new ArrayList<>();
-
-        for(int item_id: Menu.getMenuItems(this.menu_id)) {
-            menu_items.add(item_id);
-        }
-
-        return menu_items;
+    public Menu getMenu(){
+        return menu;
     }
 
     public int getId() {
@@ -55,9 +49,9 @@ public class ServiceInfo implements EventItemInfo {
             @Override
             public void handle(ResultSet rs) throws SQLException {
                 String s = rs.getString("name");
-                ServiceInfo serv = new ServiceInfo(s);
+                ServiceInfo serv = new ServiceInfo(s, rs.getInt("menu_id"));
                 serv.id = rs.getInt("id");
-                serv.menu_id = rs.getInt("menu_id");
+                //serv.menu_id = rs.getInt("menu_id");
                 serv.date = rs.getDate("service_date");
                 serv.time_Start = rs.getTime("time_start");
                 serv.time_End = rs.getTime("time_end");

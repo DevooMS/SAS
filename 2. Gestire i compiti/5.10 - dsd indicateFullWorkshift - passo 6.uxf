@@ -227,7 +227,7 @@ updateIndicateFullWorkShift(workShift)</panel_attributes>
       <h>24</h>
     </coordinates>
     <panel_attributes>halign=center
-*6 indicateFullWorkShift*
+*6a.1 indicateFullWorkShift*
 lw=0
 fontsize=20
 </panel_attributes>

@@ -12,4 +12,10 @@ public interface TaskEventReceiver {
     public void updateTaskAssigned(Task t);
 
     public void updateIndicatedFullWorkShift(WorkShift ws);
+
+    public void updateTaskDeleted(Task t, SummarySheet s);
+
+    public void updateTaskCompleted(Task t);
+
+    public void updateIndicatedNotFullWorkShift(WorkShift ws);
 }

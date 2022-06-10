@@ -141,7 +141,7 @@ public class MenuItem {
         PersistenceManager.executeUpdate(rem);
     }
 
-    /* get the recipe of an item */
+    /* get the recipe of an item
     public static ArrayList<String> getItemRecipe(int item_id){
         String query = "SELECT recipe_id, description " +
                        "FROM Menuitems " +
@@ -156,5 +156,5 @@ public class MenuItem {
         });
 
         return item_recipe;
-    }
+    }*/
 }
