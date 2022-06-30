@@ -298,8 +298,8 @@ layer=1</panel_attributes>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-7.eliminaPassiESostituisci(listaPrima p1,...,pN, sezionePrima, listaMomento m1,...,mN, 
-sezioneMomento, preparazione)
+7.eliminaPassiESostituisci(listaPrima p1,...,pN?, sezionePrima?, listaMomento m1,...,mN?, 
+sezioneMomento?, preparazione)
 layer=2</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
@@ -352,8 +352,8 @@ layer=2</panel_attributes>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-8.eliminaPassiECrea(listaPrima p1,...,pN, sezionePrima, listaMomento m1,...,mN, 
-sezioneMomento, listaIngredienti i1,...,iN, listaIngredientiPreparazioni ip1,...,ipN, nome)
+8.eliminaPassiECrea(listaPrima p1,...,pN?, sezionePrima?, listaMomento m1,...,mN?, 
+sezioneMomento?, listaIngredienti i1,...,iN?, listaIngredientiPreparazioni ip1,...,ipN?, nome)
 layer=2</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>

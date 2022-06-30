@@ -24,14 +24,14 @@ fontsize=10
 
 
 // This text will be stored with each diagram;  use it for notes.</help_text>
-  <zoom_level>4</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>184</x>
+      <x>414</x>
       <y>0</y>
-      <w>36</w>
-      <h>28</h>
+      <w>81</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -39,10 +39,10 @@ fontsize=10
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>196</x>
-      <y>24</y>
-      <w>12</w>
-      <h>732</h>
+      <x>441</x>
+      <y>54</y>
+      <w>27</w>
+      <h>1647</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1810.0</additional_attributes>
@@ -50,10 +50,10 @@ fontsize=10
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>420</x>
-      <y>8</y>
-      <w>116</w>
-      <h>20</h>
+      <x>945</x>
+      <y>18</y>
+      <w>261</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>kitchenDutyMgr:
 KitchenDutyManager</panel_attributes>
@@ -62,10 +62,10 @@ KitchenDutyManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>196</x>
-      <y>52</y>
-      <w>288</w>
-      <h>16</h>
+      <x>441</x>
+      <y>117</y>
+      <w>648</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 deleteStepsAndReplace(beforeList?, beforeSection?, momentList?, momentSection?, preparation)</panel_attributes>
@@ -74,10 +74,10 @@ deleteStepsAndReplace(beforeList?, beforeSection?, momentList?, momentSection?, 
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>476</x>
-      <y>24</y>
-      <w>12</w>
-      <h>728</h>
+      <x>1071</x>
+      <y>54</y>
+      <w>27</w>
+      <h>1638</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1800.0</additional_attributes>
@@ -85,10 +85,10 @@ deleteStepsAndReplace(beforeList?, beforeSection?, momentList?, momentSection?, 
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>476</x>
-      <y>60</y>
-      <w>8</w>
-      <h>672</h>
+      <x>1071</x>
+      <y>135</y>
+      <w>18</w>
+      <h>1512</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -97,9 +97,9 @@ deleteStepsAndReplace(beforeList?, beforeSection?, momentList?, momentSection?, 
     <id>UMLFrame</id>
     <coordinates>
       <x>0</x>
-      <y>72</y>
-      <w>1644</w>
-      <h>672</h>
+      <y>162</y>
+      <w>3699</w>
+      <h>1512</h>
     </coordinates>
     <panel_attributes>alt 
 fg=#761C8C
@@ -139,10 +139,10 @@ fontsize=11
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>196</x>
-      <y>96</y>
-      <w>288</w>
-      <h>16</h>
+      <x>441</x>
+      <y>216</y>
+      <w>648</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
@@ -151,10 +151,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>100</x>
-      <y>144</y>
-      <w>76</w>
-      <h>16</h>
+      <x>225</x>
+      <y>324</y>
+      <w>171</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>[for each bi in beforeList 
  if !beforeSection.hasStep(bi)]
@@ -165,10 +165,10 @@ fontsize=11</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>196</x>
-      <y>136</y>
-      <w>288</w>
-      <h>16</h>
+      <x>441</x>
+      <y>306</y>
+      <w>648</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
@@ -177,10 +177,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>100</x>
-      <y>184</y>
-      <w>76</w>
-      <h>20</h>
+      <x>225</x>
+      <y>414</y>
+      <w>171</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>[for each ni in nowList
  if !nowSection.hasStep(ni)]
@@ -191,10 +191,10 @@ fontsize=11</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>196</x>
-      <y>184</y>
-      <w>288</w>
-      <h>16</h>
+      <x>441</x>
+      <y>414</y>
+      <w>648</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
@@ -203,10 +203,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
-      <y>232</y>
-      <w>288</w>
-      <h>16</h>
+      <x>1080</x>
+      <y>522</y>
+      <w>648</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 deleteStepsAndReplace(beforeList?, beforeSection?, momentList?, momentSection?, preparation)</panel_attributes>
@@ -215,10 +215,10 @@ deleteStepsAndReplace(beforeList?, beforeSection?, momentList?, momentSection?, 
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>716</x>
-      <y>12</y>
-      <w>104</w>
-      <h>16</h>
+      <x>1611</x>
+      <y>27</y>
+      <w>234</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>kitchenDutyMgr.currentKitchenDuty:
 KitchenDuty</panel_attributes>
@@ -227,10 +227,10 @@ KitchenDuty</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>760</x>
-      <y>20</y>
-      <w>12</w>
-      <h>632</h>
+      <x>1710</x>
+      <y>45</y>
+      <w>27</w>
+      <h>1422</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1560.0</additional_attributes>
@@ -238,10 +238,10 @@ KitchenDuty</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>760</x>
-      <y>240</y>
-      <w>8</w>
-      <h>400</h>
+      <x>1710</x>
+      <y>540</y>
+      <w>18</w>
+      <h>900</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -249,10 +249,10 @@ KitchenDuty</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>860</x>
-      <y>12</y>
-      <w>116</w>
-      <h>20</h>
+      <x>1935</x>
+      <y>27</y>
+      <w>261</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>beforeSection:
 KitchenDutySection</panel_attributes>
@@ -261,10 +261,10 @@ KitchenDutySection</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>612</x>
-      <y>260</y>
-      <w>480</w>
-      <h>140</h>
+      <x>1377</x>
+      <y>585</y>
+      <w>1080</w>
+      <h>315</h>
     </coordinates>
     <panel_attributes>OPT
      
@@ -276,10 +276,10 @@ fg=#128C86</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>692</x>
-      <y>300</y>
-      <w>384</w>
-      <h>88</h>
+      <x>1557</x>
+      <y>675</y>
+      <w>864</w>
+      <h>198</h>
     </coordinates>
     <panel_attributes>for each 
 bi in beforeList 
@@ -289,10 +289,10 @@ fg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>916</x>
-      <y>28</y>
-      <w>12</w>
-      <h>344</h>
+      <x>2061</x>
+      <y>63</y>
+      <w>27</w>
+      <h>774</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;840.0</additional_attributes>
@@ -300,10 +300,10 @@ fg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>764</x>
-      <y>324</y>
-      <w>160</w>
-      <h>16</h>
+      <x>1719</x>
+      <y>729</y>
+      <w>360</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 deleteStep(bi)</panel_attributes>
@@ -312,10 +312,10 @@ deleteStep(bi)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>916</x>
-      <y>332</y>
-      <w>8</w>
-      <h>32</h>
+      <x>2061</x>
+      <y>747</y>
+      <w>18</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -323,10 +323,10 @@ deleteStep(bi)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1000</x>
-      <y>12</y>
-      <w>116</w>
-      <h>20</h>
+      <x>2250</x>
+      <y>27</y>
+      <w>261</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>beforeList.steps:
 ArrayList&lt;Step&gt;</panel_attributes>
@@ -335,10 +335,10 @@ ArrayList&lt;Step&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1048</x>
-      <y>28</y>
-      <w>12</w>
-      <h>332</h>
+      <x>2358</x>
+      <y>63</y>
+      <w>27</w>
+      <h>747</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;810.0</additional_attributes>
@@ -346,10 +346,10 @@ ArrayList&lt;Step&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>920</x>
-      <y>336</y>
-      <w>136</w>
-      <h>16</h>
+      <x>2070</x>
+      <y>756</y>
+      <w>306</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 remove(bi)</panel_attributes>
@@ -358,10 +358,10 @@ remove(bi)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1048</x>
-      <y>344</y>
-      <w>8</w>
-      <h>8</h>
+      <x>2358</x>
+      <y>774</y>
+      <w>18</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -369,10 +369,10 @@ remove(bi)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>612</x>
-      <y>420</y>
-      <w>776</w>
-      <h>144</h>
+      <x>1377</x>
+      <y>945</y>
+      <w>1746</w>
+      <h>324</h>
     </coordinates>
     <panel_attributes>OPT
      
@@ -384,10 +384,10 @@ fg=#128C86</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>764</x>
-      <y>484</y>
-      <w>440</w>
-      <h>16</h>
+      <x>1719</x>
+      <y>1089</y>
+      <w>990</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 deleteStep(bi)</panel_attributes>
@@ -396,10 +396,10 @@ deleteStep(bi)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>692</x>
-      <y>460</y>
-      <w>676</w>
-      <h>88</h>
+      <x>1557</x>
+      <y>1035</y>
+      <w>1521</w>
+      <h>198</h>
     </coordinates>
     <panel_attributes>for each 
 ni in nowList 
@@ -409,10 +409,10 @@ fg=blue</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1196</x>
-      <y>492</y>
-      <w>8</w>
-      <h>32</h>
+      <x>2691</x>
+      <y>1107</y>
+      <w>18</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -420,10 +420,10 @@ fg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1200</x>
-      <y>496</y>
-      <w>144</w>
-      <h>16</h>
+      <x>2700</x>
+      <y>1116</y>
+      <w>324</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 remove(bi)</panel_attributes>
@@ -432,10 +432,10 @@ remove(bi)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1336</x>
-      <y>504</y>
-      <w>8</w>
-      <h>8</h>
+      <x>3006</x>
+      <y>1134</y>
+      <w>18</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -443,10 +443,10 @@ remove(bi)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1144</x>
-      <y>12</y>
-      <w>116</w>
-      <h>20</h>
+      <x>2574</x>
+      <y>27</y>
+      <w>261</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>momentSection:
 KitchenDutySection</panel_attributes>
@@ -455,10 +455,10 @@ KitchenDutySection</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1284</x>
-      <y>12</y>
-      <w>116</w>
-      <h>20</h>
+      <x>2889</x>
+      <y>27</y>
+      <w>261</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>momentList.steps:
 ArrayList&lt;Step&gt;</panel_attributes>
@@ -467,10 +467,10 @@ ArrayList&lt;Step&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1196</x>
-      <y>28</y>
-      <w>12</w>
-      <h>504</h>
+      <x>2691</x>
+      <y>63</y>
+      <w>27</w>
+      <h>1134</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1240.0</additional_attributes>
@@ -478,10 +478,10 @@ ArrayList&lt;Step&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1336</x>
-      <y>28</y>
-      <w>12</w>
-      <h>492</h>
+      <x>3006</x>
+      <y>63</y>
+      <w>27</w>
+      <h>1107</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1210.0</additional_attributes>
@@ -489,10 +489,10 @@ ArrayList&lt;Step&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>764</x>
-      <y>580</y>
-      <w>120</w>
-      <h>32</h>
+      <x>1719</x>
+      <y>1305</y>
+      <w>270</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 this.addPreparationIngredient(preparation)</panel_attributes>
@@ -501,10 +501,10 @@ this.addPreparationIngredient(preparation)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
-      <y>660</y>
-      <w>128</w>
-      <h>24</h>
+      <x>1080</x>
+      <y>1485</y>
+      <w>288</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 notifyDeletedStepsAndReplaced(currentKitchenDuty)</panel_attributes>
@@ -513,10 +513,10 @@ notifyDeletedStepsAndReplaced(currentKitchenDuty)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>408</x>
-      <y>688</y>
-      <w>1068</w>
-      <h>28</h>
+      <x>918</x>
+      <y>1548</y>
+      <w>2403</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>for each
 er in eventReceivers
@@ -526,10 +526,10 @@ fg=blue</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>480</x>
-      <y>676</y>
-      <w>8</w>
-      <h>44</h>
+      <x>1080</x>
+      <y>1521</y>
+      <w>18</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -537,10 +537,10 @@ fg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>484</x>
-      <y>696</y>
-      <w>980</w>
-      <h>16</h>
+      <x>1089</x>
+      <y>1566</y>
+      <w>2205</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 updateDeletedStepsAndReplaced(currentKitchenDuty)
@@ -550,10 +550,10 @@ updateDeletedStepsAndReplaced(currentKitchenDuty)
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1456</x>
-      <y>704</y>
-      <w>8</w>
-      <h>8</h>
+      <x>3276</x>
+      <y>1584</y>
+      <w>18</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>
 </panel_attributes>
@@ -562,10 +562,10 @@ updateDeletedStepsAndReplaced(currentKitchenDuty)
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>12</x>
-      <y>124</y>
-      <w>164</w>
-      <h>36</h>
+      <x>27</x>
+      <y>279</y>
+      <w>369</w>
+      <h>81</h>
     </coordinates>
     <panel_attributes>OPT
 
@@ -576,10 +576,10 @@ fg=#128C86</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>12</x>
-      <y>172</y>
-      <w>164</w>
-      <h>36</h>
+      <x>27</x>
+      <y>387</y>
+      <w>369</w>
+      <h>81</h>
     </coordinates>
     <panel_attributes>OPT
 
@@ -590,10 +590,10 @@ fg=#128C86</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>764</x>
-      <y>600</y>
-      <w>8</w>
-      <h>32</h>
+      <x>1719</x>
+      <y>1350</y>
+      <w>18</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -601,10 +601,10 @@ fg=#128C86</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1420</x>
-      <y>12</y>
-      <w>76</w>
-      <h>20</h>
+      <x>3195</x>
+      <y>27</y>
+      <w>171</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>er:
 MenuEventReceiver
@@ -615,10 +615,10 @@ MenuEventReceiver
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1456</x>
-      <y>28</y>
-      <w>12</w>
-      <h>696</h>
+      <x>3276</x>
+      <y>63</y>
+      <w>27</w>
+      <h>1566</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1720.0</additional_attributes>
@@ -626,10 +626,10 @@ MenuEventReceiver
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1520</x>
-      <y>12</y>
-      <w>112</w>
-      <h>20</h>
+      <x>3420</x>
+      <y>27</y>
+      <w>252</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>currentKitchenDuty.preparationsIngredients:
 ArrayList&lt;Preparation&gt;</panel_attributes>
@@ -638,10 +638,10 @@ ArrayList&lt;Preparation&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1572</x>
-      <y>28</y>
-      <w>12</w>
-      <h>608</h>
+      <x>3537</x>
+      <y>63</y>
+      <w>27</w>
+      <h>1368</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1500.0</additional_attributes>
@@ -649,10 +649,10 @@ ArrayList&lt;Preparation&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>768</x>
-      <y>608</y>
-      <w>812</w>
-      <h>16</h>
+      <x>1728</x>
+      <y>1368</y>
+      <w>1827</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 add(preparation)
@@ -662,10 +662,10 @@ add(preparation)
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1572</x>
-      <y>616</y>
-      <w>8</w>
-      <h>8</h>
+      <x>3537</x>
+      <y>1386</y>
+      <w>18</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>
 </panel_attributes>

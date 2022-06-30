@@ -1,0 +1,1834 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2034</x>
+      <y>624</y>
+      <w>204</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>halign=center
+*Design Class Diagram (DCD)*
+lw=0
+fontsize=20
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1626</x>
+      <y>1074</y>
+      <w>618</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>UserManagement</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>846</x>
+      <y>1086</y>
+      <w>594</w>
+      <h>372</h>
+    </coordinates>
+    <panel_attributes>MenuManagement</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>1110</y>
+      <w>210</w>
+      <h>174</h>
+    </coordinates>
+    <panel_attributes>MenuManager
+--
+-menuFeatures: String[]
+--
+*event sender methods*
++addReceiver(er: MenuEventReceiver)
++removeReceiver(er: MenuEventReceiver)
+-notifySectionAdded(sec: Section)
+-notifyMenuItemAdded(mi: MenuItem)
+-notifyMenuCreated(m: Menu)
+-notifyMenuDeleted(m: Menu)
+-notifySectionsRearranged(m: Menu)
+
+--
+*operations methods*
++defineSection(name: String)
++inserItem(r: Recipe, sec?: Section, desc?: String)
++createMenu(title: String): Menu
++getRecipeBook( ): ArrayList&lt;KitchenDuty&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1176</x>
+      <y>1110</y>
+      <w>198</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>Menu
+--
+-title: String
+-published: boolean
+-inUse: boolean
+-features: String[]
+-featureValues: boolean[]
+--
++create(owner: User, title: String, features: String[])
++addSection(name: String)
++addItem(r: Recipe, sec?: Section,
+                                        desc?: String)
++isOwner(user: User): boolean
++isInUse(): boolean
++hasSection(sec: Section): boolean
++sectionsSize(): int
++moveSection(sec: Section, pos: int)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1104</x>
+      <y>1170</y>
+      <w>84</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+currentMenu
+m1=0..1</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1272</x>
+      <y>1368</y>
+      <w>156</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>MenuItem
+--
+-description: String
+--
++create(rec: Recipe, desc?: String)
++create(mi: MenuItem)
++getItemRecipe(): Recipe</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1656</x>
+      <y>1878</y>
+      <w>306</w>
+      <h>348</h>
+    </coordinates>
+    <panel_attributes>Recipe
+--
+-name: String
+-information: String
+-concreteTime: String
+-preparationTime: String
+-completionTime: String
+-portions: String
+-quantity; String
+-draft: boolean
+--
++create(name: String, user: User)
++create(kitchenDuty: KitchenDuty)
++hasSection(section: KitchenDutySection): boolean
++addStep(content: String, step?: Step, 
+                                                       section: KitchenDutySection,
+                                                       type: StepFactory,
+                                                       position: int): Step
++addPreparationIngredient(preparation: Preparation)
++addIngredient(ingredient: KitchenDutyIngredient)  
++deleteStepsAndReplace(beforeList?: ArrayList&lt;Step&gt;, 
+                                        beforeSection?: KitchenDutySection, 
+                                        momentList?: ArrayList&lt;Step&gt;, 
+                                        momentSection?: KitchenDutySection, 
+                                        preparation: Preparation) 
++hasIngredient(ingredient: KitchenDutyIngredient): boolean
++hasPreparationIngredient(preparation: Preparation): boolean
++getBeforeSection(): KitchenDutySection
++getMomentSection(): KitchenDutySection
++deleteSteps(beforeList?: ArrayList&lt;Step&gt;, 
+                                        beforeSection?: KitchenDutySection, 
+                                        momentList?: ArrayList&lt;Step&gt;, 
+                                        momentSection?: KitchenDutySection,
+                                        ingredientsList?: ArrayList&lt;KitchenDutyIngredient&gt;,
+                                        preparationsIngredientsList?: ArrayList&lt;Preparation&gt;)
++deleteIngredient(ingredient: KitchenDutyIngredient)
++deletePreparationIngredient(preparation: Preparation)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1422</x>
+      <y>1404</y>
+      <w>246</w>
+      <h>546</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+itemRecipe
+m1=1</panel_attributes>
+    <additional_attributes>390.0;880.0;200.0;880.0;200.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1290</x>
+      <y>1260</y>
+      <w>54</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n
+freeItems</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1140</x>
+      <y>1320</y>
+      <w>126</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Section
+--
+-name: String
+--
++create(name: String)
++create(sec: Section)
++addItem(mi: MenuItem)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1158</x>
+      <y>1230</y>
+      <w>48</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n
+sections</panel_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0;30.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1158</x>
+      <y>1386</y>
+      <w>126</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n
+sectionItems</panel_attributes>
+    <additional_attributes>190.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>126</x>
+      <y>1980</y>
+      <w>132</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>UseCaseLogicException
+--
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>1980</y>
+      <w>78</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>Exception
+--
+
+fg=magenta
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>894</x>
+      <y>1356</y>
+      <w>234</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>MenuEventReceiver
+{interface}
+--
+
+--
+/+updateSectionAdded(m: Menu, sec: Section)/
+/+updateMenuItemAdded(m: Menu, mi: MenuItem)/
+/+updateMenuCreated(m: Menu)/
+/+updateMenuDeleted(m: Menu)/
+/+updateSectionsRearranged(m: Menu)/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>984</x>
+      <y>1278</y>
+      <w>72</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+eventReceivers
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>120</x>
+      <y>1962</y>
+      <w>606</w>
+      <h>246</h>
+    </coordinates>
+    <panel_attributes>General module
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1956</x>
+      <y>1110</y>
+      <w>156</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>UserManager
+--
+
+--
+*event sender methods*
+
+
+--
+*operations methods*
++getCurrentUser(): User</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1662</x>
+      <y>1110</y>
+      <w>90</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>User
+
+--
+
+--
++isChef(): boolean
++isCook(): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1746</x>
+      <y>1152</y>
+      <w>222</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+currentUser
+m1=0..1</panel_attributes>
+    <additional_attributes>10.0;20.0;350.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1368</x>
+      <y>1128</y>
+      <w>306</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+owner
+m1=1</panel_attributes>
+    <additional_attributes>490.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2640</x>
+      <y>1686</y>
+      <w>300</w>
+      <h>348</h>
+    </coordinates>
+    <panel_attributes>KitchenDutyManager
+--
+*event sender methods*
++addReceiver(er: KitchenDutyEventReceiver)
++removeReceiver(er: KitchenDutyEventReceiver)
+-notifyKitchenDutyCreated(kitchenDuty: KitchenDuty)
+-notifyKitchenDutyCopiedToModify(kitchenDuty: KitchenDuty)
+-notifyStepAdded(s: Step)
+-notifyStepSectionModified(kitchenDuty: KitchenDuty)
+-notifyDeletedStepsAndReplaced(kitchenDuty: KitchenDuty)
+-notifyDeletedStepsAndCreated(kitchenDuty: KitchenDuty)
+--
+*operations methods*
++getRecipeBook(): ArrayList&lt;KitchenDuty&gt;
+
++generateKitchenDuty(name: String, type: kitchenDutyFactory): KitchenDuty
++copyKitchenDutyToModify(kitchenDuty: KitchenDuty, 
+                                             type: KitchenDutyFactory): KitchenDuty
++addStep(content: String, step?: Step, 
+                                                       section: KitchenDutySection,
+                                                       type: StepFactory,
+                                                       position: int): Step
++modifyStepSection(step: Step, 
+                                  sourceSection: KitchenDutySection, 
+                                  destinationSection: KitchenDutySection, 
+                                  position: int)
++deleteStepsAndReplace(beforeList?: ArrayList&lt;Step&gt;, 
+                                          beforeSection?: KitchenDutySection, 
+                                          nowList?: ArrayList&lt;Step&gt;, 
+                                          nowSection?: KitchenDutySection, 
+                                          preparation: Preparation)
++deleteStepsAndCreate(beforeList?: ArrayList&lt;Step&gt;, 
+                                        beforeSection?: KitchenDutySection, 
+                                        nowList?: ArrayList&lt;Step&gt;, 
+                                        nowSection?: KitchenDutySection, 
+                                        ingredientsList?: ArrayList&lt;KitchenDutyIngredient&gt;, 
+                                        preparationsIngredientsList?: ArrayList&lt;Preparation&gt;, 
+                                        name: String, type: PreparationFactory)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>120</x>
+      <y>1518</y>
+      <w>600</w>
+      <h>396</h>
+    </coordinates>
+    <panel_attributes>EventManagement</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1224</x>
+      <y>1896</y>
+      <w>216</w>
+      <h>204</h>
+    </coordinates>
+    <panel_attributes>Task
+--
+-description: String
+-quantity: String
+-portion: String
+-estimateTime: String
+-completed = false
+--
++create(recipe: Recipe, description: String): Task
++indicateCompleted()
++assign(workShift: WorkShift, 
+              cook?: User, 
+              estimatedTime?: String, 
+              quantity?: String, 
+              portions?: String)
++executedIn(workShift: WorkShift): boolean
++executedFrom(user: User): boolean
++deleteAssign(cook?: User)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>786</x>
+      <y>1554</y>
+      <w>282</w>
+      <h>366</h>
+    </coordinates>
+    <panel_attributes>TaskManager
+--
+
+--
+*event sender methods*
++addReceiver(er: TaskEventReceiver)
++removeReceiver(er: TaskEventReceiver)
+-notifySummarySheetCreated(s: SummarySheet)
+-notifyTaskAdded(task: Task)
+-notifyTaskDeleted(task: Task, s: SummarySheet)
+-notifyTaskCompleted(task: Task)
+-notifyTaskListRearranged(currentSummarySheet: SummarySheet)
+-notifyTaskAssigned(task: Task)
+-notifyDeleteTaskAssign(task: Task)
+-notifyIndicateFullWorkshift(workShift: WorkShift)
+-notifyIndicateNotFullWorkshift(workShift: WorkShift)
+--
+*operations methods*
++generateSummarySheet(event: Event, service: Service): SummarySheet
++selectSummarySheet(event: Event, service: Service, 
+                                      summarySheet: SummarySheet): SummarySheet
++defineTask(recipe: Recipe, description?: String): Task
++deleteTask(task: Task)
++indicateTaskCompleted(task: Task)
++sortTaskList(task: Task, position: int)
++assignTask(task: Task, workShift: WorkShift, 
+                                                  cook?: User, 
+                                                  estimatedTime?: String, 
+                                                  quantity?: String, 
+                                                  portions?: String)
++deleteTaskAssign(task: task, workShift: WorkShift, cook?: User)
++indicateFullWorkShift(workShift: WorkShift)
++indicateNotFullWorkShift(workShift: WorkShift)
++getWorkShiftBoard(): ArrayList&lt;WorkShift&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1062</x>
+      <y>1650</y>
+      <w>174</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+currentSummarySheet
+m2=0..1</panel_attributes>
+    <additional_attributes>10.0;20.0;270.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1224</x>
+      <y>1566</y>
+      <w>216</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>SummarySheet
+--
+
+--
++create(service: Service)
++hasService(service: Service): boolean
++addTask(recipe: Recipe, description?: String): Task
++removeTask(task: Task)
++hasTask(task: Task): boolean
++indicateTaskCompleted(task: Task)
++tasksSize(): int
++sortTaskList(task: Task, position: int)
++assignTask(task: Task, workShift: WorkShift, 
+                                              cook?: User, 
+                                              estimatedTime?: String, 
+                                              quantity?: String, 
+                                              portions?: String)
++deleteTaskAssign(task: Task, cook?: User) 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1326</x>
+      <y>1758</y>
+      <w>36</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+tasks
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1434</x>
+      <y>2004</y>
+      <w>234</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+taskRecipe
+m2=1</panel_attributes>
+    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>786</x>
+      <y>2016</y>
+      <w>282</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>TaskEventReceiver
+/{interface}/
+--
+
+--
+-updateSummarySheetCreated(s: SummarySheet)
++updateTaskAdded(task: Task)
++updateTaskDeleted(task: Task, s: SummarySheet)
++updateTaskCompleted(task: Task)
++updateTaskListRearranged(currentSummarySheet: SummarySheet)
++updateTaskAssigned(task: Task)
++updateDeleteTaskAssign(task: Task)
++updateIndicateFullWorkshift(workShift: WorkShift)
++updateIndicateNotFullWorkshift(workShift: WorkShift)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>924</x>
+      <y>1914</y>
+      <w>72</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+eventReceivers
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1824</x>
+      <y>1500</y>
+      <w>306</w>
+      <h>318</h>
+    </coordinates>
+    <panel_attributes>*&lt;&lt;interface&gt;&gt;*
+KitchenDuty
+--
+
+--
++hasSection(section: KitchenDutySection): boolean
++addStep(content: String, step?: Step, 
+                                                       section: KitchenDutySection,
+                                                       type: StepFactory,
+                                                       position: int): Step
++modifyStepSection(step: Step, 
+                                  sourceSection: KitchenDutySection, 
+                                  destinationSection: KitchenDutySection, 
+                                  position: int, compositeSteps?: ArrayList&lt;Step&gt;)  
++addPreparationIngredient(preparation: Preparation)
++addIngredient(ingredient: KitchenDutyIngredient)  
++deleteStepsAndReplace(beforeList?: ArrayList&lt;Step&gt;, 
+                                        beforeSection?: KitchenDutySection, 
+                                        momentList?: ArrayList&lt;Step&gt;, 
+                                        momentSection?: KitchenDutySection, 
+                                        preparation: Preparation) 
++hasIngredient(ingredient: KitchenDutyIngredient): boolean
++hasPreparationIngredient(preparation: Preparation): boolean
++getBeforeSection(): KitchenDutySection
++getMomentSection(): KitchenDutySection
++deleteSteps(beforeList?: ArrayList&lt;Step&gt;, 
+                                        beforeSection?: KitchenDutySection, 
+                                        momentList?: ArrayList&lt;Step&gt;, 
+                                        momentSection?: KitchenDutySection,
+                                        ingredientsList?: ArrayList&lt;KitchenDutyIngredient&gt;,
+                                        preparationsIngredientsList?: ArrayList&lt;Preparation&gt;)
++deleteIngredient(ingredient: KitchenDutyIngredient)
++deletePreparationIngredient(preparation: Preparation)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1842</x>
+      <y>1812</y>
+      <w>108</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1998</x>
+      <y>1878</y>
+      <w>306</w>
+      <h>348</h>
+    </coordinates>
+    <panel_attributes>Preparation
+--
+-name: String
+-information: String
+-concreteTime: String
+-preparationTime: String
+-completionTime: String
+-portions: String
+-quantity; String
+-draft: boolean
+--
++create(name: String, user: User)
++create(kitchenDuty: KitchenDuty)
++hasSection(section: KitchenDutySection): boolean
++addStep(content: String, step?: Step, 
+                                                       section: KitchenDutySection,
+                                                       type: StepFactory,
+                                                       position: int): Step
++addPreparationIngredient(preparation: Preparation)
++addIngredient(ingredient: KitchenDutyIngredient)  
++deleteStepsAndReplace(beforeList?: ArrayList&lt;Step&gt;, 
+                                        beforeSection?: KitchenDutySection, 
+                                        momentList?: ArrayList&lt;Step&gt;, 
+                                        momentSection?: KitchenDutySection, 
+                                        preparation: Preparation) 
++hasIngredient(ingredient: KitchenDutyIngredient): boolean
++hasPreparationIngredient(preparation: Preparation): boolean
++getBeforeSection(): KitchenDutySection
++getMomentSection(): KitchenDutySection
++deleteSteps(beforeList?: ArrayList&lt;Step&gt;, 
+                                        beforeSection?: KitchenDutySection, 
+                                        momentList?: ArrayList&lt;Step&gt;, 
+                                        momentSection?: KitchenDutySection,
+                                        ingredientsList?: ArrayList&lt;KitchenDutyIngredient&gt;,
+                                        preparationsIngredientsList?: ArrayList&lt;Preparation&gt;)
++deleteIngredient(ingredient: KitchenDutyIngredient)
++deletePreparationIngredient(preparation: Preparation)
+                                 </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2016</x>
+      <y>1812</y>
+      <w>108</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2124</x>
+      <y>1590</y>
+      <w>744</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+kitchenDutys
+m2=0..n</panel_attributes>
+    <additional_attributes>1220.0;160.0;1220.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1626</x>
+      <y>816</y>
+      <w>618</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>WorkShiftManagement</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1656</x>
+      <y>852</y>
+      <w>198</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>WorkShiftManager
+--
+
+--
+*event sender methods*
+
+
+--
+*operations methods*
++createWorkShift(): WorkShift
++indicateFullWorkShift(workShift: WorkShift)
++indicateNotFullWorkShift(workShift: WorkShift)
++getWorkShiftBoard(): ArrayList&lt;WorkShift&gt;
++hasWorkShift(workShift: WorkShift): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2064</x>
+      <y>876</y>
+      <w>144</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>WorkShift
+--
+-date: Date
+-ourStart: String
+-ourEnd: String
+-assignable: boolean
+--
++hasCook(cook: User): boolean
++indicateFull()
++indicateNotFull()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1848</x>
+      <y>888</y>
+      <w>228</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+currentWorkShift
+m2=0..1</panel_attributes>
+    <additional_attributes>10.0;20.0;360.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1746</x>
+      <y>960</y>
+      <w>402</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+cooks
+m2=0..n</panel_attributes>
+    <additional_attributes>650.0;10.0;650.0;130.0;70.0;130.0;70.0;300.0;10.0;300.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1434</x>
+      <y>1158</y>
+      <w>240</w>
+      <h>798</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+cook
+m2=0..1</panel_attributes>
+    <additional_attributes>10.0;1310.0;70.0;1310.0;70.0;10.0;380.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>2160</w>
+      <h>2280</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=0..1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                       
+                                                                                                                                                                                                                                                                                                                    workShift</panel_attributes>
+    <additional_attributes>2220.0;3500.0;2220.0;3780.0;10.0;3780.0;10.0;1250.0;3560.0;1250.0;3560.0;1460.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1842</x>
+      <y>2292</y>
+      <w>246</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>*&lt;&lt;interface&gt;&gt;*
+KitchenDutyFactory
+--
+
+--
++createKitchenDuty(name: String, user: User): KitchenDuty
++copyKitchenDutyToModify(kitchenDuty: KitchenDuty, 
+                         type: KitchenDutyFactory, 
+                         user: User)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1692</x>
+      <y>2424</y>
+      <w>282</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>RecipeFactory
+--
++createKitchenDuty(name: String): KitchenDuty
++copyKitchenDutyToModify(kitchenDuty: KitchenDuty, 
+                         type: KitchenDutyFactory, 
+                         user: User)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1986</x>
+      <y>2424</y>
+      <w>282</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>PreparationFactory
+--
++createKitchenDuty(name: String): KitchenDuty
++createPreparationFromExistingKitchenDuty(
+                              beforeList?: &lt;ArrayList&lt;Step&gt;, 
+                              nowList?: &lt;ArrayList&lt;Step&gt;, 
+                              ingredientsList?: &lt;ArrayList&lt;KitchenDutyIngredient&gt;, 
+                              preparationsIngredientsList?: &lt;ArrayList&lt;Preparation&gt;, 
+                              name: String, user: User)
++copyKitchenDutyToModify(kitchenDuty: KitchenDuty, 
+                         type: KitchenDutyFactory, 
+                         user: User)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1878</x>
+      <y>2376</y>
+      <w>78</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1986</x>
+      <y>2376</y>
+      <w>72</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1674</x>
+      <y>2220</y>
+      <w>30</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;460.0;30.0;460.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2262</x>
+      <y>2220</y>
+      <w>30</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>30.0;10.0;30.0;460.0;10.0;460.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2124</x>
+      <y>1548</y>
+      <w>1092</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+sections 
+m2=2</panel_attributes>
+    <additional_attributes>10.0;20.0;1800.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3204</x>
+      <y>1494</y>
+      <w>198</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>KitchenDutySection
+--
+-name: String
+--
++create(name: String)
++generateStep(content, step?, type, position): Step
++hasStep(step: Step): boolean
++deleteStep(step: Step)
++addStep(step: Step)
++sectionSize(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>2892</x>
+      <y>1038</y>
+      <w>516</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>IngredientManagement</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3216</x>
+      <y>1086</y>
+      <w>162</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Ingredient
+--
+-name: String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2928</x>
+      <y>1086</y>
+      <w>156</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>IngredienteManager
+--
+
+--
+*event sender methods*
+
+
+--
+*operations methods*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3078</x>
+      <y>1128</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+ingredients
+m1=0..n</panel_attributes>
+    <additional_attributes>230.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2094</x>
+      <y>1386</y>
+      <w>1122</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+ingredients
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;190.0;10.0;20.0;1850.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3204</x>
+      <y>1356</y>
+      <w>198</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>KitchenDutyIngredient
+--
+-name: String
+-dose: String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3294</x>
+      <y>1188</y>
+      <w>90</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+referenceIngredient
+m2=1</panel_attributes>
+    <additional_attributes>10.0;280.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1884</x>
+      <y>1356</y>
+      <w>198</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Tag
+--
+-name: String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1974</x>
+      <y>1434</y>
+      <w>30</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+tags
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2124</x>
+      <y>1686</y>
+      <w>384</w>
+      <h>414</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=0..n
+preparationsIngredients</panel_attributes>
+    <additional_attributes>10.0;10.0;470.0;10.0;470.0;660.0;300.0;660.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1578</x>
+      <y>1182</y>
+      <w>258</w>
+      <h>570</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+owner
+m2=1</panel_attributes>
+    <additional_attributes>410.0;930.0;10.0;930.0;10.0;10.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2784</x>
+      <y>2028</y>
+      <w>72</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+eventReceivers
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2634</x>
+      <y>2154</y>
+      <w>306</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>KitchenDutyEventReceiver
+/{interface}/
+--
+
+--
++updateKitchenDutyCreated(kitchenDuty: KitchenDuty)
++updateKitchenDutyCopiedToModify(kitchenDuty: KitchenDuty)
++updateStepAdded(s: Step)
++updateStepSectionModified(kitchenDuty: KitchenDuty)
++updateDeletedStepsAndReplaced(kitchenDuty: KitchenDuty)
++updateDeletedStepsAndCreated(kitchenDuty: KitchenDuty)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>768</x>
+      <y>1518</y>
+      <w>684</w>
+      <h>690</h>
+    </coordinates>
+    <panel_attributes>TaskManagement</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>132</x>
+      <y>1554</y>
+      <w>222</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>EventManager
+--
+
+--
+*event sender methods*
++addReceiver(er: TaskEventReceiver)
++removeReceiver(er: TaskEventReceiver)
+--
+*operations methods*
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>234</x>
+      <y>1680</y>
+      <w>66</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+currentEvent
+m2=0..1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>132</x>
+      <y>1764</y>
+      <w>216</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Event
+--
+-name: String
+-dateStart: Date
+-dateEnd: Date
+-partecipants: int
+--
++isAssignedUser(user: User): boolean
++hasService(service: Service): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>342</x>
+      <y>1812</y>
+      <w>108</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+services
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>438</x>
+      <y>1764</y>
+      <w>258</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>Service
+--
+-name: String
+-date: Date
+-timeStart: Time
+-timeEnd: Time
+-partecipants: int
+--
++getMenu(menu: Menu): Menu</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>1050</y>
+      <w>756</w>
+      <h>726</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+menu
+m2=1</panel_attributes>
+    <additional_attributes>10.0;1190.0;10.0;20.0;1230.0;20.0;1230.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>66</x>
+      <y>1026</y>
+      <w>1650</w>
+      <h>816</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+assignedUser</panel_attributes>
+    <additional_attributes>110.0;1340.0;10.0;1340.0;10.0;20.0;2730.0;20.0;2730.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3300</x>
+      <y>1608</y>
+      <w>36</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+steps
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3210</x>
+      <y>1716</y>
+      <w>198</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Step
+*&lt;&lt;abstract&gt;&gt;*
+--
+-content: String
+--
++create(content: String)
++isSingleStep(): boolean
++addChildrenStep(step: Step)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3234</x>
+      <y>1824</y>
+      <w>66</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3324</x>
+      <y>1824</y>
+      <w>72</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3114</x>
+      <y>1896</y>
+      <w>192</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>SingleStep
+--
++create(content: String)
++isSingleStep(): boolean
++getCompositeSteps(): ArrayList&lt;CompositeStep&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3330</x>
+      <y>1896</y>
+      <w>192</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>CompositeStep
+--
+-children: Step
+--
++create(content: String)
++isSingleStep(): boolean
++addChildrenStep(step: Step)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3402</x>
+      <y>1776</y>
+      <w>216</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1
+childrenStep</panel_attributes>
+    <additional_attributes>200.0;240.0;260.0;240.0;260.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2124</x>
+      <y>1632</y>
+      <w>612</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+currentKitchenDuty
+m2=0..1</panel_attributes>
+    <additional_attributes>1000.0;90.0;1000.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1620</x>
+      <y>1290</y>
+      <w>2346</w>
+      <h>1284</h>
+    </coordinates>
+    <panel_attributes>KitchenDutyManagement</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3186</x>
+      <y>2046</y>
+      <w>246</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>*&lt;&lt;interface&gt;&gt;*
+StepFactory
+--
+
+--
++createStep(content: String): Step</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3120</x>
+      <y>2178</y>
+      <w>186</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>SingleStepFactory
+--
++createStep(content: String): Step</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3336</x>
+      <y>2178</y>
+      <w>186</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>CompositeStepFactory
+--
++createStep(content: String): Step</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3318</x>
+      <y>2130</y>
+      <w>108</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3210</x>
+      <y>2130</y>
+      <w>84</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3516</x>
+      <y>1938</y>
+      <w>54</w>
+      <h>294</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0;70.0;470.0;10.0;470.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3078</x>
+      <y>1932</y>
+      <w>54</w>
+      <h>306</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0;10.0;490.0;70.0;490.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1848</x>
+      <y>918</y>
+      <w>228</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+workShifts
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;20.0;360.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>618</x>
+      <y>1470</y>
+      <w>786</w>
+      <h>306</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+service
+m2=1</panel_attributes>
+    <additional_attributes>1290.0;160.0;1290.0;20.0;10.0;20.0;10.0;490.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1698</x>
+      <y>1206</y>
+      <w>138</w>
+      <h>402</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+author
+m2=1</panel_attributes>
+    <additional_attributes>210.0;650.0;10.0;650.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>126</x>
+      <y>2034</y>
+      <w>132</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>EventException
+--
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>126</x>
+      <y>2088</y>
+      <w>132</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>TaskException
+--
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>126</x>
+      <y>2142</y>
+      <w>132</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>WorkShiftException
+--
+fg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

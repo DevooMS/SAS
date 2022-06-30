@@ -42,6 +42,10 @@ public class TaskManager {
         return s;
     }
 
+    public SummarySheet getCurrentSummarySheet() {
+        return currentSummarySheet;
+    }
+
     /* define new task for a summary sheet */
     public Task defineTask(Recipe recipe, String description) throws UseCaseLogicException {
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.3.0">
+<diagram program="umlet" version="15.0.0">
   <zoom_level>7</zoom_level>
   <element>
     <id>UMLClass</id>
@@ -298,8 +298,8 @@ layer=1</panel_attributes>
       <h>35</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-7.eliminaPassiESostituisci(listaPrima p1,...,pN, sezionePrima, listaMomento m1,...,mN, 
-sezioneMomento, preparazione)
+7.eliminaPassiESostituisci(listaPrima p1,...,pN?, sezionePrima?, 
+listaMomento m1,...,mN?, sezioneMomento?, preparazione)
 layer=2</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
@@ -352,8 +352,8 @@ layer=2</panel_attributes>
       <h>35</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-8.eliminaPassiECrea(listaPrima p1,...,pN, sezionePrima, listaMomento m1,...,mN, 
-sezioneMomento, listaIngredienti i1,...,iN, listaIngredientiPreparazioni ip1,...,ipN, nom)
+8.eliminaPassiECrea(listaPrima p1,...,pN?, sezionePrima?, listaMomento m1,...,mN?, 
+sezioneMomento?, listaIngredienti i1,...,iN?, listaIngredientiPreparazioni ip1,...,ipN?, nome)
 layer=2</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>

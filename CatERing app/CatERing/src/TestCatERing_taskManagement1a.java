@@ -15,7 +15,7 @@ import javafx.collections.ObservableList;
 
 import java.util.ArrayList;
 
-public class TestCatERing_taskManagement {
+public class TestCatERing_taskManagement1a {
     public static void main(String[] args) {
         try {
             System.out.println("TEST FAKE LOGIN");
@@ -32,7 +32,7 @@ public class TestCatERing_taskManagement {
             ArrayList<SummarySheet> summarySheets = new ArrayList<>();
             ObservableList<ServiceInfo> services = null;
 
-            for(EventInfo e: event) {
+            for (EventInfo e : event) {
                 services = e.getServices();
                 for (ServiceInfo service : services) {
                     SummarySheet s = CatERing.getInstance().getTaskManager().generateSummarySheet(e, service);
@@ -43,7 +43,9 @@ public class TestCatERing_taskManagement {
                 }
             }
 
-            SummarySheet summarySheetSelect = CatERing.getInstance().getTaskManager().getCurrentSummarySheet();
+            System.out.println("TEST SELECT SUMMARY SHEET");
+            SummarySheet summarySheetSelect = CatERing.getInstance().getTaskManager().selectSummarySheet(event.get(0), services.get(0), summarySheets.get(0));
+            System.out.println(summarySheetSelect);
 
             System.out.println("TEST ADD TASK");
             Recipe recipe = CatERing.getInstance().getRecipeManager().getLoadedRecipe(9);
@@ -79,7 +81,7 @@ public class TestCatERing_taskManagement {
             System.out.println("Turno aggiornato");
             System.out.println(workShift);
             CatERing.getInstance().getTaskManager().indicateNotFullWorkShift(workShift);
-        } catch (UseCaseLogicException | EventException | WorkShiftException e) {
+        } catch (TaskException | EventException | UseCaseLogicException | WorkShiftException e) {
             e.printStackTrace();
         }
     }
