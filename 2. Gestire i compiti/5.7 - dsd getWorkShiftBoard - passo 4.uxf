@@ -71,8 +71,8 @@ getWorkShiftBoard()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>344</x>
-      <y>104</y>
+      <x>296</x>
+      <y>152</y>
       <w>272</w>
       <h>32</h>
     </coordinates>

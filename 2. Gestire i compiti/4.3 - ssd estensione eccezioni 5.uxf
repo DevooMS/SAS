@@ -86,8 +86,8 @@ bg=#F9FF47</panel_attributes>
     </coordinates>
     <panel_attributes>valign=center
 halign=center
-Estensione al passo 5 (5a, 5b)
-e relativa eccezione (2a.1)
+Estensione al passo 5 (5a)
+e relativa eccezione (5a.1)
 lw=0
 fontsize=18</panel_attributes>
     <additional_attributes/>
@@ -504,7 +504,7 @@ layer=2</panel_attributes>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-5b.1 eliminaAssegnamentoCompito(compito, turno, cuoco?) 
+5a.1 eliminaAssegnamentoCompito(compito, turno, cuoco?) 
 fg=#9E1C8C</panel_attributes>
     <additional_attributes>480.0;20.0;10.0;20.0</additional_attributes>
   </element>
