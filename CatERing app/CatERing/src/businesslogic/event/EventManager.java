@@ -11,7 +11,7 @@ public class EventManager {
     }
 
     /* get the info of an event, start from the id */
-    public ArrayList<EventInfo> getEventInfo(int event_id){
+    public ObservableList<EventInfo> getEventInfo(int event_id){
         return EventInfo.loadEventInfo(event_id);
     }
 }

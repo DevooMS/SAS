@@ -76,8 +76,8 @@ public class EventInfo implements EventItemInfo {
     }
 
     /* load the info of an event, start from the id */
-    public static ArrayList<EventInfo> loadEventInfo(int event_id) {
-        ArrayList<EventInfo> e = new ArrayList<>();
+    public static ObservableList<EventInfo> loadEventInfo(int event_id) {
+        ObservableList<EventInfo> e = FXCollections.observableArrayList();
         String query = "SELECT * FROM Events WHERE id = " + event_id;
         PersistenceManager.executeQuery(query, new ResultHandler() {
             @Override

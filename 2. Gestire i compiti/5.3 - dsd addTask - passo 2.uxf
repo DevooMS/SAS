@@ -247,11 +247,11 @@ task</panel_attributes>
     <coordinates>
       <x>470</x>
       <y>385</y>
-      <w>115</w>
+      <w>190</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-notifyTaskAdded(task)</panel_attributes>
+notifyTaskAdded(currentSummarySheet, task)</panel_attributes>
     <additional_attributes>10.0;10.0;70.0;10.0;70.0;40.0;20.0;40.0</additional_attributes>
   </element>
   <element>
@@ -287,7 +287,7 @@ fg=blue
       <h>20</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-updateTaskAdded(task)</panel_attributes>
+updateTaskAdded(currentSummarySheet, task)</panel_attributes>
     <additional_attributes>10.0;20.0;670.0;20.0</additional_attributes>
   </element>
   <element>

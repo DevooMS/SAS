@@ -145,7 +145,7 @@ public class Task {
         String delTask = "DELETE FROM tasks WHERE id = " + task.id;
         PersistenceManager.executeUpdate(delTask);
 
-        ObservableList<Task> sTasks = FXCollections.unmodifiableObservableList(s.getTasks());
+        //ObservableList<Task> sTasks = FXCollections.unmodifiableObservableList(s.getTasks());
     }
 
     /* indicate task completed in the db */

@@ -22,6 +22,10 @@ public class TaskManager {
         this.eventReceivers = new ArrayList<>();
     }
 
+    public SummarySheet getCurrentSummarySheet() {
+        return currentSummarySheet;
+    }
+
     /* generate a summary sheet for a specif service of an event */
     public SummarySheet generateSummarySheet(EventInfo event, ServiceInfo service) throws UseCaseLogicException, EventException {
         User user = CatERing.getInstance().getUserManager().getCurrentUser();
@@ -42,10 +46,6 @@ public class TaskManager {
         return s;
     }
 
-    public SummarySheet getCurrentSummarySheet() {
-        return currentSummarySheet;
-    }
-
     /* define new task for a summary sheet */
     public Task defineTask(Recipe recipe, String description) throws UseCaseLogicException {
 
@@ -54,9 +54,9 @@ public class TaskManager {
         }
 
         Task t = currentSummarySheet.addTask(recipe, description);
-        int task_position = currentSummarySheet.getTaskPosition(t);
+        //int task_position = currentSummarySheet.getTaskPosition(t);
 
-        this.notifyTaskAdded(currentSummarySheet, t, task_position);
+        this.notifyTaskAdded(currentSummarySheet, t/*, task_position*/);
 
         return t;
     }
@@ -130,7 +130,7 @@ public class TaskManager {
 
         this.currentSummarySheet.removeTask(task);
 
-        this.notifyTaskDeleted(task, this.currentSummarySheet);
+        this.notifyTaskDeleted(this.currentSummarySheet, task);
     }
 
     /* indicate task completed */
@@ -159,9 +159,9 @@ public class TaskManager {
     }
 
     /* notify the add of a new task in the summary sheet for a specific service */
-    private void notifyTaskAdded(SummarySheet s, Task t, int task_position) {
+    private void notifyTaskAdded(SummarySheet s, Task t/*, int task_position*/) {
         for (TaskEventReceiver er : this.eventReceivers) {
-            er.updateTaskAdded(s, t, task_position);
+            er.updateTaskAdded(s, t/*, task_position*/);
         }
     }
 
@@ -187,9 +187,9 @@ public class TaskManager {
     }
 
     /* notify the deleted of a task */
-    private void notifyTaskDeleted(Task task, SummarySheet s){
+    private void notifyTaskDeleted(SummarySheet s, Task task){
         for (TaskEventReceiver er : this.eventReceivers) {
-            er.updateTaskDeleted(task, s);
+            er.updateTaskDeleted(s, task);
         }
     }
 

@@ -25,7 +25,7 @@ public class TestCatERing_taskManagement {
 
             System.out.println("TEST GENERATE SUMMARY SHEET");
             Menu.loadAllMenus();
-            ArrayList<EventInfo> event = CatERing.getInstance().getEventManager().getEventInfo(1);
+            ObservableList<EventInfo> event = CatERing.getInstance().getEventManager().getEventInfo(1);
             System.out.println("Generazione fogli riepilogativi per i servizi dell'evento: ");
             System.out.println(event);
 
@@ -44,6 +44,9 @@ public class TestCatERing_taskManagement {
             }
 
             SummarySheet summarySheetSelect = CatERing.getInstance().getTaskManager().getCurrentSummarySheet();
+
+            System.out.println("Foglio riepilogativo attuale");
+            System.out.println(summarySheetSelect);
 
             System.out.println("TEST ADD TASK");
             Recipe recipe = CatERing.getInstance().getRecipeManager().getLoadedRecipe(9);
@@ -72,13 +75,9 @@ public class TestCatERing_taskManagement {
             System.out.println("Task aggiornato: ");
             System.out.println(insertTask);
 
-            System.out.println("TEST INDICATE FULL WORK SHIFT");
-            System.out.println("Turno da indicare completo");
-            System.out.println(workShift);
-            CatERing.getInstance().getTaskManager().indicateFullWorkShift(workShift);
-            System.out.println("Turno aggiornato");
-            System.out.println(workShift);
-            CatERing.getInstance().getTaskManager().indicateNotFullWorkShift(workShift);
+            System.out.println("Foglio riepilogativo aggiornato");
+            System.out.println(summarySheetSelect);
+
         } catch (UseCaseLogicException | EventException | WorkShiftException e) {
             e.printStackTrace();
         }

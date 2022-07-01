@@ -24,7 +24,7 @@ public class TestCatERing_taskManagement2b {
 
             System.out.println("TEST GENERATE SUMMARY SHEET");
             Menu.loadAllMenus();
-            ArrayList<EventInfo> event = CatERing.getInstance().getEventManager().getEventInfo(1);
+            ObservableList<EventInfo> event = CatERing.getInstance().getEventManager().getEventInfo(1);
             System.out.println("Generazione fogli riepilogativi per i servizi dell'evento: ");
             System.out.println(event);
 

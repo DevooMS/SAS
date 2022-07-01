@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.0.0">
-  <zoom_level>3</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>432</x>
-      <y>222</y>
-      <w>27</w>
-      <h>21</h>
+      <x>264</x>
+      <y>104</y>
+      <w>72</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -15,10 +15,10 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>531</x>
-      <y>228</y>
-      <w>87</w>
-      <h>15</h>
+      <x>528</x>
+      <y>120</y>
+      <w>232</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>taskMgr:
 TaskManager</panel_attributes>
@@ -27,10 +27,10 @@ TaskManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>441</x>
-      <y>255</y>
-      <w>138</w>
-      <h>12</h>
+      <x>288</x>
+      <y>192</y>
+      <w>368</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 indicateTaskCompleted(task)</panel_attributes>
@@ -39,10 +39,10 @@ indicateTaskCompleted(task)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>573</x>
-      <y>240</y>
-      <w>9</w>
-      <h>225</h>
+      <x>640</x>
+      <y>152</y>
+      <w>24</w>
+      <h>600</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;730.0</additional_attributes>
@@ -50,10 +50,10 @@ indicateTaskCompleted(task)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>573</x>
-      <y>261</y>
-      <w>6</w>
-      <h>189</h>
+      <x>640</x>
+      <y>208</y>
+      <w>16</w>
+      <h>504</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -61,10 +61,10 @@ indicateTaskCompleted(task)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>333</x>
-      <y>270</y>
-      <w>624</w>
-      <h>189</h>
+      <x>0</x>
+      <y>232</y>
+      <w>1664</w>
+      <h>504</h>
     </coordinates>
     <panel_attributes>ALT 
 
@@ -108,10 +108,10 @@ layer=-3</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>441</x>
-      <y>240</y>
-      <w>9</w>
-      <h>231</h>
+      <x>288</x>
+      <y>152</y>
+      <w>24</w>
+      <h>616</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;750.0</additional_attributes>
@@ -119,10 +119,10 @@ layer=-3</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>789</x>
-      <y>228</y>
-      <w>87</w>
-      <h>15</h>
+      <x>1216</x>
+      <y>120</y>
+      <w>232</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>task:
 Task</panel_attributes>
@@ -131,10 +131,10 @@ Task</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>831</x>
-      <y>240</y>
-      <w>9</w>
-      <h>111</h>
+      <x>1328</x>
+      <y>152</y>
+      <w>24</w>
+      <h>296</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;350.0</additional_attributes>
@@ -142,10 +142,10 @@ Task</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>711</x>
-      <y>309</y>
-      <w>126</w>
-      <h>12</h>
+      <x>1008</x>
+      <y>336</y>
+      <w>336</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 indicateCompleted()</panel_attributes>
@@ -154,10 +154,10 @@ indicateCompleted()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>576</x>
-      <y>360</y>
-      <w>78</w>
-      <h>18</h>
+      <x>648</x>
+      <y>472</y>
+      <w>208</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 notifyTaskCompleted(task)</panel_attributes>
@@ -166,10 +166,10 @@ notifyTaskCompleted(task)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>576</x>
-      <y>372</y>
-      <w>6</w>
-      <h>33</h>
+      <x>648</x>
+      <y>504</y>
+      <w>16</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -177,10 +177,10 @@ notifyTaskCompleted(task)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>531</x>
-      <y>387</y>
-      <w>411</w>
-      <h>21</h>
+      <x>528</x>
+      <y>544</y>
+      <w>1096</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>for each
 er in receivers
@@ -190,10 +190,10 @@ fg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>579</x>
-      <y>390</y>
-      <w>354</w>
-      <h>15</h>
+      <x>656</x>
+      <y>552</y>
+      <w>944</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 updateTaskCompleted(task)
@@ -203,10 +203,10 @@ updateTaskCompleted(task)
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>927</x>
-      <y>396</y>
-      <w>6</w>
-      <h>6</h>
+      <x>1584</x>
+      <y>568</y>
+      <w>16</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>
 </panel_attributes>
@@ -215,10 +215,10 @@ updateTaskCompleted(task)
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>927</x>
-      <y>240</y>
-      <w>9</w>
-      <h>174</h>
+      <x>1584</x>
+      <y>152</y>
+      <w>24</w>
+      <h>464</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;560.0</additional_attributes>
@@ -226,10 +226,10 @@ updateTaskCompleted(task)
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>900</x>
-      <y>228</y>
-      <w>57</w>
-      <h>15</h>
+      <x>1512</x>
+      <y>120</y>
+      <w>152</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>er:
 taskEventReceiver
@@ -240,10 +240,10 @@ taskEventReceiver
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>609</x>
-      <y>183</y>
-      <w>102</w>
-      <h>15</h>
+      <x>736</x>
+      <y>0</y>
+      <w>272</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>halign=center
 *2b.1 indicateTaskCompleted*
@@ -255,10 +255,10 @@ fontsize=20
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>666</x>
-      <y>228</y>
-      <w>87</w>
-      <h>15</h>
+      <x>888</x>
+      <y>120</y>
+      <w>232</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>taskMgr.currentSummarySheet:
 SummarySheet</panel_attributes>
@@ -267,10 +267,10 @@ SummarySheet</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>708</x>
-      <y>240</y>
-      <w>9</w>
-      <h>117</h>
+      <x>1000</x>
+      <y>152</y>
+      <w>24</w>
+      <h>312</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;370.0</additional_attributes>
@@ -278,10 +278,10 @@ SummarySheet</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>576</x>
-      <y>294</y>
-      <w>138</w>
-      <h>12</h>
+      <x>648</x>
+      <y>296</y>
+      <w>368</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 indicateTaskCompleted(task)</panel_attributes>
@@ -290,10 +290,10 @@ indicateTaskCompleted(task)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>708</x>
-      <y>300</y>
-      <w>6</w>
-      <h>48</h>
+      <x>1000</x>
+      <y>312</y>
+      <w>16</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -301,10 +301,10 @@ indicateTaskCompleted(task)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>831</x>
-      <y>315</y>
-      <w>6</w>
-      <h>27</h>
+      <x>1328</x>
+      <y>352</y>
+      <w>16</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -312,10 +312,10 @@ indicateTaskCompleted(task)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>834</x>
-      <y>321</y>
-      <w>66</w>
-      <h>21</h>
+      <x>1336</x>
+      <y>368</y>
+      <w>176</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 this.completed = true</panel_attributes>
@@ -324,10 +324,10 @@ this.completed = true</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>441</x>
-      <y>435</y>
-      <w>141</w>
-      <h>18</h>
+      <x>288</x>
+      <y>672</y>
+      <w>376</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException

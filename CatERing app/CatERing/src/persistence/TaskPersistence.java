@@ -13,8 +13,8 @@ public class TaskPersistence implements TaskEventReceiver {
     }
 
     @Override
-    public void updateTaskAdded(SummarySheet s, Task t, int task_position){
-        Task.saveNewTask(s.getId(), t, task_position);
+    public void updateTaskAdded(SummarySheet s, Task t/*, int task_position*/){
+        Task.saveNewTask(s.getId(), t, s.getTaskPosition(t));
     }
 
     @Override
@@ -33,7 +33,7 @@ public class TaskPersistence implements TaskEventReceiver {
     }
 
     @Override
-    public void updateTaskDeleted(Task t, SummarySheet s){
+    public void updateTaskDeleted(SummarySheet s, Task t){
         Task.deleteTask(t,s);
         SummarySheet.saveTaskListRearranged(s);
     }

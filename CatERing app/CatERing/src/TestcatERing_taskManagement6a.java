@@ -7,7 +7,6 @@ import businesslogic.menu.Menu;
 import businesslogic.recipe.Recipe;
 import businesslogic.task.SummarySheet;
 import businesslogic.task.Task;
-import businesslogic.task.TaskException;
 import businesslogic.user.User;
 import businesslogic.workShift.WorkShift;
 import businesslogic.workShift.WorkShiftException;
@@ -15,7 +14,7 @@ import javafx.collections.ObservableList;
 
 import java.util.ArrayList;
 
-public class TestCatERing_taskManagement1a {
+public class TestcatERing_taskManagement6a {
     public static void main(String[] args) {
         try {
             System.out.println("TEST FAKE LOGIN");
@@ -32,7 +31,7 @@ public class TestCatERing_taskManagement1a {
             ArrayList<SummarySheet> summarySheets = new ArrayList<>();
             ObservableList<ServiceInfo> services = null;
 
-            for (EventInfo e : event) {
+            for(EventInfo e: event) {
                 services = e.getServices();
                 for (ServiceInfo service : services) {
                     SummarySheet s = CatERing.getInstance().getTaskManager().generateSummarySheet(e, service);
@@ -43,8 +42,9 @@ public class TestCatERing_taskManagement1a {
                 }
             }
 
-            System.out.println("TEST SELECT SUMMARY SHEET");
-            SummarySheet summarySheetSelect = CatERing.getInstance().getTaskManager().selectSummarySheet(event.get(0), services.get(0), summarySheets.get(0));
+            SummarySheet summarySheetSelect = CatERing.getInstance().getTaskManager().getCurrentSummarySheet();
+
+            System.out.println("Foglio riepilogativo attuale");
             System.out.println(summarySheetSelect);
 
             System.out.println("TEST ADD TASK");
@@ -64,19 +64,31 @@ public class TestCatERing_taskManagement1a {
             for(WorkShift ws: workShifts)
                 System.out.println(ws);
 
+            System.out.println("TEST INDICATE FULL WORK SHIFT");
+            System.out.println("Turno da indicare completo");
+            WorkShift workShift = workShifts.get(0);
+            System.out.println(workShift);
+            CatERing.getInstance().getTaskManager().indicateFullWorkShift(workShift);
+            System.out.println("Turno aggiornato");
+            System.out.println(workShift);
+
+            System.out.println("TEST INDICATE NOT FULL WORK SHIFT");
+            System.out.println("Turno da indicare non completo");
+            System.out.println(workShift);
+            CatERing.getInstance().getTaskManager().indicateNotFullWorkShift(workShift);
+            System.out.println("Turno aggiornato");
+            System.out.println(workShift);
+
             System.out.println("TEST ASSIGN TASK");
             System.out.println("Foglio riepilogativo del task da assegnare");
             System.out.println(summarySheetSelect);
             System.out.println("Task da assegnare: ");
             System.out.println(insertTask);
-            WorkShift workShift = workShifts.get(0);
+            workShift = workShifts.get(0);
             CatERing.getInstance().getTaskManager().assignTask(insertTask, workShift, User.loadUserById(4), "1 ora", "10 croissant", "x 10 persone" );
             System.out.println("Task aggiornato: ");
             System.out.println(insertTask);
-
-            System.out.println("Foglio riepilogativo aggiornato");
-            System.out.println(summarySheetSelect);
-        } catch (TaskException | EventException | UseCaseLogicException | WorkShiftException e) {
+        } catch (WorkShiftException | EventException | UseCaseLogicException e) {
             e.printStackTrace();
         }
     }
