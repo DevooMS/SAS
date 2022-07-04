@@ -163,7 +163,7 @@ layer=3</panel_attributes>
       <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-informazioni registrate
+mansione aggiornata
 layer=3</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
@@ -176,7 +176,7 @@ layer=3</panel_attributes>
       <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-passo registrato</panel_attributes>
+mansione aggiornata</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
   <element>
@@ -213,7 +213,7 @@ bg=#8CB4FF</panel_attributes>
       <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-ingrediente regitsrato</panel_attributes>
+mansione aggiornata</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
   <element>
@@ -237,7 +237,7 @@ ingrediente regitsrato</panel_attributes>
       <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-porzioni e quantità registrate</panel_attributes>
+mansione aggiornata</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
   <element>
@@ -395,7 +395,7 @@ layer=-1</panel_attributes>
       <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-tempistiche registrate</panel_attributes>
+mansione aggiornata</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
   <element>
@@ -419,7 +419,7 @@ tempistiche registrate</panel_attributes>
       <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-tag registrato</panel_attributes>
+mansione aggiornata</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
   </element>
   <element>
@@ -547,7 +547,7 @@ layer=3</panel_attributes>
       <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-modifica informazioni registrata
+mansione aggiornata
 fg=#9E1C8C
 layer=3</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>

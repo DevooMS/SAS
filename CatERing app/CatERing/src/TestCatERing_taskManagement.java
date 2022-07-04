@@ -4,6 +4,7 @@ import businesslogic.event.EventException;
 import businesslogic.event.EventInfo;
 import businesslogic.event.ServiceInfo;
 import businesslogic.menu.Menu;
+import businesslogic.menu.MenuManager;
 import businesslogic.recipe.Recipe;
 import businesslogic.task.SummarySheet;
 import businesslogic.task.Task;
@@ -24,7 +25,7 @@ public class TestCatERing_taskManagement {
             System.out.println(user.getUserName());
 
             System.out.println("TEST GENERATE SUMMARY SHEET");
-            Menu.loadAllMenus();
+            CatERing.getInstance().getMenuManager().getAllMenus();
             ObservableList<EventInfo> event = CatERing.getInstance().getEventManager().getEventInfo(1);
             System.out.println("Generazione fogli riepilogativi per i servizi dell'evento: ");
             System.out.println(event);

@@ -22,7 +22,7 @@ public class TestCatERing_taskManagement2a {
             System.out.println(user.getUserName());
 
             System.out.println("TEST GENERATE SUMMARY SHEET");
-            Menu.loadAllMenus();
+            CatERing.getInstance().getMenuManager().getAllMenus();
             ObservableList<EventInfo> event = CatERing.getInstance().getEventManager().getEventInfo(1);
             System.out.println("Generazione fogli riepilogativi per i servizi dell'evento: ");
             System.out.println(event);
